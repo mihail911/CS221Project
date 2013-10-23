@@ -2,6 +2,7 @@ Course Search
 =============
 
 Author: Michael Dickens <mdickens@stanford.edu>
+
 Author: Mihail Eric <meric@stanford.edu>
 
 Description
