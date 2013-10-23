@@ -9,12 +9,8 @@ Perform searches over a database.
 
 class SearchSchema():
 
-    def __init__(self, filename):
-        """
-        Initialize by loading `filename` into an internal format.
-        """
-        # TODO: implement this
-        pass
+    def __init__(self, courses):
+        self.courses = courses
 
     def search(self, query):
         """
@@ -30,5 +26,8 @@ class SimpleSearch(SearchSchema):
     Search simply by finding keywords in the course list.
     """
     def search(self, query):
-        # TODO: implement this
-        pass
+        # Right now, if you input a course name, it returns the course data.
+        for k in courses:
+            if query == k:
+                return courses[k]
+        return None
