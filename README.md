@@ -1,0 +1,1 @@
+This is our CS221 project: a query search engine for finding Stanford courses.
