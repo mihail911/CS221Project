@@ -1,0 +1,8 @@
+Project Proposal
+
+TODO:
+1) Take a limited collection of classes from explorecourses.stanford.edu (scrape using BeautifulSoup or JS?)
+2) Manually determine the relevance of the results of a search query.
+3) Base-line system: Keyword search (list of professor's names, list of course names)
+4) How to input queries: comma-delimited phrases?
+5) 
