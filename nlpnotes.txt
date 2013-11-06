@@ -1,9 +1,0 @@
-﻿Notes on NLP
-
-*Part of speech tagging—rule-based and stochastic methods used
-*Syntactic structure annotated using embedded lists	
-*Regular expressions?
-*Typical control flow: tokenizer-->POS tagger-->regex matcher-->template filler-->template merger
-*regular expression matching phase, using extraction template
-
-
