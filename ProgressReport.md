@@ -1,5 +1,9 @@
 # Project Progress Report
 
+Author: Michael Dickens
+
+Author: Mihail Eric
+
 ## Preliminary Query Searching
 
 We maintain inverted indexes for a variety of features, including
@@ -75,6 +79,7 @@ We create a lists of categories of interest, containing words that
 belong to that category as follows:
 
     professors=['Jerry Cain', 'Mehran Sahami', 'Vadim Khayms', etc...]
+
     buildings_on_campus=['Cubberley Auditorium', 'Mudd Chemistry
     Building', 'Green Earth Sciences', etc...]
 
@@ -135,19 +140,30 @@ courses related to a particular concept.
 ## Example Queries to Support
 
     'courses taught [by {NAME PROFESSOR}] [in {QUARTER OF YEAR}] [at
-    {TIME OF DAY}]' 'courses taught by {PROFESSOR QUALIFIER}' 'courses
-    [that meet] on {DAY OF WEEK}' 'courses in {NAME DEPARTMENT}
-    department' 'courses on {TOPICS/SUBJECT MATTER OF COURSE}'
+    {TIME OF DAY}]'
+
+    'courses taught by {PROFESSOR QUALIFIER}'
+
+    'courses [that meet] on {DAY OF WEEK}'
+
+    'courses in {NAME DEPARTMENT} department'
+
+    'courses on {TOPICS/SUBJECT MATTER OF COURSE}'
 
 ## Conclusion
 
 Our work on this project can be reduced to the following sets of
 subtasks that we need to accomplish:
 
- * Finish implementing basic database management
+ * Finish implementing database management
  * Feature extraction of queries and course descriptions
- * Parse of texts for information extraction through a combination of
+ * Parse texts for information extraction through a combination of
 POS-tagging, chunking, and named entity recognition
  * Implement an algorithm for matching query features to course
 features
 
+Our next steps involve implementing robust feature extraction and 
+using extracted features to naively match courses. New challenges 
+may arise as we implement our program in more detail, but we feel 
+confident that we can implement a useful course search in the 
+coming weeks.
