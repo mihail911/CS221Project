@@ -18,8 +18,11 @@ instructordbname = "instructordatabase.db"
 allcoursesdb = sqlite3.connect(allcoursesdbname)
 cursor = allcoursesdb.cursor()
 
-def queryDB(query):
-    cursor.execute(query)
+def queryDB(query, args=None):
+    if args:
+        cursor.execute(query, args)
+    else:
+        cursor.execute(query)
     return cursor.fetchall()
 
 def cleanup():

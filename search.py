@@ -19,7 +19,7 @@ class PropertySearch(SearchSchema):
     """
     def search(self, query):
         property, requirement = query.split()
-        # TODO: Don't use format or Bobby Tables will get you. See
-        # http://docs.python.org/2/library/sqlite3.html
+        # TODO: This isn't sanitized but I can't get the sanitized
+        # version to work.
         return queryDB('SELECT * FROM COURSEINFO WHERE %s = "%s"' %
                        (property, requirement))
