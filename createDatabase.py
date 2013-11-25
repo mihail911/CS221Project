@@ -4,7 +4,7 @@ of all available courses."""
 
 import sqlite3
 
-f=open('courseinfo2.txt','r')
+allcoursesdatabase="courseinfodata.db"
 
 def oneClassInfo(f):
 	"""Reads in the contents of one file in Python and outputs information as a dictionary."""
@@ -25,35 +25,30 @@ def oneClassInfo(f):
 	coursedict[coursetitle]=courseinfo
 	return coursedict
 
-dictexample=oneClassInfo(f)
-print dictexample
-##not working yet!!
+def setupDatabase():
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	curs.execute('create table COURSEINFO (title,code,instructor,units,description)')
+	conn.commit()
+	conn.close()
+
 def allClassInfo():
-	allcourses=[]
-	with open('courseinfo.txt') as f:
+	conn=sqlite3.connect(allcoursesdatabase)
+	conn.text_factory=str
+	curs=conn.cursor()
+	with open('courseinfo2.txt') as f:
 		while True:
-			coursedict={}
-			courseinfo={}
+
 			coursetitle=' '.join(f.readline()[14:].split())
+			if not coursetitle: break
 			courseinstructors=' '.join(f.readline()[20:].split())
+			coursecode=' '.join(f.readline()[13:].split())	
 			courseunits=' '.join(f.readline()[13:].split())
 			coursedescription=' '.join(f.readline()[20:].split())
 			delimiter=f.readline()
-
-			courseinfo['Course Title']=coursetitle
-			courseinfo['Course Instructors']=courseinstructors
-			courseinfo['Course Units']=courseunits
-			courseinfo['Course Description']=coursedescription	
-			coursedict[coursetitle]=courseinfo
-			allcourses.append(coursedict)	
-	return allcourses
-
-def setupDatabase(allcourseinfo):
-	conn=sqlite3.connect('courseinfo_db.db')
-	curs=conn.cursor()
-	curs.execute('create table ALLCOURSES (title,code,instructor,units,description)')
-
+			allelems=(coursetitle,coursecode,courseinstructors, courseunits, coursedescription)
+			curs.execute("insert into COURSEINFO values (?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
-#allcourses=allClassInfo()
-#print allcourses
+
+#allClassInfo()
