@@ -1,5 +1,5 @@
 #!/usr/bin/python
-"""Provides a series of methods for creating a usable database from a text file
+"""Provides a series of methods for creating usable databases from a text file
 of all available courses."""
 
 import sqlite3
@@ -33,12 +33,12 @@ def setupDatabase():
 	conn.close()
 
 def allClassInfo():
+	"""Populates COURSEINFO database with all course info."""
 	conn=sqlite3.connect(allcoursesdatabase)
 	conn.text_factory=str
 	curs=conn.cursor()
 	with open('courseinfo2.txt') as f:
 		while True:
-
 			coursetitle=' '.join(f.readline()[14:].split())
 			if not coursetitle: break
 			courseinstructors=' '.join(f.readline()[20:].split())
@@ -52,3 +52,38 @@ def allClassInfo():
 	conn.close()
 
 #allClassInfo()
+
+instructordb='instructordatabase.db'
+def instructorDBInstance():
+	"""Creates instructor database instance.""" 
+	conn=sqlite3.connect(instructordb)
+	cursor=conn.cursor()
+	cursor.execute('create table INSTRUCTORDB (instructor,coursecode)')
+	conn.commit()
+	conn.close()
+
+#instructorDBInstance()
+
+def makeInstructorDatabase():
+	"""Populates INSTRUCTORDB with instructor information where 
+	each row is of the form (instructor, coursecode)"""
+	conn=sqlite3.connect(instructordb)
+	conn.text_factory=str
+	curs=conn.cursor()
+	with open('courseinfo2.txt') as f:
+		while True:
+			coursetitle=' '.join(f.readline()[14:].split())
+			if not coursetitle: break
+			courseinstructors=' '.join(f.readline()[20:].split())
+			allinstructors=[inst.strip() for inst in courseinstructors.split(',') if inst.strip()!='']
+			coursecode=' '.join(f.readline()[13:].split())	
+			courseunits=' '.join(f.readline()[13:].split())
+			coursedescription=' '.join(f.readline()[20:].split())
+			delimiter=f.readline()
+			for inst in allinstructors:
+				instelem=(inst,coursecode)
+				curs.execute("insert into INSTRUCTORDB values (?,?)", instelem)	
+	conn.commit()
+	conn.close()
+
+makeInstructorDatabase()
