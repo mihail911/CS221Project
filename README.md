@@ -1,12 +1,10 @@
-Course Search
-=============
+# Course Search
 
 Author: Michael Dickens <mdickens@stanford.edu>
 
 Author: Mihail Eric <meric@stanford.edu>
 
-Description
------------
+## Description
 
 This is our CS221 project: a query search engine for finding Stanford courses.
 
@@ -26,7 +24,7 @@ Instructor Database Format:
 
 **In this database, a single instructor is mapped to the appropriate course code.
 
-Literature Review
------------------
+## Note on Conventions
 
+Method names are camel case and variable names are all lowercase.
 

@@ -30,7 +30,6 @@ class SearchSchema():
 
     def search(self, query):
         return self.searchSanitized(self.sanitizeQuery(query))
-
         
 class NameSearch(SearchSchema):
     """
