@@ -1,3 +1,4 @@
+#!usr/bin/Python
 """Provides a series of methods for creating a usable database from a text file
 of all available courses."""
 
