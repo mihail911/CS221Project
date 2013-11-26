@@ -29,7 +29,7 @@ def setupDatabase():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
         curs.execute('DROP TABLE courseinfo')
-	curs.execute('CREATE TABLE courseinfo (title,code,instructor,units,description)')
+	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title,code,instructor,units,description)')
 	conn.commit()
 	conn.close()
 
@@ -39,15 +39,18 @@ def allClassInfo():
 	conn.text_factory=str
 	curs=conn.cursor()
 	with open('courseinfo2.txt') as f:
+                id = 0
 		while True:
 			coursetitle=' '.join(f.readline()[14:].split())
 			if not coursetitle: break
+                        id += 1
 			courseinstructors=' '.join(f.readline()[20:].split())
 			coursecode=' '.join(f.readline()[13:].split())	
 			courseunits=' '.join(f.readline()[13:].split())
+                        print courseunits
 			coursedescription=' '.join(f.readline()[20:].split())
 			delimiter=f.readline()
-			allelems=(coursetitle,coursecode,courseinstructors, courseunits, coursedescription)
+			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits, coursedescription)
 			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
