@@ -11,17 +11,20 @@ weights indicate relatedness.
 
 """
 
+from nltk.stem.porter import PorterStemmer
 import re
 from collections import Counter
 from readDB import getField
 import search
 from util import *
 
+stemmer = PorterStemmer()
+
 def getData():
     return search.queryDB("SELECT * FROM courseinfo")
 
 def titleFeatures(title):
-    return [ ('title', w.lower()) for w in title.split() ]
+    return [ ('title', stemmer.stem(w.lower())) for w in title.split() ]
 
 def codeFeatures(code):
     index = re.search('[0-9]', code).start()
@@ -48,7 +51,7 @@ def descFeatures(desc):
     """
     Features for a course description.
     """
-    return [ ('desc', w.lower()) for w in desc.split() ]
+    return [ ('desc', stemmer.stem(w.lower())) for w in desc.split() ]
 
 def extractFeatures(entry):
     """
