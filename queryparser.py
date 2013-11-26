@@ -36,31 +36,7 @@ def getInstructorNames(namedentitynodes):
 		allinstructors.append(instructorname.rstrip())
 	return allinstructors
 
-query='courses taught by Abdullah Yousuff'
+query='courses taught by Jesus Howard Christ'
 postag=parseQuery(query)
-#print postag
 chunked=chunkquery(postag)
-#print chunked
 print getInstructorNames(chunked)
-
-#parseQuery("courses taught by Jerry Cain")
-# x='courses taught by Jerry Cain'
-# posx=nltk.pos_tag(nltk.word_tokenize(x))
-# chunked=nltk.ne_chunk(posx)
-# for i in chunked.subtrees():
-# 	if i.node=='PERSON':
-# 		print i
-#print chunked[0],chunked.node
-# leaves=[]
-# def traverse(t,leaves):
-# 	try:
-# 		t.node
-# 	except AttributeError:
-# 		leaves.append(t)
-# 	else:
-# 		leaves.append((t.node, ))
-# 		for child in t:
-# 			traverse(child,leaves)
-
-#traverse(chunked,leaves)
-#print leaves
