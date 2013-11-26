@@ -71,6 +71,8 @@ def extractFeatures(entry):
     return set(titlefeats + codefeats + instrfeats + unitfeats + \
                descfeats + codecombofeats)
 
+features = dict()
+
 def createFeaturePriors(entries):
     """
     For each feature of a course, find the prior probability of that
@@ -83,7 +85,9 @@ def createFeaturePriors(entries):
     """
     allfeatures = Counter()
     for entry in entries:
-        for f in extractFeatures(entry):
+        feats = extractFeatures(entry)
+        features[entry] = feats
+        for f in feats:
             allfeatures[f] += 1
 
     # Use allfeatures to construct a table of probabilities.
@@ -183,11 +187,11 @@ def getRelatedCourses(data, entry1, numrelated):
     
     return: a list of (course, relatedness) sorted by relatedness.
     """
-    feats1 = extractFeatures(entry1)
+    feats1 = features[entry1]
     
     courses = [ (None, -1) for _ in range(numrelated) ]
     for entry2 in data:
-        feats2 = extractFeatures(entry2)
+        feats2 = features[entry2]
         relatedness = weight(feats1, feats2)
         if relatedness > courses[0][1]:
             courses[0] = ((getField(entry2,'id'), getField(entry2, 'code'), getField(entry2, 'title')),
