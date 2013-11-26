@@ -29,7 +29,7 @@ def setupDatabase():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
         curs.execute('DROP TABLE courseinfo')
-	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title,code,instructor,unitsmin INTEGER,unitsmax INTEGER,description)')
+	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description)')
 	conn.commit()
 	conn.close()
 
