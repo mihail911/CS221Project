@@ -5,6 +5,10 @@
 ** TODO Change list of instructors in the course info db from a string to an actual list
 ** TODO For courses where the title lists alternative codes, treat these codes as a separate value in the table and not as part of the title.
 * Bugs
+<<<<<<< HEAD
+** TODO Sanitized queries (in search.py:search()) don't work.
+=======
 ** No known bugs. Yay!
 
 
+>>>>>>> f00c7acaac2a8948bf63c274591dab1820fa78c2
