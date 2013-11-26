@@ -1,6 +1,7 @@
 * Big Changes
 ** Construct course relatedness graph using Bayes' theorem.
 *** TODO How to compute P(F|R) and P(~F|R)?
+*** TODO Make features use word stems instead of words
 * Small Changes
 ** DONE Replace magic constants for field indices with XXXindex in readDB.py.
    CLOSED: [2013-11-26 Tue 14:12]
