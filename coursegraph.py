@@ -58,7 +58,7 @@ def extractFeatures(entry):
     codefeats = codeFeatures(getField(entry, 'code'))
     instrfeats = instructorFeatures(getField(entry, 'instructor'))
     unitfeats = unitFeatures(getField(entry, 'unitsmin'),
-                             (getField(entry, 'unitsmax')+1))
+                             (getField(entry, 'unitsmax')))
     descfeats = descFeatures(getField(entry, 'description'))
 
     codecombofeats = [ ('codecombo', feat1, feat2)
@@ -187,7 +187,7 @@ def getRelatedCourses(data, entry1, numrelated):
         feats2 = extractFeatures(entry2)
         relatedness = weight(feats1, feats2)
         if relatedness > courses[0][1]:
-            courses[0] = ((getField(entry2, 'code'), getField(entry2, 'title')),
+            courses[0] = ((getField(entry2,'id'), getField(entry2, 'code'), getField(entry2, 'title')),
                           relatedness)
             # Note: This sort is O(n) because Python uses timsort and
             # only one element is out of order.
