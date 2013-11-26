@@ -32,6 +32,14 @@ def codeFeatures(code):
 
 def instructorFeatures(title):
     return [ ('instr', w.lower()) for w in title.split(",") ]
+
+def unitFeatures(units):
+    """
+    There may be some small correlation between related features and
+    number of units. For example, every class in the Math 50-series is
+    5 units.
+    """
+    return [ ('units', units) ]
     
 def descFeatures(desc):
     """
@@ -48,13 +56,15 @@ def extractFeatures(entry):
     titlefeats = titleFeatures(entry[0])
     codefeats = codeFeatures(entry[1])
     instrfeats = instructorFeatures(entry[2])
+    unitfeats = unitFeatures(entry[3])
     descfeats = descFeatures(entry[4])
 
     codecombofeats = [ ('codecombo', feat1, feat2)
                        for feat1 in codefeats
-                       for feat2 in titlefeats + descfeats ]
+                       for feat2 in titlefeats + descfeats + instrfeats ]
     
-    return set(titlefeats + codefeats + instrfeats + descfeats + codecombofeats)
+    return set(titlefeats + codefeats + instrfeats + unitfeats + \
+               descfeats + codecombofeats)
 
 def createFeaturePriors(data):
     """
@@ -167,7 +177,6 @@ def getRelatedCourses(data, entry1, numrelated):
     return: a list of (course, relatedness) sorted by relatedness.
     """
     feats1 = extractFeatures(entry1)
-    print 'features:', feats1
     
     courses = [ (None, -1) for _ in range(numrelated) ]
     for entry2 in data:

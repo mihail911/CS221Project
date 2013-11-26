@@ -16,8 +16,9 @@ def testSqlQuery():
 
 def testCourseRelatednessReal():
     data = coursegraph.getData()
-    entry = [ entry for entry in data if entry[1] == "CS106A" ][0]
-    print coursegraph.getRelatedCourses(data, entry, 8)
+    # cs106A = [ entry for entry in data if entry[1] == "CS106A" ][0]
+    math51 = [ entry for entry in data if entry[1] == "MATH51" ][0]
+    print coursegraph.getRelatedCourses(data, math51, 8)
 
 def testCourseRelatedness():
     alldata = [

@@ -1,5 +1,6 @@
 * Big Changes
-** TODO Construct course relatedness graph using Bayes' theorem.
+** Construct course relatedness graph using Bayes' theorem.
+*** TODO How to compute P(F|R) and P(~F|R)?
 * Small Changes
 ** TODO Make `code` the primary key in the course db.
 ** TODO Change list of instructors in the course info db from a string to an actual list
