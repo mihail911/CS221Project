@@ -21,5 +21,5 @@ class PropertySearch(SearchSchema):
         property, requirement = query.split()
         # TODO: This isn't sanitized but I can't get the sanitized
         # version to work.
-        return queryDB('SELECT * FROM COURSEINFO WHERE %s = "%s"' %
+        return queryDB('SELECT * FROM courseinfo WHERE %s = "%s"' %
                        (property, requirement))

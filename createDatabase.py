@@ -28,7 +28,8 @@ def oneClassInfo(f):
 def setupDatabase():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
-	curs.execute('create table COURSEINFO (title,code,instructor,units,description)')
+        curs.execute('DROP TABLE courseinfo')
+	curs.execute('CREATE TABLE courseinfo (title,code,instructor,units,description)')
 	conn.commit()
 	conn.close()
 
@@ -47,7 +48,7 @@ def allClassInfo():
 			coursedescription=' '.join(f.readline()[20:].split())
 			delimiter=f.readline()
 			allelems=(coursetitle,coursecode,courseinstructors, courseunits, coursedescription)
-			curs.execute("insert into COURSEINFO values (?,?,?,?,?)", allelems)	
+			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
 
@@ -58,7 +59,7 @@ def instructorDBInstance():
 	"""Creates instructor database instance.""" 
 	conn=sqlite3.connect(instructordb)
 	cursor=conn.cursor()
-	cursor.execute('create table INSTRUCTORDB (instructor,coursecode)')
+	cursor.execute('CREATE TABLE instructordb (instructor,coursecode)')
 	conn.commit()
 	conn.close()
 
@@ -82,8 +83,11 @@ def makeInstructorDatabase():
 			delimiter=f.readline()
 			for inst in allinstructors:
 				instelem=(inst,coursecode)
-				curs.execute("insert into INSTRUCTORDB values (?,?)", instelem)	
+				curs.execute("INSERT INTO instructordb VALUES (?,?)", instelem)	
 	conn.commit()
 	conn.close()
 
-makeInstructorDatabase()
+# makeInstructorDatabase()
+
+setupDatabase()
+allClassInfo()
