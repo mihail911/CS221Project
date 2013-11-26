@@ -13,6 +13,7 @@ weights indicate relatedness.
 
 import re
 from collections import Counter
+from readDB import getField
 import search
 from util import *
 
@@ -28,18 +29,20 @@ def codeFeatures(code):
     numbers = re.sub('[a-zA-Z]', '', code[index:]).rjust(3, '0')
     return [ ('codename', letters),
              ('code100s', numbers[0]),
-             ('code10s', numbers[1]) ]
+             ('code10s', numbers[1]),
+             ('code11s', numbers[1:3])
+    ]
 
 def instructorFeatures(title):
     return [ ('instr', w.lower()) for w in title.split(",") ]
 
-def unitFeatures(units):
+def unitFeatures(minunits, maxunits):
     """
     There may be some small correlation between related features and
     number of units. For example, every class in the Math 50-series is
     5 units.
     """
-    return [ ('units', units) ]
+    return [ ('minunits', minunits), ('maxunits', maxunits) ]
     
 def descFeatures(desc):
     """
@@ -50,14 +53,13 @@ def descFeatures(desc):
 def extractFeatures(entry):
     """
     Find the features for a given entry. Features are stored in a sparse vector.
-
-    TODO: Try creating pairs of features as well (e.g. ('title&codename', 'programming', 'cs'))
     """
-    titlefeats = titleFeatures(entry[0])
-    codefeats = codeFeatures(entry[1])
-    instrfeats = instructorFeatures(entry[2])
-    unitfeats = unitFeatures(entry[3])
-    descfeats = descFeatures(entry[4])
+    titlefeats = titleFeatures(getField(entry, 'title'))
+    codefeats = codeFeatures(getField(entry, 'code'))
+    instrfeats = instructorFeatures(getField(entry, 'instructor'))
+    unitfeats = unitFeatures(getField(entry, 'unitsmin'),
+                             (getField(entry, 'unitsmax')+1))
+    descfeats = descFeatures(getField(entry, 'description'))
 
     codecombofeats = [ ('codecombo', feat1, feat2)
                        for feat1 in codefeats
@@ -66,23 +68,25 @@ def extractFeatures(entry):
     return set(titlefeats + codefeats + instrfeats + unitfeats + \
                descfeats + codecombofeats)
 
-def createFeaturePriors(data):
+def createFeaturePriors(entries):
     """
     For each feature of a course, find the prior probability of that
     feature occurring.
+
+    entries: List of database entries where each entry is a tuple of fields.
 
     return: Dictionary mapping features to probabilities. If a feature
     is not in the dictionary, its probability is 0.
     """
     allfeatures = Counter()
-    for entry in data:
+    for entry in entries:
         for f in extractFeatures(entry):
             allfeatures[f] += 1
 
     # Use allfeatures to construct a table of probabilities.
     probs = dict()
     for f in allfeatures:
-        probs[f] = float(allfeatures[f]) / len(data)
+        probs[f] = float(allfeatures[f]) / len(entries)
     return probs
 
 alldata = getData()
@@ -183,7 +187,8 @@ def getRelatedCourses(data, entry1, numrelated):
         feats2 = extractFeatures(entry2)
         relatedness = weight(feats1, feats2)
         if relatedness > courses[0][1]:
-            courses[0] = (entry2[0], relatedness)
+            courses[0] = ((getField(entry2, 'code'), getField(entry2, 'title')),
+                          relatedness)
             # Note: This sort is O(n) because Python uses timsort and
             # only one element is out of order.
             courses.sort(key=lambda pair: pair[1])

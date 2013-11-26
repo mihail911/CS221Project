@@ -15,6 +15,14 @@ import sqlite3
 allcoursesdbname = "courseinfodata.db"
 instructordbname = "instructordatabase.db"
 
+fields = 'id,title,code,instructor,unitsmin,unitsmax,description'.split(",")
+indexes = dict()
+for i in range(len(fields)):
+    indexes[fields[i]] = i
+
+def getField(entry, field):
+    return entry[indexes[field]]
+
 allcoursesdb = sqlite3.connect(allcoursesdbname)
 cursor = allcoursesdb.cursor()
 
