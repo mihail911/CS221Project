@@ -6,7 +6,7 @@ cabal-version: >= 1.14
 
 Flag Debug
      Description: Enable debug support
-     Default: False
+     Default: True
 
 executable CS221Project
   main-is: Main.hs
@@ -22,7 +22,7 @@ executable CS221Project
                -- , Stemmer >= 0.5
                , vector >= 0.10.0.0
   if flag(debug)
-     GHC-Options: -O2 -rtsopts -fprof-auto -caf-all
+     GHC-Options: -O2 -rtsopts -fprof-auto -caf-all -prof
      CPP-Options: -DDEBUG 
   else
      GHC-Options: -O2 -rtsopts

@@ -21,6 +21,7 @@ import qualified Data.Map as Map
 -- MissingH
 import Data.String.Utils
 
+import Util
 import ReadDB
 
 data Feature = Title String
@@ -97,10 +98,6 @@ getFeaturePriors featureMap =
         folder myMap feats =
           Set.foldl (\cum feat -> incMapValue feat cum) myMap feats
 
--- | Perform a Bayesian probability update to find P(A | Event).
-probUpdate :: Double -> Double -> Double -> Double
-probUpdate prior pEventGivenPrior pEvent =
-  prior * pEventGivenPrior / pEvent
 
 bayesWeight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
 bayesWeight featurePriors feats1 feats2 = sum $ Set.toList probs
@@ -116,8 +113,9 @@ weight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
 weight = bayesWeight
 
 getRelatedCourses :: Map.Map Feature Double -> Map.Map Entry FeatureSet ->
-                     Entry -> Int -> [Entry]
-getRelatedCourses featurePriors featureMap entry1 numToGet =
-  take numToGet $ reverse $ map fst $ sortBy (compare `on` (weight featurePriors feats1 . snd)) $
+                     Int -> Entry -> [Entry]
+getRelatedCourses featurePriors featureMap numToGet entry1 =
+  map fst $
+  largestKBy (compare `on` (weight featurePriors feats1 . snd)) numToGet $
   Map.assocs featureMap
   where feats1 = featureMap Map.! entry1

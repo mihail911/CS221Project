@@ -19,7 +19,8 @@ testRelatednessReal =
      let featurePriors = getFeaturePriors featureMap
      let math51 = head [ entry | entry <- entries, codeKey entry == "math51" ]
      print math51
-     print $ getRelatedCourses featurePriors featureMap math51 8
+     print $ map (getRelatedCourses featurePriors featureMap 8) $ take 20 entries
+     -- print $ getRelatedCourses featurePriors featureMap 8 math51
 
 runTests :: IO ()
 runTests = testRelatednessReal

@@ -1,7 +1,9 @@
 * Big Changes
 ** Construct course relatedness graph using Bayes' theorem.
-*** TODO Rewrite in Haskell
 *** TODO Copy documentation into Haskell files
+*** Make program faster
+**** Use hash tables instead of trees
+**** Inline
 *** TODO How to compute P(F|R) and P(~F|R)?
 *** TODO Make features use word stems instead of words (use NLP.Stemmer)
 * Small Changes
