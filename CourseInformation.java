@@ -9,9 +9,6 @@ import edu.stanford.services.explorecourses.ExploreCoursesConnection;
 import edu.stanford.services.explorecourses.Section;
 import edu.stanford.services.explorecourses.Instructor;
 import edu.stanford.services.explorecourses.MeetingSchedule;
-
-
-
 import java.io.PrintWriter;
 import java.io.File;
 import java.io.*;
