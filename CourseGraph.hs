@@ -12,7 +12,8 @@ it in Haskell.
 
 module CourseGraph where
 
-import Data.Char
+import Data.Function
+import Data.List
 import qualified Data.Maybe as Maybe
 import qualified Data.Set as Set
 import qualified Data.Map as Map
@@ -84,30 +85,39 @@ incMapValue k m =
     Just x -> Map.insert k (x+1) m
     Nothing -> Map.insert k 1 m
 
-featureMap :: IO (Map.Map Entry (FeatureSet))
-featureMap = allEntries >>=
-             (\entries -> return $
-                          foldl (\cum entry ->
-                                  Map.insert entry (extractFeatures entry) cum)
-                          Map.empty
-                          entries)
+getFeatureMap :: [Entry] -> Map.Map Entry FeatureSet
+getFeatureMap entries =
+  foldl (\cum entry -> Map.insert entry (extractFeatures entry) cum)
+  Map.empty entries
 
-featurePriors :: IO (Map.Map Feature Double)
-featurePriors =
-  do entries <- allEntries
-     featureMap' <- featureMap
-     let featureCounts = foldl
-                         (\cum entry -> mapper featureMap' entry cum)
-                         Map.empty
-                         entries
-     return $ Map.map (/ fromIntegral (length entries)) featureCounts
-  where mapper featureMap' entry myMap =
-          Set.foldl (\cum feat -> incMapValue feat cum) myMap $
-          featureMap' Map.! entry
+getFeaturePriors :: Map.Map Entry FeatureSet -> Map.Map Feature Double
+getFeaturePriors featureMap =
+  Map.map (/ fromIntegral (Map.size featureMap)) featureCounts
+  where featureCounts = Map.foldl folder Map.empty featureMap
+        folder myMap feats =
+          Set.foldl (\cum feat -> incMapValue feat cum) myMap feats
 
--- bayesWeight :: FeatureSet -> FeatureSet -> Double
--- bayesWeight feats1 feats2 = sum probs
---   where probs = map update feats1
---         update feat = if member feat feats2
---                       then probUpdate prior 0.9 $ 
+-- | Perform a Bayesian probability update to find P(A | Event).
+probUpdate :: Double -> Double -> Double -> Double
+probUpdate prior pEventGivenPrior pEvent =
+  prior * pEventGivenPrior / pEvent
+
+bayesWeight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
+bayesWeight featurePriors feats1 feats2 = sum $ Set.toList probs
+  where probs = Set.map update feats1
+        prior = 0.1
+        update feat = if Set.member feat feats2
+                      then probUpdate prior 0.9 $ featurePrior
+                      else probUpdate prior 0.1 $ 1 - featurePrior
+          where featurePrior = featurePriors Map.! feat
                         
+
+weight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
+weight = bayesWeight
+
+getRelatedCourses :: Map.Map Feature Double -> Map.Map Entry FeatureSet ->
+                     Entry -> Int -> [Entry]
+getRelatedCourses featurePriors featureMap entry1 numToGet =
+  take numToGet $ map fst $ sortBy (compare `on` (weight featurePriors feats1 . snd)) $
+  Map.assocs featureMap
+  where feats1 = featureMap Map.! entry1

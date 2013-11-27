@@ -15,8 +15,11 @@ import CourseGraph
 testRelatednessReal :: IO ()
 testRelatednessReal =
   do entries <- allEntries
-     let math51 = [ entry | entry <- entries, codeKey entry == "math51" ]
-     print ""
+     let featureMap = getFeatureMap entries
+     let featurePriors = getFeaturePriors featureMap
+     let math51 = head [ entry | entry <- entries, codeKey entry == "math51" ]
+     print math51
+     print $ getRelatedCourses featurePriors featureMap math51 8
 
 runTests :: IO ()
 runTests = testRelatednessReal

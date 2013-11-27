@@ -23,7 +23,10 @@ data Entry = Entry { idKey :: Int
                    , minUnitsKey :: Int
                    , maxUnitsKey :: Int
                    , descriptionKey :: String
-                   } deriving (Eq, Ord, Show)
+                   } deriving (Eq, Ord)
+
+instance Show Entry where
+  show entry = show (codeKey entry) ++ show (titleKey entry)
 
 readDB :: FilePath -> IO [[SqlValue]]
 readDB filename =
@@ -43,6 +46,3 @@ makeEntries :: [[SqlValue]] -> [Entry]
 makeEntries outerVals = go outerVals []
   where go [] res = res
         go (val:vals) res = go vals ((makeEntry val):res)
-
-main :: IO ()
-main = readDB "courseinfodata.db" >>= (return . makeEntries) >>= print
