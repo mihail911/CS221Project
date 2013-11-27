@@ -26,7 +26,7 @@ data Entry = Entry { idKey :: Int
                    } deriving (Eq, Ord)
 
 instance Show Entry where
-  show entry = show (codeKey entry) ++ show (titleKey entry)
+  show entry = (codeKey entry) ++ ": " ++ (titleKey entry)
 
 readDB :: FilePath -> IO [[SqlValue]]
 readDB filename =

@@ -118,6 +118,6 @@ weight = bayesWeight
 getRelatedCourses :: Map.Map Feature Double -> Map.Map Entry FeatureSet ->
                      Entry -> Int -> [Entry]
 getRelatedCourses featurePriors featureMap entry1 numToGet =
-  take numToGet $ map fst $ sortBy (compare `on` (weight featurePriors feats1 . snd)) $
+  take numToGet $ reverse $ map fst $ sortBy (compare `on` (weight featurePriors feats1 . snd)) $
   Map.assocs featureMap
   where feats1 = featureMap Map.! entry1
