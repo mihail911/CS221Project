@@ -20,9 +20,8 @@ import java.util.*;
 /** Prints out information for all courses offered at Stanford in an Academic Year **/
 public class CourseInformation
 {
-  public static void main(String[] args) throws IOException, JDOMException
-  {
-  	PrintWriter writer=new PrintWriter("/home/meric/Documents/CS221/Project/courseinfo2.txt");
+  public static void getAllCourseInfo()throws IOException, JDOMException{
+    PrintWriter writer=new PrintWriter("/home/meric/Documents/CS221/Project/courseinfo2.txt");
     ExploreCoursesConnection connection = new ExploreCoursesConnection();
     for(School s : connection.getSchools())
       for(Department d : s.getDepartments())
@@ -39,14 +38,30 @@ public class CourseInformation
           Object[] allinst=allinstructors.toArray();
           for (int i=0; i<allinst.length; i++)
             instructors=instructors+ allinst[i].toString()+", "; //separate instructors by ','
-        	writer.println("Course Title: "+c.getTitle());//get title of course
-        	writer.println("Course Instructors: "+ instructors); //to be filled in here
+          writer.println("Course Title: "+c.getTitle());//get title of course
+          writer.println("Course Instructors: "+ instructors); //to be filled in here
           writer.println("Course Code: "+ c.getSubjectCodePrefix()+c.getSubjectCodeSuffix());
-        	writer.println("Course Units: "+Integer.toString(c.getMinimumUnits())+"-"+Integer.toString(c.getMaximumUnits()));
-        	writer.println("Course Description: "+c.getDescription());
-        	writer.println("----------------------------");	
+          writer.println("Course Units: "+Integer.toString(c.getMinimumUnits())+"-"+Integer.toString(c.getMaximumUnits()));
+          writer.println("Course Prereqs: "); 
+          writer.println("Course Description: "+c.getDescription());
+          writer.println("----------------------------"); 
           
       }
     writer.close();
+  
+  }
+  public static void getDepartmentCodes()throws IOException, JDOMException{
+    PrintWriter writer=new PrintWriter("/home/meric/Documents/CS221/Project/departmentcodes.txt");
+    ExploreCoursesConnection connection = new ExploreCoursesConnection();
+    for(School s : connection.getSchools())
+      for(Department d : s.getDepartments()){
+          writer.println(d.getCode());
+      }
+    writer.close();
+  }
+  public static void main(String[] args) throws IOException, JDOMException
+  {
+  	//ourseInformation instance=new Courseinformation();
+    getDepartmentCodes();
   }
 } 
