@@ -11,6 +11,32 @@ module Util where
 
 import Data.List
 
+import qualified Data.Set as Set
+import qualified Data.Map as Map
+
+data Entry = Entry { idKey :: Int
+                   , titleKey :: String
+                   , codeKey :: String
+                   , instructorsKey :: String
+                   , minUnitsKey :: Int
+                   , maxUnitsKey :: Int
+                   , descriptionKey :: String
+                   } deriving (Eq, Ord)
+
+data Feature = Title String
+               | CodeName String | Code100s Char | Code10s Char | Code11s String
+               | Instructor String
+               | MinUnits Int
+               | MaxUnits Int
+               | Desc String
+               | Combo Feature Feature
+             deriving (Show, Eq, Ord)
+
+type FeatureSet = Set.Set Feature
+type FeatureMap = Map.Map Entry FeatureSet
+type FeaturePriorMap = Map.Map Feature Double
+type RelatednessGraph = Map.Map Entry [Entry]
+
 -- | Perform a Bayesian probability update to find P(A | Event).
 probUpdate :: Double -> Double -> Double -> Double
 probUpdate prior pEventGivenPrior pEvent =
