@@ -15,3 +15,7 @@ Then there's the question of how to combine each conditional probability. First 
 I started with simple features: just the words in the title and description. Then I added features for instructor names and course codes.
 
 Next I thought to add combination features. I just included `code + (title/description word)` for the sake of efficiency.
+
+### Profiling
+
+It takes way too long to run. I spent about two hours trying to get the Python profiler to give me something useful, but I couldn't get it to work so I'm rewriting the program in Haskell.
