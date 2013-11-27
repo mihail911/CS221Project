@@ -26,7 +26,7 @@ import Util
 import ReadDB
 
 allEntries :: IO [Entry]
-allEntries = readDB "courseinfo-small.db" >>= (return . makeEntries)
+allEntries = readDB smallDBName >>= (return . makeEntries)
 
 titleFeatures :: String -> FeatureSet
 titleFeatures title = Set.fromList [ Title w | w <- words title ]

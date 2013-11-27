@@ -20,6 +20,8 @@ import Database.HDBC
 
 import Util
 
+smallDBName = "courseinfo-small.db"
+
 instance Show Entry where
   show entry = (codeKey entry) ++ ": " ++ (titleKey entry)
 
@@ -73,8 +75,8 @@ writeDB filename entries =
 
 writeRelatednessGraph :: RelatednessGraph -> IO ()
 writeRelatednessGraph graph =
-  do db <- connectSqlite3 "courseinfodata-small.db"
-     -- quickQuery' db "DROP TABLE relatedness"[]
+  do db <- connectSqlite3 smallDBName
+     -- quickQuery' db "DROP TABLE relatedness" []
      quickQuery' db "CREATE TABLE relatedness (id INTEGER NOT NULL,related_id INTEGER NOT NULL)" []
      stmt <- prepare db "INSERT INTO relatedness VALUES (?,?)"
      executeMany stmt $ concatMap mapper $ Map.toList graph
@@ -89,4 +91,4 @@ makeSmallDB =
   do db <- readDB "courseinfodata.db"
      let entries = makeEntries db
      print $ length $ getDBCrossSection entries
-     writeDB "courseinfo-small.db" (getDBCrossSection entries)
+     writeDB smallDBName (getDBCrossSection entries)
