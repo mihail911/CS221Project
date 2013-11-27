@@ -102,9 +102,9 @@ weight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
 weight = bayesWeight
 
 -- | Find the K most related courses in descending order of relatedness.
-getRelatedCourses :: FeaturePriorMap -> FeatureMap ->
+buildRelatedCourses :: FeaturePriorMap -> FeatureMap ->
                      Int -> Entry -> [Entry]
-getRelatedCourses featurePriors featureMap numToGet entry1 =
+buildRelatedCourses featurePriors featureMap numToGet entry1 =
   reverse $ map fst $
   largestKBy (compare `on` (weight featurePriors feats1 . snd)) numToGet $
   Map.assocs featureMap
@@ -126,6 +126,6 @@ constructRelatednessGraph numRelated =
      let featureMap = getFeatureMap entries
      let featurePriors = getFeaturePriors featureMap
      let graph = getRelatednessGraph
-                 (getRelatedCourses featurePriors featureMap numRelated)
+                 (buildRelatedCourses featurePriors featureMap numRelated)
                  entries
      writeRelatednessGraph graph

@@ -19,13 +19,15 @@ testRelatednessReal =
      let featureMap = getFeatureMap entries
      let featurePriors = getFeaturePriors featureMap
      let math51 = head [ entry | entry <- entries, codeKey entry == "math51" ]
+     print $ idKey math51
      print math51
-     print $ map (getRelatedCourses featurePriors featureMap 8) entries
+     -- print $ map (getRelatedCourses featurePriors featureMap 8) entries
      -- print $ getRelatedCourses featurePriors featureMap 8 math51
+     cleanup
 
 runTests :: IO ()
 runTests = testRelatednessReal
 
 
 main :: IO ()
-main = constructRelatednessGraph 10
+main = testRelatednessReal
