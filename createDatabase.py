@@ -2,7 +2,7 @@
 """Provides a series of methods for creating usable databases from a text file
 of all available courses."""
 
-import sqlite3
+import sqlite3, re,pdb
 
 allcoursesdatabase="courseinfodata.db"
 
@@ -26,18 +26,88 @@ def oneClassInfo(f):
 	return coursedict
 
 def setupDatabase():
+	"""
+	Create all course info database.
+	"""
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
-        curs.execute('DROP TABLE courseinfo')
-	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description)')
+	curs.execute('DROP TABLE courseinfo')
+	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description,prereqs)')
 	conn.commit()
 	conn.close()
 
+def setupDeptCodeTable():
+	"""
+	Add department code table
+	to all course info database.
+	"""
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	curs.execute('DROP TABLE deptcodes')
+	curs.execute('CREATE TABLE deptcodes (departmentcode)')
+	conn.commit()
+	conn.close()
+
+def populateDeptCodeTable():
+	"""
+	Update dept code table 
+	with list of all dept codes.
+	"""
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	with open('departmentcodes.txt') as f:
+		while True:
+			code=f.readline().strip()
+			if not code: break
+			curs.execute('INSERT INTO deptcodes VALUES (?)', [code])	
+	conn.commit()
+	conn.close()
+
+def getSetOfDeptCodes():
+	"""
+	Get set of all dept codes.
+	"""
+	allcodes=set()
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	curs.execute('select * from deptcodes')
+	for code in curs.fetchall():
+		allcodes.add(code[0]) 
+	return allcodes
+
+def extractPrereqs(coursedescription, deptcodes):
+	"""
+	Extract course prereqs from course description.
+	"""
+	#pdb.set_trace()
+	prereqindex=coursedescription.find('Prerequisite')
+	if prereqindex>=0:
+		courseprereqs=coursedescription[(prereqindex+13):]
+		modifiedprereqs=re.sub('[\:,/?.()]','', courseprereqs.strip())
+		newprereqs=''
+		prereqslist=modifiedprereqs.split()
+		tokenindex=0
+		while tokenindex<len(prereqslist):
+			if prereqslist[tokenindex] in deptcodes:
+				if (tokenindex+1)<len(prereqslist):
+					newprereqs+=(prereqslist[tokenindex]+prereqslist[tokenindex+1]+" ")
+					tokenindex+=2
+			else:
+				newprereqs+=(prereqslist[tokenindex]+" ")
+				tokenindex+=1
+		return newprereqs.strip()
+	return ''
+# deptcodes=getSetOfDeptCodes()
+# x='Prerequisite: Placement Test, AMELANG 128C.'
+# print extractPrereqs(x,deptcodes)
 def allClassInfo():
-	"""Populates COURSEINFO database with all course info."""
+	"""
+	Populates COURSEINFO database with all course info.
+	"""
 	conn=sqlite3.connect(allcoursesdatabase)
 	conn.text_factory=str
 	curs=conn.cursor()
+	deptcodes=getSetOfDeptCodes()
 	with open('courseinfo2.txt') as f:
                 id = 0
 		while True:
@@ -48,9 +118,10 @@ def allClassInfo():
 			coursecode=' '.join(f.readline()[13:].split())
 			courseunits=f.readline()[13:].split("-")
 			coursedescription=' '.join(f.readline()[20:].split())
+			courseprereqs=extractPrereqs(coursedescription,deptcodes)
 			delimiter=f.readline()
-			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription)
-			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?)", allelems)	
+			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription,courseprereqs)
+			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
 
@@ -93,3 +164,5 @@ def makeInstructorDatabase():
 
 setupDatabase()
 allClassInfo()
+# # setupDeptCodeTable()
+# # populateDeptCodeTable()	
