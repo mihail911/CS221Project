@@ -32,7 +32,8 @@ readDB filename =
      return res
 
 instance Show Entry where
-  show entry = "[" ++ (idKey entry) ++ "] "(codeKey entry) ++ ": " ++ (titleKey entry)
+  show entry = "[" ++ (show $ idKey entry) ++ "] " ++ (codeKey entry)
+               ++ ": " ++ (titleKey entry)
 
 fromSqlString :: SqlValue -> String
 fromSqlString = map toLower . BS.unpack . fromSql
@@ -89,12 +90,14 @@ writeDB filename entries =
 writeRelatednessGraph :: RelatednessGraph -> IO ()
 writeRelatednessGraph graph =
   do db <- smallDB
-     quickQuery' db "CREATE TABLE relatedness (id INTEGER NOT NULL,related_id INTEGER NOT NULL)" []
-     stmt <- prepare db "INSERT INTO relatedness VALUES (?,?)"
+     quickQuery' db "DROP TABLE relatedness" []
+     quickQuery' db "CREATE TABLE relatedness (id INTEGER NOT NULL,related_id INTEGER NOT NULL,score REAL NOT NULL)" []
+     stmt <- prepare db "INSERT INTO relatedness VALUES (?,?,?)"
      executeMany stmt $ concatMap mapper $ Map.toList graph
      commit db
      return ()
-  where mapper (entry, relateds) = map (\r -> [toSql (idKey entry), toSql (idKey r)])
+  where mapper (entry, relateds) =
+          map (\(r, score) -> [toSql (idKey entry), toSql (idKey r), toSql score])
                                    relateds
 
 makeSmallDB :: IO ()

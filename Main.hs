@@ -30,4 +30,5 @@ runTests = testRelatednessReal
 
 
 main :: IO ()
-main = testRelatednessReal
+-- main = runTests
+main = constructRelatednessGraph 10

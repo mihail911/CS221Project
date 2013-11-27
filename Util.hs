@@ -35,7 +35,7 @@ data Feature = Title String
 type FeatureSet = Set.Set Feature
 type FeatureMap = Map.Map Entry FeatureSet
 type FeaturePriorMap = Map.Map Feature Double
-type RelatednessGraph = Map.Map Entry [Entry]
+type RelatednessGraph = Map.Map Entry [(Entry, Double)]
 
 -- | Perform a Bayesian probability update to find P(A | Event).
 probUpdate :: Double -> Double -> Double -> Double

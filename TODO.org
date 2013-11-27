@@ -1,5 +1,6 @@
 * Big Changes
 ** Construct course relatedness graph using Bayes' theorem.
+*** TODO In relatedness graph, add relatedness as a column.
 *** TODO Copy documentation into Haskell files
 *** Make program faster
 **** Instead of storing one big featurePriors, store a different one for each entry so lookup will be much faster. Wait, this isn't possible because the map has to be over everything.

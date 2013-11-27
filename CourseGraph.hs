@@ -101,12 +101,12 @@ bayesWeight featurePriors feats1 feats2 = sum $ Set.toList probs
 weight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
 weight = bayesWeight
 
--- | Find the K most related courses in descending order of relatedness.
+-- | Find the K most related courses.
 buildRelatedCourses :: FeaturePriorMap -> FeatureMap ->
-                     Int -> Entry -> [Entry]
+                     Int -> Entry -> [(Entry, Double)]
 buildRelatedCourses featurePriors featureMap numToGet entry1 =
-  reverse $ map fst $
-  largestKBy (compare `on` (weight featurePriors feats1 . snd)) numToGet $
+  largestKBy (compare `on` snd) numToGet $
+  map (\(entry2, feats2) -> (entry2, weight featurePriors feats1 feats2)) $
   Map.assocs featureMap
   where feats1 = featureMap Map.! entry1
 
@@ -114,7 +114,7 @@ buildRelatedCourses featurePriors featureMap numToGet entry1 =
 -- most-related entries in order. Represents the graph as an adjacency
 -- list.
 -- Note: This could be generalized to any sort of relatedness.
-getRelatednessGraph :: (Entry -> [Entry]) -> [Entry] -> RelatednessGraph
+getRelatednessGraph :: (Entry -> [(Entry, Double)]) -> [Entry] -> RelatednessGraph
 getRelatednessGraph relatedFun entries =
   Map.fromList $ map (\entry -> (entry, relatedFun entry)) entries
 

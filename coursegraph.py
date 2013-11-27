@@ -202,9 +202,12 @@ def getRelatedCourses(entry):
     """
     Read the relatedness graph to find related courses.
     """
-    ids = set([ related_id for (id, related_id) in relatedness \
-            if id == getField(entry, 'id') ])
-    return [ entry for entry in alldata if getField(entry, 'id') in ids ]
+    related = [ (related_id, score) for (id, related_id, score) in relatedness \
+                if id == getField(entry, 'id') ]
+    entries = sorted([ (entry, pair[1]) for pair in related for entry in alldata
+                       if getField(entry, 'id') == pair[0] ],
+                     key=lambda pair: pair[1])
+    return entries
     
 def buildGraph():
     for entry in data:
