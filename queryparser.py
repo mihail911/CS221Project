@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import nltk, re, pprint,sqlite3
 import pdb
+import createDatabase
 
 partsofspeechmap={'NNP': 'Proper Noun', 'NNS': 'Plural Noun', 'IN': 'Preposition', 'VB':'Verb Base Form', 'NN':'Singular noun', 'DT': 'Determiner'} #mapping from POS tag to actual meaning
 
@@ -16,17 +17,12 @@ def parseQuery(query):
 	"""
 	Return query with POS tags.
 	"""
-	instructordb='instructordb_saved.db'
-	conn=sqlite3.connect(instructordb)
-	curs=conn.cursor()
-	curs.execute('select * from instructordb')
-
+	allinstructors=createDatabase.getInstructors()
 	words=nltk.word_tokenize(query)
-	for instpair in curs.fetchall():
+	for inst in allinstructors: 
 		for index in range(len(words)):
-			if words[index].capitalize() in instpair[0].split():
+			if words[index].capitalize() in inst.split():
 				words[index]=words[index].capitalize()
-	conn.close()
 	return nltk.pos_tag(words)
 
 def chunkQuery(querypostags, grammar):
@@ -39,7 +35,6 @@ def chunkQuery(querypostags, grammar):
 	cp=nltk.RegexpParser(grammar)
 	tree=cp.parse(querypostags)
 	for subtree in tree.subtrees():
-		# if subtree.node in namedentitykeys:
 		allnamedentity.append(subtree)
 	return allnamedentity
 
@@ -51,28 +46,19 @@ def getInstructorNames(namedentitynodes):
 	"""
 
 	allinstructors=[]	
-	#pdb.set_trace()
 	for n in namedentitynodes:
 		instructorname=""
 		if hasattr(n,'node'):
 			if n.node=='PNOUN':
 				instructorname=' '.join(c[0] for c in n.leaves())
-		# if n.node=='PERSON':
-			# for nameindex in range(len(n)): #append instructor names
-			# 	instructorname+=n[nameindex][0]+" "
 		if instructorname!='': allinstructors.append(instructorname.rstrip())
 	return set(allinstructors)
 
-# query='Jesus Christ and Mehrain Sahami'
-# postag=parseQuery(query)
-# chunked=chunkquery(postag)
-# print getInstructorNames(chunked)
-
-def isCourseCode(querytokens,coursecodes):
+def containsCourseCode(querytokens,coursecodes):
 	"""
 	Checks to see if the query tokens contain a course code.
-	If so, return a list of found course codes. Else return the 
-	empty list.
+	If so, return a list of found course codes, else return the 
+	empty set.
 	"""
 	querycoursecodes=[]
 	for code in coursecodes:
@@ -81,16 +67,39 @@ def isCourseCode(querytokens,coursecodes):
 				querycoursecodes.append(token)
 	return set(querycoursecodes)
 
+def containsDeptCode(querytokens,deptcodes):
+	"""
+	Checks to see if query tokens contain a 
+	department code. If found, return set of codes,
+	else return the empty set.
+	"""
+	deptcodes=set()
+	pdb.set_trace()
+	for code in deptcodes:
+		for token in querytokens:
+			if code in token:
+				deptcodes.add(token)
+	return deptcodes
+
 def readQuery():
 	"""
 	Reads in a query and extracts information
 	useful for satisfying the query.
 	"""
 	query=raw_input("Please input desired course search: ")
-	tokenized=nltk.word_tokenize(query)
+	coursecodes=createDatabase.getCourseCodes()
+	departmentcodes=createDatabase.getSetOfDeptCodes()
+	cleanquery=re.sub('[\:,/?.()]','', query).strip()
+	tokenized=nltk.word_tokenize(cleanquery)
+	#print 'course codes', coursecodes
+	coursecodes=containsCourseCode(tokenized,coursecodes)
+	deptcodes=containsDeptCode(tokenized,departmentcodes)
+	print 'department', departmentcodes
+	print 'dept', deptcodes
+	print 'codes', coursecodes
 	postag=parseQuery(query)
-	chunked=chunkQuery(postag,propernoungrammar)
-	allinstructors=getInstructorNames(chunked)
+	chunkedinstructor=chunkQuery(postag,propernoungrammar)
+	allinstructors=getInstructorNames(chunkedinstructor)
 	print allinstructors
 
 #readQuery()

@@ -5,7 +5,7 @@ of all available courses."""
 import sqlite3, re,pdb
 
 allcoursesdatabase="courseinfodata.db"
-
+instructordb='instructordb_saved.db'
 def oneClassInfo(f):
 	"""Reads in the contents of one file in Python and outputs information as a dictionary."""
 	coursedict={}
@@ -75,6 +75,31 @@ def getSetOfDeptCodes():
 		allcodes.add(code[0]) 
 	return allcodes
 
+def getCourseCodes():
+	"""
+	Return a set of all course codes.
+	"""
+	coursecodes=set()
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	curs.execute('select * from courseinfo')
+	for code in curs.fetchall():
+		coursecodes.add(code[2])
+	conn.close()
+	return coursecodes
+
+def getInstructors():
+	"""
+	Return a set of all course instructors.
+	"""
+	instructors=set()
+	conn=sqlite3.connect(instructordb)
+	curs=conn.cursor()
+	curs.execute('select * from instructordb')
+	for instructor in curs.fetchall():
+		instructors.add(instructor[0])
+	return instructors
+
 def extractPrereqs(coursedescription, deptcodes):
 	"""
 	Extract course prereqs from course description.
@@ -118,16 +143,14 @@ def allClassInfo():
 			coursecode=' '.join(f.readline()[13:].split())
 			courseunits=f.readline()[13:].split("-")
 			coursedescription=' '.join(f.readline()[20:].split())
-			courseprereqs=extractPrereqs(coursedescription,deptcodes)
+			#courseprereqs=extractPrereqs(coursedescription,deptcodes)
 			delimiter=f.readline()
-			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription,courseprereqs)
+			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription,'')
 			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
 
-#allClassInfo()
 
-instructordb='instructordatabase.db'
 def instructorDBInstance():
 	"""Creates instructor database instance.""" 
 	conn=sqlite3.connect(instructordb)
@@ -135,8 +158,6 @@ def instructorDBInstance():
 	cursor.execute('CREATE TABLE instructordb (instructor,coursecode)')
 	conn.commit()
 	conn.close()
-
-#instructorDBInstance()
 
 def makeInstructorDatabase():
 	"""Populates INSTRUCTORDB with instructor information where 
@@ -160,9 +181,7 @@ def makeInstructorDatabase():
 	conn.commit()
 	conn.close()
 
-# makeInstructorDatabase()
-
-setupDatabase()
-allClassInfo()
+# setupDatabase()
+# allClassInfo()
 # # setupDeptCodeTable()
 # # populateDeptCodeTable()	
