@@ -13,6 +13,7 @@ import qualified Data.ByteString.Char8 as BS
 import Text.Printf
 import Data.Char
 import Data.List
+import qualified Data.Map as Map
 
 import Database.HDBC.Sqlite3 (connectSqlite3)
 import Database.HDBC
@@ -70,13 +71,18 @@ writeDB filename entries =
      disconnect db
      return ()
 
--- writeRelatednessGraph :: RelatednessGraph -> IO ()
--- writeRelatednessGraph graph =
---   do db <- connectSqlite3 "courseinfodata-small.db"
---      quickQuery' db "CREATE TABLE relatedness (id INTEGER PRIMARY KEY NOT NULL,related_id INTEGER NOT NULL)"
---      stmt <- prepare db "INSERT INTO relatedness VALUES (?,?)"
---      executeMany stmt $ mapWithKey (\ -> [toSql (idKey entry)])
---      return ()
+writeRelatednessGraph :: RelatednessGraph -> IO ()
+writeRelatednessGraph graph =
+  do db <- connectSqlite3 "courseinfodata-small.db"
+     -- quickQuery' db "DROP TABLE relatedness"[]
+     quickQuery' db "CREATE TABLE relatedness (id INTEGER NOT NULL,related_id INTEGER NOT NULL)" []
+     stmt <- prepare db "INSERT INTO relatedness VALUES (?,?)"
+     executeMany stmt $ concatMap mapper $ Map.toList graph
+     commit db
+     disconnect db
+     return ()
+  where mapper (entry, relateds) = map (\r -> [toSql (idKey entry), toSql (idKey r)])
+                                   relateds
 
 makeSmallDB :: IO ()
 makeSmallDB =

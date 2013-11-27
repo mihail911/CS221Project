@@ -118,12 +118,14 @@ getRelatednessGraph :: (Entry -> [Entry]) -> [Entry] -> RelatednessGraph
 getRelatednessGraph relatedFun entries =
   Map.fromList $ map (\entry -> (entry, relatedFun entry)) entries
 
--- constructRelatednessGraph :: Int -> IO ()
--- constructRelatednessGraph numRelated =
---   do entries <- allEntries
---      let featureMap = getFeatureMap entries
---      let featurePriors = getFeaturePriors featureMap
---      let graph = getRelatednessGraph
---                  (getRelatedCourses featurePriors featureMap numRelated)
---                  entries
---      writeRelatednessGraph graph
+-- | Do the whole process of reading in the DB, constructing the
+  -- relatedness graph, and writing it to the DB.
+constructRelatednessGraph :: Int -> IO ()
+constructRelatednessGraph numRelated =
+  do entries <- allEntries
+     let featureMap = getFeatureMap entries
+     let featurePriors = getFeaturePriors featureMap
+     let graph = getRelatednessGraph
+                 (getRelatedCourses featurePriors featureMap numRelated)
+                 entries
+     writeRelatednessGraph graph
