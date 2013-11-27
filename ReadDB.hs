@@ -24,15 +24,15 @@ smallDBName = "courseinfo-small.db"
 
 smallDB = connectSqlite3 smallDBName
 
-instance Show Entry where
-  show entry = (codeKey entry) ++ ": " ++ (titleKey entry)
-
 readDB :: FilePath -> IO [[SqlValue]]
 readDB filename =
   do db <- connectSqlite3 filename
      res <- quickQuery' db (printf "SELECT * FROM courseinfo") []
      disconnect db
      return res
+
+instance Show Entry where
+  show entry = "[" ++ (idKey entry) ++ "] "(codeKey entry) ++ ": " ++ (titleKey entry)
 
 fromSqlString :: SqlValue -> String
 fromSqlString = map toLower . BS.unpack . fromSql

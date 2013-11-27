@@ -14,14 +14,10 @@ weights indicate relatedness.
 from nltk.stem.porter import PorterStemmer
 import re
 from collections import Counter
-from readDB import getField
-import search
+from readDB import *
 from util import *
 
 stemmer = PorterStemmer()
-
-def getData():
-    return search.queryDB("SELECT * FROM courseinfo")
 
 def titleFeatures(title):
     return [ ('title', stemmer.stem(w.lower())) for w in title.split() ]
@@ -97,6 +93,7 @@ def createFeaturePriors(entries):
     return probs
 
 alldata = getData()
+relatedness = getRelatedness()
 featurepriors = createFeaturePriors(alldata)
 
 
@@ -179,7 +176,7 @@ def weight(feats1, feats2):
 #    return featFreqWeightedWeight(feats1, feats2)
     return bayesWeight(feats1, feats2)
 
-def getRelatedCourses(data, entry1, numrelated):
+def buildRelatedCourses(data, entry1, numrelated):
     """
     TODO: This is slow. Try to make it faster.
     
@@ -200,6 +197,14 @@ def getRelatedCourses(data, entry1, numrelated):
             # only one element is out of order.
             courses.sort(key=lambda pair: pair[1])
     return courses
+
+def getRelatedCourses(entry): 
+    """
+    Read the relatedness graph to find related courses.
+    """
+    ids = set([ related_id for (id, related_id) in relatedness \
+            if id == getField(entry, 'id') ])
+    return [ entry for entry in alldata if getField(entry, 'id') in ids ]
     
 def buildGraph():
     for entry in data:

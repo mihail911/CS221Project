@@ -11,8 +11,9 @@ Utilities to read the course database and provide useful output.
 """ 
 
 import sqlite3
+import search
 
-allcoursesdbname = "courseinfodata.db"
+allcoursesdbname = "courseinfo-small.db"
 instructordbname = "instructordatabase.db"
 
 fields = 'id,title,code,instructor,unitsmin,unitsmax,description'.split(",")
@@ -32,6 +33,12 @@ def queryDB(query, args=None):
     else:
         cursor.execute(query)
     return cursor.fetchall()
+
+def getData():
+    return queryDB("SELECT * FROM courseinfo")
+
+def getRelatedness():
+    return queryDB("SELECT * FROM relatedness")
 
 def cleanup():
     """
