@@ -26,7 +26,7 @@ import Util
 import ReadDB
 
 allEntries :: IO [Entry]
-allEntries = readDB "courseinfo-small.db" >>= (return . makeEntries)
+allEntries = readDB smallDBName >>= (return . makeEntries)
 
 titleFeatures :: String -> FeatureSet
 titleFeatures title = Set.fromList [ Title w | w <- words title ]
@@ -102,9 +102,9 @@ weight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
 weight = bayesWeight
 
 -- | Find the K most related courses in descending order of relatedness.
-getRelatedCourses :: FeaturePriorMap -> FeatureMap ->
+buildRelatedCourses :: FeaturePriorMap -> FeatureMap ->
                      Int -> Entry -> [Entry]
-getRelatedCourses featurePriors featureMap numToGet entry1 =
+buildRelatedCourses featurePriors featureMap numToGet entry1 =
   reverse $ map fst $
   largestKBy (compare `on` (weight featurePriors feats1 . snd)) numToGet $
   Map.assocs featureMap
@@ -118,12 +118,14 @@ getRelatednessGraph :: (Entry -> [Entry]) -> [Entry] -> RelatednessGraph
 getRelatednessGraph relatedFun entries =
   Map.fromList $ map (\entry -> (entry, relatedFun entry)) entries
 
--- constructRelatednessGraph :: Int -> IO ()
--- constructRelatednessGraph numRelated =
---   do entries <- allEntries
---      let featureMap = getFeatureMap entries
---      let featurePriors = getFeaturePriors featureMap
---      let graph = getRelatednessGraph
---                  (getRelatedCourses featurePriors featureMap numRelated)
---                  entries
---      writeRelatednessGraph graph
+-- | Do the whole process of reading in the DB, constructing the
+  -- relatedness graph, and writing it to the DB.
+constructRelatednessGraph :: Int -> IO ()
+constructRelatednessGraph numRelated =
+  do entries <- allEntries
+     let featureMap = getFeatureMap entries
+     let featurePriors = getFeaturePriors featureMap
+     let graph = getRelatednessGraph
+                 (buildRelatedCourses featurePriors featureMap numRelated)
+                 entries
+     writeRelatednessGraph graph

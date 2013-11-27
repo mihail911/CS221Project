@@ -1,127 +1,137 @@
-	Wed Nov 27 15:32 2013 Time and Allocation Profiling Report  (Final)
+	Wed Nov 27 16:36 2013 Time and Allocation Profiling Report  (Final)
 
 	   CS221Project +RTS -p -K50000000 -RTS
 
-	total time  =       76.49 secs   (76489 ticks @ 1000 us, 1 processor)
-	total alloc = 14,471,271,240 bytes  (excludes profiling overheads)
+	total time  =       79.29 secs   (79287 ticks @ 1000 us, 1 processor)
+	total alloc = 14,643,616,088 bytes  (excludes profiling overheads)
 
 COST CENTRE                     MODULE      %time %alloc
 
-compare                         CourseGraph  62.8    0.0
-bayesWeight.update.featurePrior CourseGraph  15.4    4.0
-bayesWeight.probs               CourseGraph  12.6   89.4
-bayesWeight.update              CourseGraph   8.1    0.0
+compare                         Util         61.8    0.0
+bayesWeight.update.featurePrior CourseGraph  15.8    4.0
+bayesWeight.probs               CourseGraph  13.2   89.3
+bayesWeight.update              CourseGraph   8.2    0.0
 probUpdate                      Util          0.5    3.8
 bayesWeight                     CourseGraph   0.3    2.2
 
 
-                                                                                             individual     inherited
-COST CENTRE                             MODULE                             no.     entries  %time %alloc   %time %alloc
+                                                                                                 individual     inherited
+COST CENTRE                                 MODULE                             no.     entries  %time %alloc   %time %alloc
 
-MAIN                                    MAIN                               166           0    0.0    0.0   100.0  100.0
- testRelatednessReal                    Main                               335           0    0.0    0.0   100.0  100.0
-  testRelatednessReal.featurePriors     Main                               391           1    0.0    0.0     0.1    0.2
-   getFeaturePriors                     CourseGraph                        392           1    0.0    0.0     0.1    0.2
-    getFeaturePriors.featureCounts      CourseGraph                        393           1    0.0    0.0     0.1    0.2
-     getFeaturePriors.folder            CourseGraph                        394         172    0.0    0.0     0.1    0.2
-      getFeaturePriors.folder.\         CourseGraph                        395       36635    0.0    0.0     0.1    0.2
-       incMapValue                      CourseGraph                        396       36635    0.0    0.2     0.1    0.2
-        compare                         CourseGraph                        399     1104004    0.0    0.0     0.0    0.0
-        incMapValue.v                   CourseGraph                        397       36635    0.0    0.0     0.1    0.0
-         compare                        CourseGraph                        398     1104004    0.0    0.0     0.0    0.0
-  testRelatednessReal.featureMap        Main                               356           1    0.0    0.0     0.1    0.2
-   getFeatureMap                        CourseGraph                        357           1    0.0    0.0     0.1    0.2
-    getFeatureMap.\                     CourseGraph                        358         172    0.0    0.0     0.1    0.2
-     extractFeatures                    CourseGraph                        367         172    0.0    0.0     0.1    0.2
-      extractFeatures.codeComboFeats    CourseGraph                        384         172    0.0    0.1     0.0    0.1
-       compare                          CourseGraph                        385      624924    0.0    0.0     0.0    0.0
-      extractFeatures.descFeats         CourseGraph                        381         172    0.0    0.0     0.0    0.1
-       descFeatures                     CourseGraph                        382         172    0.0    0.1     0.0    0.1
-        compare                         CourseGraph                        383       32512    0.0    0.0     0.0    0.0
-      extractFeatures.unitFeats         CourseGraph                        378         172    0.0    0.0     0.0    0.0
-       unitFeatures                     CourseGraph                        379         172    0.0    0.0     0.0    0.0
-        compare                         CourseGraph                        380         172    0.0    0.0     0.0    0.0
-      extractFeatures.instrFeats        CourseGraph                        376         172    0.0    0.0     0.0    0.0
-       instrFeatures                    CourseGraph                        377         172    0.0    0.0     0.0    0.0
-        compare                         CourseGraph                        400         168    0.0    0.0     0.0    0.0
-      compare                           CourseGraph                        375       23955    0.0    0.0     0.0    0.0
-      extractFeatures.codeFeats         CourseGraph                        371         172    0.0    0.0     0.0    0.0
-       codeFeatures                     CourseGraph                        372         172    0.0    0.0     0.0    0.0
-        codeFeatures.letters            CourseGraph                        386         172    0.0    0.0     0.0    0.0
-        compare                         CourseGraph                        374         858    0.0    0.0     0.0    0.0
-        codeFeatures.numbers            CourseGraph                        373         172    0.0    0.0     0.0    0.0
-      extractFeatures.titleFeats        CourseGraph                        368         172    0.0    0.0     0.0    0.0
-       titleFeatures                    CourseGraph                        369         172    0.0    0.0     0.0    0.0
-        compare                         CourseGraph                        370        1825    0.0    0.0     0.0    0.0
-     compare                            ReadDB                             359        1317    0.0    0.0     0.0    0.0
-  getRelatedCourses                     CourseGraph                        355         172    0.0    0.0    99.8   99.5
-   getRelatedCourses.feats1             CourseGraph                        365         172    0.0    0.0     0.0    0.0
-    compare                             ReadDB                             366        1148    0.0    0.0     0.0    0.0
-   largestKBy                           Util                               360        1613    0.0    0.1    99.8   99.5
-    ==                                  CourseGraph                        412      181219    0.0    0.0     0.0    0.0
-    ==                                  ReadDB                             411         301    0.0    0.0     0.0    0.0
-    largestKBy.left                     Util                               410         520    0.0    0.0     0.0    0.0
-    largestKBy.right                    Util                               409        1613    0.0    0.0     0.0    0.0
-    largestKBy.pivot                    Util                               388        1613    0.0    0.0     0.0    0.0
-    largestKBy.(...)                    Util                               361        1613    0.1    0.1    99.7   99.5
-     bayesWeight                        CourseGraph                        363      156478    0.3    2.2    99.6   99.3
-      bayesWeight.probs                 CourseGraph                        364      156478   12.6   89.4    99.4   97.2
-       probUpdate                       Util                               408     2337950    0.0    0.0     0.0    0.0
-       bayesWeight.update               CourseGraph                        387    36613536    8.1    0.0    86.8    7.8
-        probUpdate                      Util                               405    34275586    0.5    3.8     0.5    3.8
-        bayesWeight.update.featurePrior CourseGraph                        390    36613536   15.4    4.0    61.9    4.0
-         compare                        CourseGraph                        404  1111613442   46.5    0.0    46.5    0.0
-        compare                         CourseGraph                        389   534734627   16.2    0.0    16.2    0.0
-  show                                  ReadDB                             354        1377    0.0    0.0     0.0    0.0
-  testRelatednessReal.math51            Main                               346           1    0.0    0.0     0.0    0.0
-  allEntries                            CourseGraph                        337           0    0.0    0.0     0.0    0.0
-   makeEntries                          ReadDB                             347           1    0.0    0.0     0.0    0.0
-    makeEntries.go                      ReadDB                             348         173    0.0    0.0     0.0    0.0
-     makeEntry                          ReadDB                             349         172    0.0    0.0     0.0    0.0
-      fromSqlString                     ReadDB                             351           0    0.0    0.0     0.0    0.0
-   readDB                               ReadDB                             340           0    0.0    0.0     0.0    0.0
- CAF:main1                              Main                               330           0    0.0    0.0     0.0    0.0
-  main                                  Main                               332           1    0.0    0.0     0.0    0.0
- CAF:main2                              Main                               328           0    0.0    0.0     0.0    0.0
-  runTests                              Main                               333           1    0.0    0.0     0.0    0.0
- CAF:main3                              Main                               326           0    0.0    0.0     0.0    0.0
-  testRelatednessReal                   Main                               334           1    0.0    0.0     0.0    0.0
- CAF:lvl_r3tz                           Main                               324           0    0.0    0.0     0.0    0.0
-  testRelatednessReal                   Main                               352           0    0.0    0.0     0.0    0.0
-   testRelatednessReal.math51           Main                               353           0    0.0    0.0     0.0    0.0
- CAF:makeSmallDB14                      ReadDB                             310           0    0.0    0.0     0.0    0.0
-  readDB                                ReadDB                             342           0    0.0    0.0     0.0    0.0
- CAF:makeSmallDB15                      ReadDB                             309           0    0.0    0.0     0.0    0.0
-  readDB                                ReadDB                             343           0    0.0    0.0     0.0    0.0
- CAF:makeSmallDB16                      ReadDB                             308           0    0.0    0.0     0.0    0.0
- CAF:makeSmallDB17                      ReadDB                             307           0    0.0    0.0     0.0    0.0
-  readDB                                ReadDB                             344           0    0.0    0.0     0.0    0.0
- CAF:makeSmallDB18                      ReadDB                             306           0    0.0    0.0     0.0    0.0
- CAF:fromSqlString                      ReadDB                             298           0    0.0    0.0     0.0    0.0
-  fromSqlString                         ReadDB                             350           1    0.0    0.0     0.0    0.0
- CAF:getRelatedCourses_$dEq             CourseGraph                        296           0    0.0    0.0     0.0    0.0
- CAF:weight                             CourseGraph                        294           0    0.0    0.0     0.0    0.0
-  weight                                CourseGraph                        362           1    0.0    0.0     0.0    0.0
- CAF:getRelatedCourses_$dEq1            CourseGraph                        293           0    0.0    0.0     0.0    0.0
- CAF:bayesWeight_prior                  CourseGraph                        291           0    0.0    0.0     0.0    0.0
-  bayesWeight                           CourseGraph                        406           0    0.0    0.0     0.0    0.0
-   bayesWeight.prior                    CourseGraph                        407           1    0.0    0.0     0.0    0.0
- CAF:allEntries1                        CourseGraph                        290           0    0.0    0.0     0.0    0.0
-  allEntries                            CourseGraph                        336           1    0.0    0.0     0.0    0.0
- CAF:allEntries2                        CourseGraph                        289           0    0.0    0.0     0.0    0.0
-  allEntries                            CourseGraph                        338           0    0.0    0.0     0.0    0.0
-   readDB                               ReadDB                             339           1    0.0    0.0     0.0    0.0
- CAF:allEntries3                        CourseGraph                        288           0    0.0    0.0     0.0    0.0
-  allEntries                            CourseGraph                        341           0    0.0    0.0     0.0    0.0
- CAF:allEntries4                        CourseGraph                        287           0    0.0    0.0     0.0    0.0
- CAF                                    Data.String.Utils                  276           0    0.0    0.0     0.0    0.0
- CAF                                    Database.HDBC.Sqlite3.Connection   268           0    0.0    0.0     0.0    0.0
- CAF                                    Database.HDBC.SqlValue             260           0    0.0    0.0     0.0    0.0
- CAF                                    GHC.Conc.Signal                    219           0    0.0    0.0     0.0    0.0
- CAF                                    GHC.IO.Encoding                    211           0    0.0    0.0     0.0    0.0
- CAF                                    GHC.IO.Encoding.Iconv              209           0    0.0    0.0     0.0    0.0
- CAF                                    GHC.IO.Handle.FD                   202           0    0.0    0.0     0.0    0.0
- CAF                                    Text.Read.Lex                      182           0    0.0    0.0     0.0    0.0
-  testRelatednessReal                   Main                               401           0    0.0    0.0     0.0    0.0
-   allEntries                           CourseGraph                        402           0    0.0    0.0     0.0    0.0
-    readDB                              ReadDB                             403           0    0.0    0.0     0.0    0.0
+MAIN                                        MAIN                               169           0    0.0    0.0   100.0  100.0
+ main                                       Main                               340           0    0.0    0.0   100.0  100.0
+  constructRelatednessGraph                 CourseGraph                        341           0    0.0    0.0   100.0  100.0
+   constructRelatednessGraph.featurePriors  CourseGraph                        402           1    0.0    0.0     0.1    0.2
+    getFeaturePriors                        CourseGraph                        403           1    0.0    0.0     0.1    0.2
+     getFeaturePriors.featureCounts         CourseGraph                        404           1    0.0    0.0     0.1    0.2
+      getFeaturePriors.folder               CourseGraph                        405         172    0.0    0.0     0.1    0.2
+       getFeaturePriors.folder.\            CourseGraph                        406       36635    0.0    0.0     0.1    0.2
+        incMapValue                         CourseGraph                        407       36635    0.0    0.2     0.1    0.2
+         compare                            Util                               410     1104004    0.0    0.0     0.0    0.0
+         incMapValue.v                      CourseGraph                        408       36635    0.0    0.0     0.1    0.0
+          compare                           Util                               409     1104004    0.1    0.0     0.1    0.0
+   constructRelatednessGraph.featureMap     CourseGraph                        365           1    0.0    0.0     0.1    0.2
+    getFeatureMap                           CourseGraph                        366           1    0.0    0.0     0.1    0.2
+     getFeatureMap.\                        CourseGraph                        367         172    0.0    0.0     0.1    0.2
+      extractFeatures                       CourseGraph                        378         172    0.0    0.0     0.1    0.2
+       extractFeatures.codeComboFeats       CourseGraph                        395         172    0.0    0.1     0.0    0.1
+        compare                             Util                               396      624924    0.0    0.0     0.0    0.0
+       extractFeatures.descFeats            CourseGraph                        392         172    0.0    0.0     0.0    0.1
+        descFeatures                        CourseGraph                        393         172    0.0    0.1     0.0    0.1
+         compare                            Util                               394       32512    0.0    0.0     0.0    0.0
+       extractFeatures.unitFeats            CourseGraph                        389         172    0.0    0.0     0.0    0.0
+        unitFeatures                        CourseGraph                        390         172    0.0    0.0     0.0    0.0
+         compare                            Util                               391         172    0.0    0.0     0.0    0.0
+       extractFeatures.instrFeats           CourseGraph                        387         172    0.0    0.0     0.0    0.0
+        instrFeatures                       CourseGraph                        388         172    0.0    0.0     0.0    0.0
+         compare                            Util                               411         168    0.0    0.0     0.0    0.0
+       compare                              Util                               386       23955    0.0    0.0     0.0    0.0
+       extractFeatures.codeFeats            CourseGraph                        382         172    0.0    0.0     0.0    0.0
+        codeFeatures                        CourseGraph                        383         172    0.0    0.0     0.0    0.0
+         codeFeatures.letters               CourseGraph                        397         172    0.0    0.0     0.0    0.0
+         compare                            Util                               385         858    0.0    0.0     0.0    0.0
+         codeFeatures.numbers               CourseGraph                        384         172    0.0    0.0     0.0    0.0
+       extractFeatures.titleFeats           CourseGraph                        379         172    0.0    0.0     0.0    0.0
+        titleFeatures                       CourseGraph                        380         172    0.0    0.0     0.0    0.0
+         compare                            Util                               381        1825    0.0    0.0     0.0    0.0
+      compare                               Util                               368        1317    0.0    0.0     0.0    0.0
+   constructRelatednessGraph.graph          CourseGraph                        356           1    0.0    0.0    99.7   99.5
+    getRelatednessGraph                     CourseGraph                        357           1    0.0    0.0    99.7   99.5
+     compare                                Util                               362        1317    0.0    0.0     0.0    0.0
+     getRelatednessGraph.\                  CourseGraph                        360         172    0.0    0.0    99.7   99.5
+      getRelatedCourses                     CourseGraph                        364         172    0.0    0.0    99.7   99.5
+       getRelatedCourses.feats1             CourseGraph                        374         172    0.0    0.0     0.0    0.0
+        compare                             Util                               375        1148    0.0    0.0     0.0    0.0
+       largestKBy                           Util                               369        1667    0.0    0.1    99.7   99.5
+        ==                                  Util                               425      211151    0.0    0.0     0.0    0.0
+        ==                                  Util                               424         354    0.0    0.0     0.0    0.0
+        largestKBy.left                     Util                               423         614    0.0    0.0     0.0    0.0
+        largestKBy.right                    Util                               422        1667    0.0    0.0     0.0    0.0
+        largestKBy.pivot                    Util                               399        1667    0.0    0.0     0.0    0.0
+        largestKBy.(...)                    Util                               370        1667    0.1    0.1    99.7   99.4
+         bayesWeight                        CourseGraph                        372      158478    0.3    2.2    99.6   99.3
+          bayesWeight.probs                 CourseGraph                        373      158478   13.2   89.3    99.3   97.2
+           probUpdate                       Util                               418     2345200    0.0    0.0     0.0    0.0
+           bayesWeight.update               CourseGraph                        398    37039740    8.2    0.0    86.1    7.8
+            probUpdate                      Util                               421    34694540    0.5    3.8     0.5    3.8
+            bayesWeight.update.featurePrior CourseGraph                        401    37039740   15.8    4.0    60.4    4.0
+             compare                        Util                               417  1124191304   44.6    0.0    44.6    0.0
+            compare                         Util                               400   541458392   17.1    0.0    17.1    0.0
+   writeRelatednessGraph                    ReadDB                             352           1    0.0    0.0     0.0    0.0
+    writeRelatednessGraph.mapper            ReadDB                             363         172    0.0    0.0     0.0    0.0
+     writeRelatednessGraph.mapper.\         ReadDB                             426        1720    0.0    0.0     0.0    0.0
+   allEntries                               CourseGraph                        343           0    0.0    0.0     0.0    0.0
+    makeEntries                             ReadDB                             358           1    0.0    0.0     0.0    0.0
+     makeEntries.go                         ReadDB                             359         173    0.0    0.0     0.0    0.0
+      makeEntry                             ReadDB                             361         172    0.0    0.0     0.0    0.0
+       fromSqlString                        ReadDB                             377           0    0.0    0.0     0.0    0.0
+    readDB                                  ReadDB                             346           0    0.0    0.0     0.0    0.0
+ CAF:main1                                  Main                               330           0    0.0    0.0     0.0    0.0
+  main                                      Main                               338           1    0.0    0.0     0.0    0.0
+   constructRelatednessGraph                CourseGraph                        339           1    0.0    0.0     0.0    0.0
+ CAF:writeRelatednessGraph2                 ReadDB                             307           0    0.0    0.0     0.0    0.0
+  writeRelatednessGraph                     ReadDB                             355           0    0.0    0.0     0.0    0.0
+ CAF:writeRelatednessGraph3                 ReadDB                             306           0    0.0    0.0     0.0    0.0
+ CAF:writeRelatednessGraph4                 ReadDB                             305           0    0.0    0.0     0.0    0.0
+  writeRelatednessGraph                     ReadDB                             354           0    0.0    0.0     0.0    0.0
+ CAF:writeRelatednessGraph5                 ReadDB                             304           0    0.0    0.0     0.0    0.0
+ CAF:writeRelatednessGraph6                 ReadDB                             303           0    0.0    0.0     0.0    0.0
+  writeRelatednessGraph                     ReadDB                             353           0    0.0    0.0     0.0    0.0
+ CAF:makeSmallDB12                          ReadDB                             302           0    0.0    0.0     0.0    0.0
+  readDB                                    ReadDB                             348           0    0.0    0.0     0.0    0.0
+ CAF:makeSmallDB13                          ReadDB                             301           0    0.0    0.0     0.0    0.0
+  readDB                                    ReadDB                             349           0    0.0    0.0     0.0    0.0
+ CAF:makeSmallDB14                          ReadDB                             300           0    0.0    0.0     0.0    0.0
+ CAF:makeSmallDB15                          ReadDB                             299           0    0.0    0.0     0.0    0.0
+  readDB                                    ReadDB                             350           0    0.0    0.0     0.0    0.0
+ CAF:makeSmallDB16                          ReadDB                             298           0    0.0    0.0     0.0    0.0
+ CAF:fromSqlString                          ReadDB                             290           0    0.0    0.0     0.0    0.0
+  fromSqlString                             ReadDB                             376           1    0.0    0.0     0.0    0.0
+ CAF:smallDBName                            ReadDB                             288           0    0.0    0.0     0.0    0.0
+  smallDBName                               ReadDB                             347           1    0.0    0.0     0.0    0.0
+ CAF:smallDBName1                           ReadDB                             287           0    0.0    0.0     0.0    0.0
+ CAF:getRelatedCourses_$dEq                 CourseGraph                        286           0    0.0    0.0     0.0    0.0
+ CAF:getRelatedCourses_$dEq1                CourseGraph                        285           0    0.0    0.0     0.0    0.0
+ CAF:weight                                 CourseGraph                        284           0    0.0    0.0     0.0    0.0
+  weight                                    CourseGraph                        371           1    0.0    0.0     0.0    0.0
+ CAF:bayesWeight_prior                      CourseGraph                        282           0    0.0    0.0     0.0    0.0
+  bayesWeight                               CourseGraph                        419           0    0.0    0.0     0.0    0.0
+   bayesWeight.prior                        CourseGraph                        420           1    0.0    0.0     0.0    0.0
+ CAF:allEntries1                            CourseGraph                        281           0    0.0    0.0     0.0    0.0
+  allEntries                                CourseGraph                        342           1    0.0    0.0     0.0    0.0
+ CAF:allEntries2                            CourseGraph                        280           0    0.0    0.0     0.0    0.0
+  allEntries                                CourseGraph                        344           0    0.0    0.0     0.0    0.0
+   readDB                                   ReadDB                             345           1    0.0    0.0     0.0    0.0
+ CAF                                        Data.String.Utils                  279           0    0.0    0.0     0.0    0.0
+ CAF                                        Database.HDBC.Sqlite3.Connection   271           0    0.0    0.0     0.0    0.0
+ CAF                                        Database.HDBC.SqlValue             263           0    0.0    0.0     0.0    0.0
+ CAF                                        GHC.Conc.Signal                    222           0    0.0    0.0     0.0    0.0
+ CAF                                        GHC.IO.Encoding                    214           0    0.0    0.0     0.0    0.0
+ CAF                                        GHC.IO.Encoding.Iconv              212           0    0.0    0.0     0.0    0.0
+ CAF                                        GHC.IO.Handle.FD                   205           0    0.0    0.0     0.0    0.0
+ CAF                                        Text.Read.Lex                      185           0    0.0    0.0     0.0    0.0
+  main                                      Main                               412           0    0.0    0.0     0.0    0.0
+   constructRelatednessGraph                CourseGraph                        413           0    0.0    0.0     0.0    0.0
+    writeRelatednessGraph                   ReadDB                             416           0    0.0    0.0     0.0    0.0
+    allEntries                              CourseGraph                        414           0    0.0    0.0     0.0    0.0
+     readDB                                 ReadDB                             415           0    0.0    0.0     0.0    0.0

@@ -13,11 +13,16 @@ import qualified Data.ByteString.Char8 as BS
 import Text.Printf
 import Data.Char
 import Data.List
+import qualified Data.Map as Map
 
 import Database.HDBC.Sqlite3 (connectSqlite3)
 import Database.HDBC
 
 import Util
+
+smallDBName = "courseinfo-small.db"
+
+smallDB = connectSqlite3 smallDBName
 
 instance Show Entry where
   show entry = (codeKey entry) ++ ": " ++ (titleKey entry)
@@ -52,6 +57,17 @@ getDBCrossSection = filter p
           where number :: Int
                 number = read $ filter isDigit $ codeKey entry
 
+relatedCoursesFromDB :: Int -> IO [Entry]
+relatedCoursesFromDB courseID =
+  do db <- smallDB
+     rawIDs <- quickQuery' db "SELECT related_id FROM relatedness WHERE id=?"
+               [toSql courseID]
+     let flatRawIDs = concat rawIDs
+     let n = length flatRawIDs
+     entries <- quickQuery' db ("SELECT * FROM courseinfo WHERE id IN ("
+                 ++ (take (2*n - 1) $ cycle "?,") ++ ")") flatRawIDs
+     return $ makeEntries entries
+
 writeDB :: FilePath -> [Entry] -> IO ()
 writeDB filename entries =
   do db <- connectSqlite3 filename
@@ -70,17 +86,23 @@ writeDB filename entries =
      disconnect db
      return ()
 
--- writeRelatednessGraph :: RelatednessGraph -> IO ()
--- writeRelatednessGraph graph =
---   do db <- connectSqlite3 "courseinfodata-small.db"
---      quickQuery' db "CREATE TABLE relatedness (id INTEGER PRIMARY KEY NOT NULL,related_id INTEGER NOT NULL)"
---      stmt <- prepare db "INSERT INTO relatedness VALUES (?,?)"
---      executeMany stmt $ mapWithKey (\ -> [toSql (idKey entry)])
---      return ()
+writeRelatednessGraph :: RelatednessGraph -> IO ()
+writeRelatednessGraph graph =
+  do db <- smallDB
+     quickQuery' db "CREATE TABLE relatedness (id INTEGER NOT NULL,related_id INTEGER NOT NULL)" []
+     stmt <- prepare db "INSERT INTO relatedness VALUES (?,?)"
+     executeMany stmt $ concatMap mapper $ Map.toList graph
+     commit db
+     return ()
+  where mapper (entry, relateds) = map (\r -> [toSql (idKey entry), toSql (idKey r)])
+                                   relateds
 
 makeSmallDB :: IO ()
 makeSmallDB =
   do db <- readDB "courseinfodata.db"
      let entries = makeEntries db
      print $ length $ getDBCrossSection entries
-     writeDB "courseinfo-small.db" (getDBCrossSection entries)
+     writeDB smallDBName (getDBCrossSection entries)
+
+cleanup :: IO ()
+cleanup = smallDB >>= disconnect
