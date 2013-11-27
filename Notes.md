@@ -19,3 +19,5 @@ Next I thought to add combination features. I just included `code + (title/descr
 ### Profiling
 
 It takes way too long to run. I spent about two hours trying to get the Python profiler to give me something useful, but I couldn't get it to work so I'm rewriting the program in Haskell.
+
+Haskell is also really slow for some reason, but at least the profiler works so I'm going to try to fix it.

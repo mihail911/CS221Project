@@ -12,6 +12,7 @@ it in Haskell.
 
 module CourseGraph where
 
+import Data.Char
 import Data.Function
 import Data.List
 import qualified Data.Maybe as Maybe
@@ -21,21 +22,11 @@ import qualified Data.Map as Map
 -- MissingH
 import Data.String.Utils
 
+import Util
 import ReadDB
 
-data Feature = Title String
-               | CodeName String | Code100s Char | Code10s Char | Code11s String
-               | Instructor String
-               | MinUnits Int
-               | MaxUnits Int
-               | Desc String
-               | Combo Feature Feature
-             deriving (Show, Eq, Ord)
-
-type FeatureSet = Set.Set Feature
-
 allEntries :: IO [Entry]
-allEntries = readDB "courseinfodata.db" >>= (return . makeEntries)
+allEntries = readDB "courseinfo-small.db" >>= (return . makeEntries)
 
 titleFeatures :: String -> FeatureSet
 titleFeatures title = Set.fromList [ Title w | w <- words title ]
@@ -47,8 +38,8 @@ codeFeatures code = Set.fromList $ map Maybe.fromJust $ filter Maybe.isJust [
   if length numbers > 1 then Just $ Code10s $ numbers!!1 else Nothing, 
   if length numbers > 0 then Just $ Code11s $ tail numbers else Nothing
   ]
-  where letters = filter (\c -> c >= 'a' && c <= 'z') code
-        numbers = filter (\c -> c >= '0' && c <= '9') code
+  where letters = filter isAlpha code
+        numbers = filter isDigit code
 
 instrFeatures :: String -> FeatureSet
 instrFeatures instrs =
@@ -85,39 +76,54 @@ incMapValue k m =
     Just x -> Map.insert k (x+1) m
     Nothing -> Map.insert k 1 m
 
-getFeatureMap :: [Entry] -> Map.Map Entry FeatureSet
+getFeatureMap :: [Entry] -> FeatureMap
 getFeatureMap entries =
   foldl (\cum entry -> Map.insert entry (extractFeatures entry) cum)
   Map.empty entries
 
-getFeaturePriors :: Map.Map Entry FeatureSet -> Map.Map Feature Double
+getFeaturePriors :: FeatureMap -> FeaturePriorMap
 getFeaturePriors featureMap =
   Map.map (/ fromIntegral (Map.size featureMap)) featureCounts
   where featureCounts = Map.foldl folder Map.empty featureMap
         folder myMap feats =
           Set.foldl (\cum feat -> incMapValue feat cum) myMap feats
 
--- | Perform a Bayesian probability update to find P(A | Event).
-probUpdate :: Double -> Double -> Double -> Double
-probUpdate prior pEventGivenPrior pEvent =
-  prior * pEventGivenPrior / pEvent
 
-bayesWeight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
+bayesWeight :: FeaturePriorMap -> FeatureSet -> FeatureSet -> Double
 bayesWeight featurePriors feats1 feats2 = sum $ Set.toList probs
   where probs = Set.map update feats1
         prior = 0.1
         update feat = if Set.member feat feats2
                       then probUpdate prior 0.9 $ featurePrior
                       else probUpdate prior 0.1 $ 1 - featurePrior
-          where featurePrior = featurePriors Map.! feat
-                        
+          where featurePrior = featurePriors Map.! feat                        
 
 weight :: Map.Map Feature Double -> FeatureSet -> FeatureSet -> Double
 weight = bayesWeight
 
-getRelatedCourses :: Map.Map Feature Double -> Map.Map Entry FeatureSet ->
-                     Entry -> Int -> [Entry]
-getRelatedCourses featurePriors featureMap entry1 numToGet =
-  take numToGet $ reverse $ map fst $ sortBy (compare `on` (weight featurePriors feats1 . snd)) $
+-- | Find the K most related courses in descending order of relatedness.
+getRelatedCourses :: FeaturePriorMap -> FeatureMap ->
+                     Int -> Entry -> [Entry]
+getRelatedCourses featurePriors featureMap numToGet entry1 =
+  reverse $ map fst $
+  largestKBy (compare `on` (weight featurePriors feats1 . snd)) numToGet $
   Map.assocs featureMap
   where feats1 = featureMap Map.! entry1
+
+-- | Construct a directed graph where each entry has an edge to its 
+-- most-related entries in order. Represents the graph as an adjacency
+-- list.
+-- Note: This could be generalized to any sort of relatedness.
+getRelatednessGraph :: (Entry -> [Entry]) -> [Entry] -> RelatednessGraph
+getRelatednessGraph relatedFun entries =
+  Map.fromList $ map (\entry -> (entry, relatedFun entry)) entries
+
+-- constructRelatednessGraph :: Int -> IO ()
+-- constructRelatednessGraph numRelated =
+--   do entries <- allEntries
+--      let featureMap = getFeatureMap entries
+--      let featurePriors = getFeaturePriors featureMap
+--      let graph = getRelatednessGraph
+--                  (getRelatedCourses featurePriors featureMap numRelated)
+--                  entries
+--      writeRelatednessGraph graph

@@ -1,0 +1,1518 @@
+Course Title: Methods of High-Performance Computing in GeoSciences
+Course Instructors: 
+Course Code: EARTHSCI320
+Course Units: 1-1
+Course Description: Workshop consisting of 8 lectures addressing topics necessary for high-performance computing research on the CEES cluster in the School of Earth Sciences. In addition to attending lectures students will be required to complete a short project related to high-performance computing.
+----------------------------
+Course Title: Geokids: Earth Sciences Education
+Course Instructors: Jennifer Saltzman, 
+Course Code: EARTHSCI5
+Course Units: 1-1
+Course Description: Service learning through the Geokids program.  Eight weeks of supervised teaching to early elementary students about Earth sciences.  Hands-on teaching strategies for science standards-based instruction.
+----------------------------
+Course Title: Negotiation (CEE 151, CEE 251)
+Course Instructors: 
+Course Code: EARTHSCI251
+Course Units: 3-3
+Course Description: Students learn to prepare for and conduct negotiations in a variety of arenas including getting a job, managing workplace conflict, negotiating transactions, and managing personal relationships. Interactive class. The internationally travelled instructor who has mediated cases in over 75 countries will require students to negotiate real life case studies and discuss their results in class. Application required before first day of class; see Coursework.
+----------------------------
+Course Title: Current Research in the Earth and Environmental Sciences
+Course Instructors: Richard Nevle, 
+Course Code: EARTHSCI1
+Course Units: 1-1
+Course Description: Primarily for freshmen and sophomores.  An introduction to faculty and research areas in the School of Earth Sciences, including biogeochemistry, oceanography, paleobiology, geophysics, tectonics, geostatistics, soil science, hydrogeology, energy resources, earth surface processes, geochronology, volcanoes and earthquakes, and remote sensing.  May be repeated for credit.
+----------------------------
+Course Title: Earth Sciences Seminar
+Course Instructors: Pamela Matson, 
+Course Code: EARTHSCI300
+Course Units: 1-1
+Course Description: Required for incoming graduate students except coterms.  Research questions, tools, and approaches of faculty members from all departments in the School of Earth Sciences.  Goals are:  to inform new graduate students about the school&#39;s range of scientific interests and expertise; and introduce them to each other across departments and research groups.  Panel discussions or faculty member presentations at each meeting.  May be repeated for credit.
+----------------------------
+Course Title: Earth Science Course Enhancement
+Course Instructors: 
+Course Code: EARTHSCI201
+Course Units: 3-3
+Course Description: For graduate students working in collaboration with a faculty member to develop and improve activities for courses within the School of Earth Sciences.  Weekly meetings to discuss pedagogical strategies and give feedback on activities.  May be repeated for credit.
+----------------------------
+Course Title: Professional Development in Earth Science Education
+Course Instructors: 
+Course Code: EARTHSCI200
+Course Units: 1-1
+Course Description: For graduate students who wish to gain experience for careers in teaching and mentoring.  May be repeated for credit
+----------------------------
+Course Title: Digital Methods in Archaeology (ANTHRO 98B)
+Course Instructors: 
+Course Code: ANTHRO298B
+Course Units: 3-5
+Course Description: This is a course on digital technologies in archaeology used for documentation, visualization, and analysis of archaeological spaces and objects.  Emphasizes hands-on approaches to image manipulation, virtual reality, GIS, CAD, and photogrammetry modeling methods.
+----------------------------
+Course Title: Theory of Ecological and Environmental Anthropology (HUMBIO 118)
+Course Instructors: Douglas Bird, Lisa Curran, 
+Course Code: ANTHRO90C
+Course Units: 5-5
+Course Description: Dynamics of culturally inherited human behavior and its relationship to social and physical environments. Topics include a history of ecological approaches in anthropology, subsistence ecology, sharing, risk management, territoriality, warfare, and resource conservation and management. Case studies from Australia, Melanesia, Africa, and S. America.
+----------------------------
+Course Title: Ethnographic Writing
+Course Instructors: 
+Course Code: ANTHRO311
+Course Units: 3-5
+Course Description: For graduate students writing or planning to write a dissertation using ethnographic methods. The choices made by the authors of ethnographies in constructing an argument, using data and speaking to an audience of readers. Readings include chapters written by class members currently writing dissertations. Prerequisite: consent of instructor.
+----------------------------
+Course Title: Contemporary Chinese Society Through Independent Documentary Film (ANTHRO 251A)
+Course Instructors: Kevin Carrico, 
+Course Code: ANTHRO151A
+Course Units: 3-5
+Course Description: An overview of social issues in contemporary China as seen through its emerging independent documentary film movement. Topics covered include representations of history, political power and accountability in the reform era, human rights, urbanization, the environment, homelessness and inequality, sexualities, addiction, and the role of media in society. Each viewing is accompanied by readings in media theory or the anthropological/sociological study of contemporary China. Can be taken with or without research component. Films include English subtitles.
+----------------------------
+Course Title: Neandertals and Modern Humans: Origin, Evolution, Interactions (ANTHRO 210A)
+Course Instructors: 
+Course Code: ANTHRO110A
+Course Units: 3-3
+Course Description: The expansion out of Africa of our species represents the last spectacular step in the course of Human Evolution.  It resulted in the colonization of the whole planet and the replacement of archaic forms of humans in Eurasia. One way to investigate why Homo sapiens has been such a successful species is to compare its evolution with that of its closest relative, the Neandertals. Exploring the bio-cultural processes at work in the two lineages leads to examine some of the main issues in Paleoanthropology and the most recent methodological advances in the field.
+----------------------------
+Course Title: God and the Supernatural
+Course Instructors: 
+Course Code: ANTHRO26N
+Course Units: 3-5
+Course Description: This course explores the conditions under which people have experiences that they identify as &quot;supernatural&quot;: experiences of something that is not physically present. We will explore the cultural and psychological dimensions of this very real phenomenon. We will not, however, make ontological judgments about whether something which is experienced as externally present is in fact externally present: in other words, this is a class about culture and psychology, not about metaphysics. We will do experimental work, using our selves and fellow classmates, as subjects, to understand who, when and how people have experiences that they deem &quot;supernatural.&quot;
+----------------------------
+Course Title: CSRE House Seminar: Race and Ethnicity at Stanford (CSRE 135I)
+Course Instructors: 
+Course Code: ANTHRO135I
+Course Units: 1-2
+Course Description: Race, ethnicity, gender, and religion using the tools, analytical skills and concepts developed by anthropologists.
+----------------------------
+Course Title: Demography and Life History Theory
+Course Instructors: James Jones, 
+Course Code: ANTHRO363
+Course Units: 5-5
+Course Description: Problems in demography and theoretical population biology applied to human systems. Emphasis is on establishing relationships between models in theoretical population biology and empirical demographic methodology. Topics include philosophy of models and model building, population dynamics, stable population theory, species interactions in human ecology, models of infectious diseases and their control, cultural evolution. Prerequisites: HUMBIO 137 or consent of instructor.
+----------------------------
+Course Title: South Asia: History, People, Politics (ANTHRO 249)
+Course Instructors: 
+Course Code: ANTHRO149
+Course Units: 5-5
+Course Description: The South Asian subcontinent (comprising of India, Pakistan, Bangladesh, Nepal, Bhutan and Sri Lanka) is one of the most diverse and densely populated regions in the world and increasingly prominent in new global political and cultural economies. South Asia has also provided the inspiration for cutting edge theories about the colonial state, postcolonial studies, democracy, popular culture, and religious conflict. The course will provide an overview of major historical events and social trends in contemporary South Asia and focus on themes such as gender, religion, caste, migration and movement, new technologies, the urban and rural, the state, and new forms of consumption among others.Thus, the course will give students historically and theoretically informed perspectives on contemporary South Asia, as well as how to apply insights learned to larger debates within the political and social sciences.
+----------------------------
+Course Title: Directed Study in Honors and Senior Papers
+Course Instructors: Miyako Inoue, Mark Gardiner, Stephen Murphy-Shigematsu, Lynn Meskell, Barbara Voss, Stephanie Melillo, James Jones, John Rick, Rebecca Bird, Ian Robertson, Tanya Luhrmann, Richard Klein, Sharika Thiranagama, Kathleen Coll, Matthew Jobin, Michael Wilcox, Harumi Befu, William Durham, Paulla Ebron, Thomas Hansen, Aisha Ghani, Liisa Malkki, Alma Kunanbaeva, Daniel Salkeld, Brian Codding, Ian Hodder, Shanti Morell-Hart, Duana Fullwiley, Sarah Ives, Melissa Brown, Ewa Domanska, Matthew Kohrman, Kabir Tambar, Arek Marciniak, Damien Droney, James Ferguson, Krish Seetah, Angela Garcia, Douglas Bird, S. Lochlann Jain, Carter Hunt, Lisa Curran, Sylvia Yanagisako, James Fox, 
+Course Code: ANTHRO95B
+Course Units: 1-10
+Course Description: Taken in the final quarter before graduation. Independent study and work on senior paper for students admitted to the program. Prerequisite: consent of program adviser and instructor.
+----------------------------
+Course Title: Object Lessons (ANTHRO 134)
+Course Instructors: Lindsay Weiss, 
+Course Code: ANTHRO234
+Course Units: 5-5
+Course Description: Human-object relations in the processes of world making. Objectification and materiality through ethnography, archaeology, material culture studies, and cultural studies. Interpretive connotations around and beyond the object, the unstable terrain of interrelationships between sociality and materiality, and the cultural constitution of objects. Sources include: works by Marx, Hegel, and Mauss; classic Pacific ethnographies of exchange, circulation, alienability, and fetishism; and material culture studies.
+----------------------------
+Course Title: Public Archaeology: Market Street Chinatown Archaeology Project (ASNAMST 112)
+Course Instructors: Barbara Voss, Guido Pezzarossi, 
+Course Code: ANTHRO112
+Course Units: 4-5
+Course Description: This internship-style course centers on the practice and theory of historical archaeology research and interpretation through a focused study of San Jose¿s historic Chinese communities. The course includes classroom lectures, seminar discussion, laboratory analysis of historic artifacts, and participation in public archaeology events. Course themes include immigration, urbanization, material culture, landscape, transnational identities, race and ethnicity, gender, cultural resource management, public history, and heritage politics. The course includes required lab sections, field trips, and public service. Transportation will be provided for off-site activities.
+----------------------------
+Course Title: Language and Prehistory (ANTHRO 221)
+Course Instructors: James Fox, 
+Course Code: ANTHRO121
+Course Units: 4-5
+Course Description: Language classification and its implications for human prehistory. The role of linguistic data in analyzing prehistoric populations, cultures, contact, and migrations. Comparison of linguistic and biological classifications. Reconstruction, proto-vocabularies, and culture. Archaeological decipherment and the origins and evolution of writing.  Archaeological and genetic evidence for human migrations. (DA-A; HEF II,III)
+----------------------------
+Course Title: Research Workshop
+Course Instructors: Beth Levin, 
+Course Code: LINGUIST395
+Course Units: 1-2
+Course Description: Restricted to students in the doctoral program. Student presentations of research toward qualifying papers.May be repeated for credit.
+----------------------------
+Course Title: Analysis on Manifolds
+Course Instructors: 
+Course Code: MATH146
+Course Units: 3-3
+Course Description: Differentiable manifolds, tangent space, submanifolds, implicit function theorem, differential forms, vector and tensor fields. Frobenius&#39; theorem, DeRham theory. Prerequisite: 52 or 52H.
+----------------------------
+Course Title: Linear Algebra and Differential Calculus of Several Variables, ACE
+Course Instructors: Wojciech Wieczorek, Elizabeth Goodman, Daniel Jerison, Hilaf Hasson, 
+Course Code: MATH51A
+Course Units: 6-6
+Course Description: Students attend MATH 51 lectures with different recitation sessions: four hours per week instead of two, emphasizing engineering applications. Prerequisite: application; see http://soe.stanford.edu/edp/programs/ace.html.
+----------------------------
+Course Title: Topics in Number Theory
+Course Instructors: Brian Conrad, 
+Course Code: MATH249C
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Mathematics of Computation
+Course Instructors: Lexing Ying, 
+Course Code: MATH118
+Course Units: 3-3
+Course Description: Notions of analysis and algorithms central to modern scientific computing: continuous and discrete Fourier expansions, the fast Fourier transform, orthogonal polynomials, interpolation, quadrature, numerical differentiation, analysis and discretization of initial-value and boundary-value ODE, finite and spectral elements. Prerequisites: MATH 51 and 53.
+----------------------------
+Course Title: Calculus (accelerated)
+Course Instructors: Mark Lucianovic, Valentin Buciumas, Kenneth Ho, Alexandra Musat, Jesse Madnick, Jafar Jafarov, 
+Course Code: MATH41
+Course Units: 5-5
+Course Description: Introduction to differential and integral calculus of functions of one variable.  Topics: limits, rates of change, the derivative and applications, introduction to the definite integral and integration. Math 41 and 42 cover the same material as Math 19-20-21, but in two quarters rather than three.  Prerequisites: trigonometry, advanced algebra, and analysis of elementary functions, including exponentials and logarithms.
+----------------------------
+Course Title: Modules and Group Representations
+Course Instructors: Akshay Venkatesh, 
+Course Code: MATH122
+Course Units: 3-3
+Course Description: Modules over PID. Group representations and group rings.  Tensor algebra over a field.  Maschke&#39;s theorem and character theory.  Character tables, construction of representations.  Prerequisite: Math 120. Also recommended: 113.
+----------------------------
+Course Title: Honors Multivariable Mathematics
+Course Instructors: Leon Simon, Cary Malkiewich, 
+Course Code: MATH51H
+Course Units: 5-5
+Course Description: For prospective Mathematics majors in the honors program and students from other areas of science or engineering who have a strong mathematics background. Three quarter sequence covers the material of 51, 52, 53, and additional advanced calculus and ordinary and partial differential equations. Unified treatment of multivariable calculus, linear algebra, and differential equations with a different order of topics and emphasis from standard courses. Students should know one-variable calculus and have an interest in a theoretical approach to the subject. Prerequisite: score of 5 on BC Advanced Placement exam, or consent of instructor.
+----------------------------
+Course Title: Lebesgue Integration and Fourier Analysis
+Course Instructors: Andras Vasy, 
+Course Code: MATH172
+Course Units: 3-3
+Course Description: Similar to 205A, but for undergraduate Math majors and graduate students in other disciplines. Topics include Lebesgue measure on Euclidean space, Lebesgue integration, L^p spaces, the Fourier transform, the Hardy-Littlewood maximal function and Lebesgue differentiation. Prerequisite: 171 or consent of instructor.
+----------------------------
+Course Title: Riemannian Geometry
+Course Instructors: Richard Schoen, 
+Course Code: MATH144
+Course Units: 3-3
+Course Description: Smooth manifolds, tensor fields, geometry of Riemannian and Lorentz metrics, the Levi-Civita connection and curvature tensor, Ricci curvature, scalar curvature, and Einstein manifolds, spaces of constant curvature.  Prerequisites: Math 51, 52, and 53.
+----------------------------
+Course Title: Low Dimensional Topology
+Course Instructors: Maryam Mirzakhani, 
+Course Code: MATH282A
+Course Units: 3-3
+Course Description: The theory of surfaces and 3-manifolds. Curves on surfaces, the classification of diffeomorphisms of surfaces, and Teichmuller space. The mapping class group and the braid group. Knot theory, including knot invariants. Decomposition of 3-manifolds: triangulations, Heegaard splittings, Dehn surgery. Loop theorem, sphere theorem, incompressible surfaces. Geometric structures, particularly hyperbolic structures on surfaces and 3-manifolds.  May be repeated for credit up to 6 total units.
+----------------------------
+Course Title: Honors Multivariable Mathematics
+Course Instructors: Yakov Eliashberg, 
+Course Code: MATH53H
+Course Units: 5-5
+Course Description: Continuation of 52H. Prerequisite: 52H.
+----------------------------
+Course Title: The Game of Go: Strategy, Theory, and History
+Course Instructors: 
+Course Code: MATH70SI
+Course Units: 1-1
+Course Description: Strategy and mathematical theories of the game of Go, with guest appearance by a professional Go player.
+----------------------------
+Course Title: Real Analysis
+Course Instructors: Leon Simon, 
+Course Code: MATH205A
+Course Units: 3-3
+Course Description: Basic measure theory and the theory of Lebesgue integration. Prerequisite: 171 or equivalent.
+----------------------------
+Course Title: Mathematical Methods of Imaging (CME 321A)
+Course Instructors: Leonid Ryzhik, 
+Course Code: MATH221A
+Course Units: 3-3
+Course Description: Image denoising and deblurring with optimization and partial differential equations methods. Imaging functionals based on total variation and l-1 minimization. Fast algorithms and their implementation.
+----------------------------
+Course Title: QUANTUM MECHANICS II
+Course Instructors: 
+Course Code: MATH273B
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Topics in Group Theory
+Course Instructors: 
+Course Code: MATH247
+Course Units: 3-3
+Course Description: Topics include the Burnside basis theorem, classification of p-groups, regular and powerful groups, Sylow theorems, the Frattini argument, nilpotent groups, solvable groups, theorems of P. Hall, group cohomology, and the Schur-Zassenhaus theorem. The classical groups and introduction to the classification of finite simple groups and its applications. May be repeated for credit.
+----------------------------
+Course Title: Calculus (Accelerated)
+Course Instructors: Beniada Shabani, Zhiyuan Li, Mark Lucianovic, Fernando Shao, Daniel Berwick-Evans, 
+Course Code: MATH42
+Course Units: 5-5
+Course Description: Continuation of 41.  Methods of symbolic and numerical integration, applications of the definite integral, introduction to differential equations, infinite series.  Prerequisite: 41 or equivalent.
+----------------------------
+Course Title: Seminar in Topology
+Course Instructors: 
+Course Code: MATH385
+Course Units: 1-3
+Course Description: 
+----------------------------
+Course Title: mirror symmetry
+Course Instructors: 
+Course Code: MATH259
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Topics in Geometric Analysis
+Course Instructors: Yi Wang, 
+Course Code: MATH258
+Course Units: 3-3
+Course Description: May be repeated for credit.
+----------------------------
+Course Title: Homotopy Theory
+Course Instructors: Soren Galatius, 
+Course Code: MATH282B
+Course Units: 3-3
+Course Description: Homotopy groups, fibrations, spectral sequences, simplicial methods, Dold-Thom theorem, models for loop spaces, homotopy limits and colimits, stable homotopy theory.  May be repeated for credit up to 6 total units.
+----------------------------
+Course Title: Calculus ACE
+Course Instructors: Mark Lucianovic, Amy Pang, 
+Course Code: MATH41A
+Course Units: 6-6
+Course Description: Students attend MATH 41 lectures with different recitation sessions, four hours instead of two, emphasizing engineering applications. Prerequisite: application; see http://soe.stanford.edu/edp/programs/ace.html.
+----------------------------
+Course Title: Symplectic Geometry and Topology
+Course Instructors: 
+Course Code: MATH257A
+Course Units: 3-3
+Course Description: Linear symplectic geometry and linear Hamiltonian systems. Symplectic manifolds and their Lagrangian submanifolds, local properties. Symplectic geometry and mechanics. Contact geometry and contact manifolds. Relations between symplectic and contact manifolds. Hamiltonian systems with symmetries. Momentum map and its properties. May be repeated for credit.
+----------------------------
+Course Title: Computational Commutative Algebra
+Course Instructors: 
+Course Code: MATH111
+Course Units: 3-3
+Course Description: Introduction to the theory of commutative rings, ideals, and modules. Systems of polynomial equations in several variables from the algorithmic viewpoint. Groebner bases, Buchberger&#39;s algorithm, elimination theory. Applications to algebraic geometry and to geometric problems.
+----------------------------
+Course Title: Probabilistic Methods in Analysis
+Course Instructors: 
+Course Code: MATH233
+Course Units: 3-3
+Course Description: Proofs and constructions in analysis obtained from basic results in Probability Theory and a &#39;probabilistic way of thinking.&#39; Topics: Rademacher functions, Gaussian processes, entropy.
+----------------------------
+Course Title: Research Seminar Participation
+Course Instructors: Persi Diaconis, Leonid Ryzhik, Solomon Feferman, Doron Levy, Simon Brendle, Brian White, Leon Simon, Maryam Mirzakhani, Valdo Durrleman, Eleny Ionel, Yakov Eliashberg, Jun Li, Gunnar Carlsson, Andras Vasy, Daniel Bump, Brian Conrad, Rafe Mazzeo, Soren Galatius, Gregory Brumfiel, Steven Kerckhoff, Kannan Soundararajan, Ralph Cohen, Amir Dembo, Tai-Ping Liu, Grigori Mints, Emmanuel Candes, Akshay Venkatesh, George Papanicolaou, Ravi Vakil, Matthew Kahle, Richard Schoen, 
+Course Code: MATH361
+Course Units: 1-3
+Course Description: Participation in a faculty-led seminar which has no specific course number.
+----------------------------
+Course Title: Celestial Mechanics
+Course Instructors: 
+Course Code: MATH138
+Course Units: 3-3
+Course Description: Mathematically rigorous introduction to the classical N-body problem: the motion of N particles evolving according to Newton&#39;s law. Topics include: the Kepler problem and its symmetries; other central force problems; conservation theorems; variational methods; Hamilton-Jacobi theory; the role of equilibrium points and stability; and symplectic methods. Prerequisites: 53, and 115 or 171.
+----------------------------
+Course Title: Linear Algebra and Matrix Theory
+Course Instructors: Sourav Chatterjee, Daniel Kane, Martin Luu, 
+Course Code: MATH113
+Course Units: 3-3
+Course Description: Algebraic properties of matrices and their interpretation in geometric terms. The relationship between the algebraic and geometric points of view and matters fundamental to the study and solution of linear equations. Topics: linear equations, vector spaces, linear dependence, bases and coordinate systems; linear transformations and matrices; similarity; eigenvectors and eigenvalues; diagonalization.
+----------------------------
+Course Title: Symplectic Geometry and Topology
+Course Instructors: Eleny Ionel, 
+Course Code: MATH257C
+Course Units: 3-3
+Course Description: Continuation of 257B. May be repeated for credit.
+----------------------------
+Course Title: Modern Algebra II
+Course Instructors: Brian Conrad, 
+Course Code: MATH210B
+Course Units: 3-3
+Course Description: Continuation of 210A.  Topics in Galois theory, commutative algebra, and algebraic geometry.  Prerequisites: 210A, and 121 or equivalent.
+----------------------------
+Course Title: Seminar in Mathematical Biology
+Course Instructors: 
+Course Code: MATH389
+Course Units: 1-3
+Course Description: 
+----------------------------
+Course Title: Seminar in Analysis
+Course Instructors: 
+Course Code: MATH381
+Course Units: 1-3
+Course Description: 
+----------------------------
+Course Title: Discrete Probabilistic Methods
+Course Instructors: Amir Dembo, 
+Course Code: MATH159
+Course Units: 3-3
+Course Description: Modern discrete probabilistic methods suitable for analyzing discrete structures of the type arising in number theory, graph theory, combinatorics, computer science, information theory and molecular sequence analysis.  Prerequisite: STATS 116/MATH 151 or equivalent.
+----------------------------
+Course Title: Topics in Topology
+Course Instructors: 
+Course Code: MATH283A
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Practical Training
+Course Instructors: Emmanuel Candes, 
+Course Code: MATH198
+Course Units: 1-1
+Course Description: Only for students majoring in mathematics. Students obtain employment in a relevant industrial or research activity to enhance their professional experience.  Students submit a concise report detailing work activities, problems worked on, and key results. May be repeated for credit up to 3 units. Prerequisite: qualified offer of employment and consent of advisor or instructor.
+----------------------------
+Course Title: Classics in Geometry and Topology
+Course Instructors: 
+Course Code: MATH395
+Course Units: 3-3
+Course Description: Original papers in geometry and in algebraic and geometric  topology. May be repeated for credit.
+----------------------------
+Course Title: Quantum Mechanics I
+Course Instructors: 
+Course Code: MATH273A
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Computation and Simulation in Finance
+Course Instructors: 
+Course Code: MATH239
+Course Units: 3-3
+Course Description: Monte Carlo, finite difference, tree, and transform methods for the numerical solution of partial differential equations in finance. Emphasis is on derivative security pricing. Prerequisite: 238 or equivalent.
+----------------------------
+Course Title: Partial Differential Equations and Diffusion Processes
+Course Instructors: 
+Course Code: MATH227
+Course Units: 3-3
+Course Description: Parabolic and elliptic partial differential equations and their relation to diffusion processes. First order equations and optimal control. Emphasis is on applications to mathematical finance. Prerequisites: MATH 131 and MATH 136/STATS 219, or equivalents.
+----------------------------
+Course Title: Introduction to Algebraic Geometry
+Course Instructors: Ravi Vakil, 
+Course Code: MATH216B
+Course Units: 3-3
+Course Description: Continuation of 216A. May be repeated for credit.
+----------------------------
+Course Title: Groups and Rings
+Course Instructors: Zhiyuan Li, Martin Luu, 
+Course Code: MATH120
+Course Units: 3-3
+Course Description: Groups acting on sets, examples of finite groups, Sylow theorems, solvable and simple groups. Fields, rings, and ideals; polynomial rings over a field; PID and non-PID. Unique factorization domains.  WIM.
+----------------------------
+Course Title: Topics in Mathematical Biology
+Course Instructors: 
+Course Code: MATH224
+Course Units: 3-3
+Course Description: Mathematical models for biological processes based on ordinary and partial differential equations. Topics: population and infectious diseases dynamics, biological oscillators, reaction diffusion models, biological waves, and pattern formation. Prerequisites: 53 and 131, or equivalents.
+----------------------------
+Course Title: Introduction to Combinatorics and Its Applications
+Course Instructors: Angela Hicks, 
+Course Code: MATH108
+Course Units: 3-3
+Course Description: Topics: graphs, trees (Cayley&#39;s Theorem, application to phylogony), eigenvalues, basic enumeration (permutations, Stirling and Bell numbers), recurrences, generating functions, basic asymptotics. Prerequisites: 51 or equivalent.
+----------------------------
+Course Title: Undergraduate Colloquium
+Course Instructors: Martin Luu, Daniel Bump, 
+Course Code: MATH196
+Course Units: 1-1
+Course Description: Weekly lectures by different experts on topics in pure and applied mathematics that go beyond the standard curriculum.  May be repeated for credit for up to 3 units.  Does not count toward the math major or minor.
+----------------------------
+Course Title: Introduction to Algebraic Geometry
+Course Instructors: Zhiyuan Li, 
+Course Code: MATH216A
+Course Units: 3-3
+Course Description: Algebraic curves, algebraic varieties, sheaves, cohomology, Riemann-Roch theorem. Classification of algebraic surfaces, moduli spaces, deformation theory and obstruction theory, the notion of schemes. May be repeated for credit. Prerequisites: 210ABC or equivalent.
+----------------------------
+Course Title: Graduate Teaching Seminar
+Course Instructors: Mark Lucianovic, Andras Vasy, 
+Course Code: MATH355
+Course Units: 1-1
+Course Description: Required of and limited to first-year Mathematics graduate students.
+----------------------------
+Course Title: Advanced Reading and Research
+Course Instructors: Persi Diaconis, Yanir Rubinstein, Leonid Ryzhik, Sourav Chatterjee, Mihran Papikian, Solomon Feferman, Doron Levy, Simon Brendle, Brian White, Peter Storm, Maryam Mirzakhani, Leon Simon, Valdo Durrleman, Donald Ornstein, F. Nathaniel Thiem, Eleny Ionel, Yakov Eliashberg, Brian Munson, Jun Li, Karl Rubin, Lexing Ying, Gunnar Carlsson, Andras Vasy, Yitzhak Katznelson, Tianhong Li, Daniel Bump, Brian Conrad, R Milgram, Soren Galatius, Rafe Mazzeo, Robert Finn, Gregory Brumfiel, Steven Kerckhoff, Gautam Iyer, Kannan Soundararajan, Ralph Cohen, Amir Dembo, Tai-Ping Liu, Grigori Mints, Akshay Venkatesh, Emmanuel Candes, George Papanicolaou, Ravi Vakil, Razvan Fetecau, Zhiwei Yun, Matthew Kahle, Richard Schoen, 
+Course Code: MATH360
+Course Units: 1-10
+Course Description: 
+----------------------------
+Course Title: Evolution Equations in Differential Geometry
+Course Instructors: Richard Bamler, 
+Course Code: MATH280
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Functions of a Complex Variable
+Course Instructors: Tian Yang, 
+Course Code: MATH106
+Course Units: 3-3
+Course Description: Complex numbers, analytic functions, Cauchy-Riemann equations, complex integration, Cauchy integral formula, residues, elementary conformal mappings. Prerequisite: 52.
+----------------------------
+Course Title: Independent Work
+Course Instructors: Persi Diaconis, Wojciech Wieczorek, Leonid Ryzhik, Solomon Feferman, Thomas Church, Brian White, Simon Brendle, Maryam Mirzakhani, Leon Simon, Antoine Toussaint, Donald Ornstein, Eleny Ionel, Yakov Eliashberg, Robert Osserman, Jun Li, Gunnar Carlsson, Andras Vasy, Yitzhak Katznelson, Isabelle Camilier, Joseph Keller, Daniel Bump, Brian Conrad, R Milgram, Rafe Mazzeo, Soren Galatius, Robert Finn, Gregory Brumfiel, Steven Kerckhoff, Ralph Cohen, Kannan Soundararajan, Amir Dembo, Tai-Ping Liu, Mark Lucianovic, Ravi Vakil, Emmanuel Candes, George Papanicolaou, Akshay Venkatesh, Richard Schoen, 
+Course Code: MATH199
+Course Units: 1-3
+Course Description: Undergraduates pursue a reading program; topics limited to those not in regular department course offerings. Credit can fulfill the elective requirement for math majors. Approval of Undergraduate Affairs Committee is required to use credit for honors majors area requirement.
+----------------------------
+Course Title: Computational Methods for Fronts, Interfaces, and Waves
+Course Instructors: 
+Course Code: MATH222
+Course Units: 3-3
+Course Description: High-order methods for multidimensional systems of conservation laws and Hamilton-Jacobi equations (central schemes, discontinuous Galerkin methods, relaxation methods). Level set methods and fast marching methods. Computation of multi-valued solutions. Multi-scale analysis, including wavelet-based methods. Boundary schemes (perfectly matched layers). Examples from (but not limited to) geometrical optics, transport equations, reaction-diffusion equations, imaging, and signal processing.
+----------------------------
+Course Title: Introduction to Algebraic Geometry
+Course Instructors: Ravi Vakil, 
+Course Code: MATH216C
+Course Units: 3-3
+Course Description: Continuation of 216B. May be repeated for credit.
+----------------------------
+Course Title: Infinite Dimensional Lie Algebra
+Course Instructors: 
+Course Code: MATH264
+Course Units: 3-3
+Course Description: 
+----------------------------
+Course Title: Theory of Probability (STATS 310B)
+Course Instructors: Andrea Montanari, 
+Course Code: MATH230B
+Course Units: 2-3
+Course Description: Conditional expectations, discrete time martingales, stopping times, uniform integrability, applications to 0-1 laws, Radon-Nikodym Theorem, ruin problems, etc. Other topics as time allows selected from (i) local limit theorems, (ii) renewal theory, (iii) discrete time Markov chains, (iv) random walk theory,nn(v) ergodic theory. Prerequisite: 310A or MATH 230A.
+----------------------------
+Course Title: Seminar in Geometry
+Course Instructors: 
+Course Code: MATH384
+Course Units: 1-1
+Course Description: 
+----------------------------
+Course Title: Applied Algebraic Topology
+Course Instructors: Gunnar Carlsson, 
+Course Code: MATH149
+Course Units: 3-3
+Course Description: Introduction to algebraic topology and its applications,  in particular persistent homology as a tool for shape and pattern recognition from high dimensional data sets, with examples analyzed using state-of-the-art software. Prerequisite: linear algebra.
+----------------------------
+Course Title: Infinite-dimensional Lie Algebras
+Course Instructors: Daniel Bump, 
+Course Code: MATH263A
+Course Units: 3-3
+Course Description: Basics of Kac-Moody Lie algebras, which include both finite dimensional semisimple Lie algebras and their infinite-dimensional analogs, up to the Kac-Weyl character formula and Macdonald identities, and the Boson-Fermion correspondence. May be repeated for credit. Prerequisite: 210 or equivalent.
+----------------------------
+Course Title: Partial Differential Equations
+Course Instructors: Andras Vasy, 
+Course Code: MATH256B
+Course Units: 3-3
+Course Description: Continuation of 256A.
+----------------------------
+Course Title: Algebraic Groups
+Course Instructors: 
+Course Code: MATH252
+Course Units: 3-3
+Course Description: Smooth affine groups over general fields, quotients, tori, solvable groups, reductive groups, root systems, Existence and Isomorphism theorem, structure theory.  If time permits, classification theory over interesting fields.  Prerequisites:  210A, 210B, and familiarity with algebraic varieties over general fields.
+----------------------------
+Course Title: Advanced Topics in Convex Optimization
+Course Instructors: 
+Course Code: MATH301
+Course Units: 3-3
+Course Description: Modern developments in convex optimization: semidefinite programming; novel and efficient first-order algorithms for smooth and nonsmooth convex optimization. Emphasis on numerical methods suitable for large scale problems arising in science and engineering. Prerequisites: convex optimization (EE 364), linear algebra (Math 104), numerical linear algebra (CME 302); background in probability, statistics, real analysis and numerical optimization.
+----------------------------
+Course Title: Differential Geometry
+Course Instructors: 
+Course Code: MATH143
+Course Units: 3-3
+Course Description: Geometry of curves and surfaces in three-space and higher dimensional manifolds. Parallel transport, curvature, and geodesics. Surfaces with constant curvature. Minimal surfaces.
+----------------------------
+Course Title: Calculus
+Course Instructors: Christelle Vincent, Marion Campisi, Daniel Berwick-Evans, 
+Course Code: MATH19
+Course Units: 3-3
+Course Description: Introduction to differential calculus of functions of one variable. Topics: review of elementary functions including exponentials and logarithms, limits, rates of change, the derivative, and applications. Math 19, 20, and 21 cover the same material as Math 41 and 42, but in three quarters rather than two.  Prerequisites: precalculus, including trigonometry, advanced algebra, and analysis of elementary functions.
+----------------------------
+Course Title: Capillary Surfaces: Explored and Unexplored Territory
+Course Instructors: Robert Finn, 
+Course Code: MATH80Q
+Course Units: 3-3
+Course Description: Preference to sophomores. Capillary surfaces: the interfaces between fluids that are adjacent to each other and do not mix. Recently discovered phenomena, predicted mathematically and subsequently confirmed by experiments, some done in space shuttles. Interested students may participate in ongoing investigations with affinity between mathematics and physics.
+----------------------------
+Course Title: Introduction to Financial Mathematics
+Course Instructors: 
+Course Code: MATH180
+Course Units: 3-3
+Course Description: Financial derivatives: contracts and options. Hedging and risk management. Arbitrage, interest rate, and discounted value. Geometric random walk and Brownian motion as models of risky assets. Initial boundary value problems for the heat and related partial differential equations. Self-financing replicating portfolio. Black-Scholes pricing of European options. Dividends. Implied volatility. Optimal stopping and American options. Prerequisite: 53. Corequisites: 131, 151 or STATS 116.
+----------------------------
+Course Title: Real Analysis
+Course Instructors: Rafe Mazzeo, 
+Course Code: MATH205B
+Course Units: 3-3
+Course Description: Point set topology, basic functional analysis, Fourier series, and Fourier transform. Prerequisites: 171 and 205A or equivalent.
+----------------------------
+Course Title: Geometry and Topology of Complex Manifolds
+Course Instructors: 
+Course Code: MATH270
+Course Units: 3-3
+Course Description: Complex manifolds, Kahler manifolds, curvature, Hodge theory, Lefschetz theorem, Kahler-Einstein equation, Hermitian-Einstein equations, deformation of complex structures. May be repeated for credit.
+----------------------------
+Course Title: Topics in Geometric Topology
+Course Instructors: Steven Kerckhoff, 
+Course Code: MATH284
+Course Units: 3-3
+Course Description: Incompressible surfaces, irreducible manifolds, prime decomposition, Morse theory, Heegaard diagrams, Heegaard splittings, the Thurston norm, sutured manifold theory, Heegaard Floer homology, sutured Floer homology.
+----------------------------
+Course Title: Complex Analysis, Geometry, and Topology
+Course Instructors: Soren Galatius, 
+Course Code: MATH215B
+Course Units: 3-3
+Course Description: Topics: fundamental group and covering spaces, homology, cohomology, products, basic homotopy theory, and applications. Prerequisites: 113, 120, and 171, or equivalent; 215A is not a prerequisite for 215B.
+----------------------------
+Course Title: Mathematics and Statistics in the Real World (STATS 90)
+Course Instructors: 
+Course Code: MATH16
+Course Units: 3-3
+Course Description: This is an introductory quantitative literacy course, that offers an introduction to the mathematics (outside of calculus) used in real-world problems. Topics include: (a) Exponential functions, compound interest, population growth. (b) Geometric series, applications to mortgage payments, amortization of loans, present value of money, drug doses and blood levels. (c) First-order approximation, estimating areas and volumes. (d) Basic probability: Bayes&#39;s rule, false positives in disease detection and drug testing. (e) Basic descriptive statistics: mean, median, standard deviation f) Least squares and linear regression.
+----------------------------
+Course Title: Introduction to Probability Theory
+Course Instructors: Amir Dembo, 
+Course Code: MATH151
+Course Units: 3-3
+Course Description: Counting; axioms of probability; conditioning and independence; expectation and variance; discrete and continuous random variables and distributions; joint distributions and dependence; central limit theorem and laws of large numbers. Prerequisite: 52 or consent of instructor.
+----------------------------
+Course Title: Speedcubing: HIstory, Theory, and Practice
+Course Instructors: 
+Course Code: MATH78SI
+Course Units: 1-1
+Course Description: History of the Rubik&#39;s cube; the current cubing community; basic mathematical theory;  concepts to improve speed solving skill.  Prior ability to solve cube not required.
+----------------------------
+Course Title: Research Seminar in Logic and the Foundations of Mathematics (PHIL 391)
+Course Instructors: Grigori Mints, 
+Course Code: MATH391
+Course Units: 1-3
+Course Description: Contemporary work. May be repeated a total of three times for credit.  Math 391 students attend the logic colloquium in 380-381T.
+----------------------------
+Course Title: Algebraic Topology
+Course Instructors: 
+Course Code: MATH148
+Course Units: 3-3
+Course Description: Fundamental group, covering spaces, Euler characteristic, homology, classification of surfaces, knots. Prerequisite: 109 or 120.
+----------------------------
+Course Title: Practical Computing for Scientists
+Course Instructors: 
+Course Code: PHYSICS91SI
+Course Units: 2-2
+Course Description: Essential computing skills for researchers in the natural sciences. Helping students transition their computing skills from a classroom to a research environment. Topics include the Unix operating system, the Python programming language, and essential tools for data analysis, simulation, and optimization. More advanced topics as time allows. Prerequisite: CS106A or equivalent.
+----------------------------
+Course Title: Quantum Mechanics II
+Course Instructors: Steven Kivelson, 
+Course Code: PHYSICS131
+Course Units: 4-4
+Course Description: Identical particles; Fermi and Bose statistics. Time-independent perturbation theory. Fine structure, the Zeeman effect and hyperfine splitting in the hydrogen atom. Time-dependent perturbation theory. Variational principle and WKB approximation.  Prerequisite: PHYSICS 120, PHYSICS 130, MATH 131P, or MATH 173.  Pre- or PHYSICS 121.
+----------------------------
+Course Title: Physics in the 21st Century
+Course Instructors: Savas Dimopoulos, 
+Course Code: PHYSICS83N
+Course Units: 3-3
+Course Description: Preference to freshmen. Current topics at the frontier of modern physics. Topics include subatomic particles and the standard model, symmetries in nature, extra dimensions of space, string theory, supersymmetry, the big bang theory of the origin of the universe, black holes, dark matter, and dark energy of the universe. Why the sun shines. Cosmology and inflation.
+----------------------------
+Course Title: Advanced Topics in Quantum Mechanics (PHYSICS 234)
+Course Instructors: Simon Foreman, David Ramirez, Sean Hartnoll, 
+Course Code: PHYSICS134
+Course Units: 3-4
+Course Description: Scattering theory, partial wave expansion, Born approximation. Additional topics may include nature of quantum measurement, EPR paradox, Bell&#39;s inequality, and topics in quantum information science; path integrals and applications; Berry&#39;s phase; structure of multi-electron atoms (Hartree-Fock); relativistic quantum mechanics (Dirac equation). Undergraduates register for PHYSICS 134 (4 units). Graduate students register for PHYSICS 234 (3 units); graduate students required to complete additional assignments in a format determined by the instructor. Prerequisites: PHYSICS 130, PHYSICS 131.
+----------------------------
+Course Title: Electricity and Optics Laboratory
+Course Instructors: Risa Wechsler, 
+Course Code: PHYSICS24
+Course Units: 1-1
+Course Description: Guided hands-on exploration of concepts in electricity and magnetism, circuits and optics with an emphasis on student predictions, observations and explanations.  Introduction to multimeters and oscilloscopes. Pre- or corequisite: PHYS 23.
+----------------------------
+Course Title: Basic Plasma Physics
+Course Instructors: 
+Course Code: PHYSICS312
+Course Units: 3-3
+Course Description: For the nonspecialist who needs a working knowledge of plasma physics for space science, astrophysics, fusion, or laser applications. Topics: orbit theory, the Boltzmann equation, fluid equations, magneto hydrodynamics (MHD) waves and instabilities, electromagnetic (EM) waves, the Vlasov theory of electrostatic (ES) waves and instabilities including Landau damping and quasilinear theory, the Fokker-Planck equation, and relaxation processes. Advanced topics in resistive instabilities and particle acceleration. Prerequisite: PHYSICS 220, or consent of instructor.
+----------------------------
+Course Title: Mechanics and Heat with Laboratory
+Course Instructors: Igor Teper, Reuben Ogburn, Sean McIntyre, Alborz Bejnood, Zhang Zhang, 
+Course Code: PHYSICS21S
+Course Units: 4-4
+Course Description: For biology, social science, and premedical students. The sequence PHYSICS 21S, PHYSICS 23S and PHYSICS 25S fulfills, in nine weeks, the one-year college physics requirement with lab of most medical schools. Labs are an integrated part of the summer courses. Introduction to Newtonian mechanics, fluid mechanics, theory of heat. Prerequisite: high school algebra and trigonometry; calculus not required.
+----------------------------
+Course Title: Quantum Mechanics
+Course Instructors: Stephen Shenker, 
+Course Code: PHYSICS231
+Course Units: 3-3
+Course Description: Basis for higher level courses on atomic solid state and particle physics.  Problems related to measurement theory and introduction to quantum computing.  Approximation methods for time-independent and time-dependent perturbations. Semiclassical and quantum theory of radiation, second quantization of radiation and matter fields. Systems of identical particles and many electron atoms and molecules. Prerequisite: PHYSICS 230.
+----------------------------
+Course Title: Introduction to Particle Physics I (PHYSICS 152)
+Course Instructors: Michael Peskin, 
+Course Code: PHYSICS252
+Course Units: 3-3
+Course Description: Elementary particles and the fundamental forces. Quarks and leptons. The mediators of the electromagnetic, weak and strong interactions. Interaction of particles with matter; particle acceleration, and detection techniques. Symmetries and conservation laws. Bound states. Decay rates. Cross sections. Feynman diagrams. Introduction to Feynman integrals. The Dirac equation. Feynman rules for quantum electrodynamics and for chromodynamics. Undergraduates register for PHYSICS 152.  Graduate students register for PHYSICS 252.  (Graduate student enrollees will be required to complete additional assignments in a format determined by the instructor.)  Prerequisite: PHYSICS 130. Pre- or corequisite: PHYSICS 131.
+----------------------------
+Course Title: Advanced Topics in Quantum Mechanics (PHYSICS 134)
+Course Instructors: Sean Hartnoll, 
+Course Code: PHYSICS234
+Course Units: 3-4
+Course Description: Scattering theory, partial wave expansion, Born approximation. Additional topics may include nature of quantum measurement, EPR paradox, Bell&#39;s inequality, and topics in quantum information science; path integrals and applications; Berry&#39;s phase; structure of multi-electron atoms (Hartree-Fock); relativistic quantum mechanics (Dirac equation). Undergraduates register for PHYSICS 134 (4 units). Graduate students register for PHYSICS 234 (3 units); graduate students required to complete additional assignments in a format determined by the instructor. Prerequisites: PHYSICS 130, PHYSICS 131.
+----------------------------
+Course Title: Continuum Mechanics
+Course Instructors: Sebastian Doniach, 
+Course Code: PHYSICS211
+Course Units: 3-3
+Course Description: Elasticity, fluids, turbulence, waves, gas dynamics, shocks, and MHD plasmas. Examples from everyday phenomena, geophysics, and astrophysics.
+----------------------------
+Course Title: Practical Training
+Course Instructors: Stephen Quake, Bernardo Huberman, James Harris, H.S.Philip Wong, David Goldhaber-Gordon, Renata Kallosh, Roger Blandford, 
+Course Code: PHYSICS291
+Course Units: 1-3
+Course Description: Opportunity for practical training in industrial labs. Arranged by student with the research adviser&#39;s approval. A brief summary of activities is required, approved by the research adviser.
+----------------------------
+Course Title: Computational Physics
+Course Instructors: Devon Powell, Tom Abel, 
+Course Code: PHYSICS113
+Course Units: 4-4
+Course Description: Numerical methods for solving problems in mechanics, electromagnetism, quantum mechanics, and statistical mechanics. Methods include numerical integration; solutions of ordinary and partial differential equations; solutions of the diffusion equation, Laplace&#39;s equation and Poisson&#39;s equation with relaxation methods; statistical methods including Monte Carlo techniques; matrix methods and eigenvalue problems. Short introduction to MatLab, used for class examples; class projects may be programmed in any language such as C. Prerequisites: MATH 53 and PHYS 120. Previous programming experience not required.
+----------------------------
+Course Title: TGR Dissertation
+Course Instructors: Malcolm Beasley, Chao-Lin Kuo, Persis Drell, Shamit Kachru, Steven Chu, Ian Fisher, Patrick Hayden, Renata Kallosh, David Burke, Daniel Palanker, Rafe Schindler, Michael Levitt, Kalanit Grill-Spector, Kathryn Moler, Stephen Shenker, Carl Wieman, Vladan Vuletic, Jay Wacker, Savas Dimopoulos, Friedrich Prinz, Hideo Mabuchi, Edward Graves, James Harris, Stanley Wojcicki, Stanley Brodsky, Aharon Kapitulnik, Dong Su, Douglas Osheroff, H.S.Philip Wong, Martin Greven, Roger Blandford, Stefan Funk, James Spudich, Steven Allen, Steven Block, David Leith, Patricia Burchat, Shoucheng Zhang, Leonard Susskind, Ronald Ruth, Roger Romani, Grzegorz Madejski, Hongjie Dai, Giorgio Gratta, Shanhui Fan, Vera Luth, Philip Bucksbaum, Alexander Chao, Monika Schleier-Smith, Robert Laughlin, Martin Breidenbach, Steven Kahn, Elliott Bloom, Todd Smith, Mark Kasevich, Hari Manoharan, Philip Scherrer, Gary Glover, Mark Schnitzer, Barbara Jones, Vahe Petrosian, Umran Inan, Stephen Quake, Sarah Church, Yoshihisa Yamamoto, Andrei Linde, JoAnne L. Hewett, Tom Abel, Lance Dixon, Jayanta Bhattacharya, Bruce Macintosh, Eva Silverstein, Robert Siemann, Zhi-Xun Shen, Aaron Roodman, William Moerner, Steven Kivelson, Risa Wechsler, Michael Peskin, Thomas Devereaux, Blas Cabrera, David Goldhaber-Gordon, Sebastian Doniach, Kent Irwin, Piero Pianetta, Tuneyoshi Kamae, Kelly Gaffney, 
+Course Code: PHYSICS802
+Course Units: 0-0
+Course Description: 
+----------------------------
+Course Title: Science on the Back of the Envelope
+Course Instructors: Shoucheng Zhang, 
+Course Code: PHYSICS81N
+Course Units: 3-3
+Course Description: Understanding the complex world around us quantitatively, using order of magnitude estimates and dimensional analysis. Starting from a handful of fundamental constants of Nature, one can estimate complex quantities such as cosmological length and time scales, size of the atom, height of Mount Everest, speed of tsunami, energy density of fuels and climate effects. Through these examples students learn the art of deductive thinking, fundamentalnnprinciples of science and the beautiful unity of nature.
+----------------------------
+Course Title: The Technical Aspects of Photography
+Course Instructors: Douglas Osheroff, 
+Course Code: PHYSICS80N
+Course Units: 3-3
+Course Description: Preference to freshmen and sophomores with some background in photography. How cameras record photographic images on film and electronically. Technical photographic processes to use cameras effectively. Camera types and their advantages, how lenses work and their limitations, camera shutters, light meters and the proper exposure of film, film types, depth of focus, control of the focal plane and perspective, and special strategies for macro and night photography. View cameras and range finder technical cameras. Students take photographs around campus. Prerequisite: high school physics.
+----------------------------
+Course Title: Quantum Mechanics
+Course Instructors: Leonard Susskind, 
+Course Code: PHYSICS230
+Course Units: 3-3
+Course Description: Fundamental concepts. Introduction to Hilbert spaces and Dirac&#39;s notation. Postulates applied to simple systems, including those with periodic structure. Symmetry operations and gauge transformation. The path integral formulation of quantum statistical mechanics. Problems related to measurement theory. The quantum theory of angular momenta and central potential problems. Prerequisite: PHYSICS 131 or equivalent.
+----------------------------
+Course Title: Independent Research and Study
+Course Instructors: Martin Perl, Roger Romani, Chao-Lin Kuo, Sami Tantawi, Giorgio Gratta, Persis Drell, Shamit Kachru, Leo Hollberg, Ian Fisher, Vijay Pande, Patrick Hayden, David Burke, Daniel Palanker, Philip Bucksbaum, Rafe Schindler, Monika Schleier-Smith, Tor Raubenheimer, Juan Alonso, Hari Manoharan, Mark Kasevich, Kathryn Moler, Sean Hartnoll, Andras Vasy, Carl Wieman, Vahe Petrosian, Savas Dimopoulos, Jay Wacker, Peter Maxim, John Lipa, Tom Abel, Bruce Macintosh, Aharon Kapitulnik, Aaron Roodman, Roger Blandford, Risa Wechsler, Gerald Fisher, Maximilian Diehn, Steven Block, Blas Cabrera, Patricia Burchat, Ariel Schwartzman, David Goldhaber-Gordon, Leonard Susskind, Sebastian Doniach, Kent Irwin, Michael McGehee, 
+Course Code: PHYSICS190
+Course Units: 1-9
+Course Description: Undergraduate research in experimental or theoretical physics under the supervision of a faculty member. Prerequisites: superior work as an undergraduate Physics major and consent of instructor.
+----------------------------
+Course Title: Research
+Course Instructors: Chao-Lin Kuo, Malcolm Beasley, Persis Drell, Leo Hollberg, Ian Fisher, Thomas Himel, David Burke, William Weis, Rafe Schindler, Nicholas Melosh, Bernardo Huberman, Michael Levitt, Kathryn Moler, Stephen Shenker, Vladan Vuletic, Edward Graves, Stanley Wojcicki, Aharon Kapitulnik, Douglas Osheroff, Dong Su, Benjamin Lev, James Spudich, Steven Block, David Leith, George Papanicolaou, Patricia Burchat, Ariel Schwartzman, Shoucheng Zhang, Ronald Ruth, Grzegorz Madejski, John Jaros, Steven Boxer, Shanhui Fan, Vijay Pande, Philip Bucksbaum, Monika Schleier-Smith, Robert Laughlin, Peter Michelson, Mark Kasevich, Hari Manoharan, Philip Scherrer, Vahe Petrosian, Zhirong Huang, Alexander Fetter, Andrei Linde, Harold Hwang, Lance Dixon, Joachim Stohr, Jayanta Bhattacharya, Robert Siemann, William Moerner, Steven Kivelson, Dan Boneh, Robert Wagoner, Scott Thomas, Gerald Fisher, Robert Byer, Blas Cabrera, Sebastian Doniach, Piero Pianetta, Shamit Kachru, Steven Chu, Patrick Hayden, Renata Kallosh, Dimitry Gorinevsky, Alexander Kosovichev, Sean Hartnoll, Carl Wieman, Jay Wacker, Savas Dimopoulos, Friedrich Prinz, John Lipa, Hideo Mabuchi, James Harris, Stanley Brodsky, H.S.Philip Wong, Leonardo Senatore, Roger Blandford, Martin Greven, Stefan Funk, Lawrence Wein, Steven Allen, John Fox, Leonard Susskind, Yoshio Nishi, Martin Perl, Roger Romani, Hongjie Dai, Giorgio Gratta, Vera Luth, Alexander Chao, Thomas Markland, Martin Breidenbach, Tor Raubenheimer, Pehr Harbury, Jelena Vuckovic, Steven Kahn, Todd Smith, Elliott Bloom, Gary Glover, Mark Schnitzer, Barbara Jones, Umran Inan, Peter Rowson, Sarah Church, Yoshihisa Yamamoto, Tom Abel, JoAnne L. Hewett, Wendy Mao, Bruce Macintosh, Eva Silverstein, Zhi-Xun Shen, Aaron Roodman, Martin Fejer, Risa Wechsler, Michael Peskin, Thomas Devereaux, Peter Graham, Norbert Pelc, David Goldhaber-Gordon, Srinivas Raghu, Kent Irwin, Tuneyoshi Kamae, Xiaoliang Qi, Kelly Gaffney, 
+Course Code: PHYSICS490
+Course Units: 1-15
+Course Description: Open only to Physics graduate students, with consent of instructor. Work is in experimental or theoretical problems in research, as distinguished from independent study of a non-research character in 190 and 293.
+----------------------------
+Course Title: Condensed Matter Theory I
+Course Instructors: 
+Course Code: PHYSICS372
+Course Units: 3-3
+Course Description: Fermi liquid theory, many-body perturbation theory, response function, functional integrals, interaction of electrons with impurities. Prerequisite: APPPHYS 273 or equivalent.
+----------------------------
+Course Title: Light and Heat Laboratory
+Course Instructors: Darien Niamir, Giorgio Gratta, Ryan Hamerly, Ramendra Bahuguna, Se Joon Lim, Ying Zhao, Mike Kozina, Matisse Milovich, 
+Course Code: PHYSICS46
+Course Units: 1-1
+Course Description: Hands-on exploration of concepts in geometrical optics, wave optics and thermodynamics. Pre- or corequisite: PHYSICS 45.
+----------------------------
+Course Title: Frontiers in Theoretical Physics and Cosmology
+Course Instructors: Shamit Kachru, 
+Course Code: PHYSICS18N
+Course Units: 3-3
+Course Description: Preference to freshmen. The course will begin with a description of the current standard models of gravitation, cosmology, and elementary particle physics.  We will then focus on frontiers of current understanding including investigations of very early universe cosmology, string theory, and the physics of black holes.
+----------------------------
+Course Title: Modern Physics in Your Life
+Course Instructors: 
+Course Code: PHYSICS70N
+Course Units: 1-1
+Course Description: How does modern physics intersect with your everyday life?  Topics may include the quantum nature of light, atomic physics and an introduction to semiconductor physics, applications to light sources (incandescent, fluorescent, light-emitting diodes, lasers) and light sensors (photodiodes and solar cells), introduction to nuclear physics (e.g., fission, fusion, interaction of radiation with matter). Co- or pre-requisite: PHYSICS 70, PHYSICS 65, or similar high-school physics preparation.
+----------------------------
+Course Title: Cosmic Horizons
+Course Instructors: Steven Allen, 
+Course Code: PHYSICS16
+Course Units: 3-3
+Course Description: The origin and evolution of the universe and its contents: stars, galaxies, quasars. The overall structure of the cosmos and the physical laws that govern matter, space, and time. Topics include the evolution of the cosmos from the origin of the elements and the formation of stars and galaxies, exotic astronomical objects (black holes, quasars, supernovae, and gamma ray bursts), dark matter, inflationary cosmology, and the fate of the cosmos.
+----------------------------
+Course Title: Introduction to Stellar and Galactic Astrophysics (PHYSICS 160)
+Course Instructors: Vahe Petrosian, 
+Course Code: PHYSICS260
+Course Units: 3-3
+Course Description: Observed characteristics of stars and the Milky Way galaxy. Physical processes in stars and matter under extreme conditions. Structure and evolution of stars from birth to death. White dwarfs, planetary nebulae, supernovae, neutron stars, pulsars, binary stars, x-ray stars, and black holes. Galactic structure, interstellar medium, molecular clouds, HI and HII regions, star formation, and element abundances. Undergraduates register for PHYSICS 160. Graduate students register for PHYSICS 260.  (Graduate student enrollees will be required to complete additional assignments in a format determined by the instructor.)  Pre or corequisites: PHYSICS 130.nSame as Physics 260.
+----------------------------
+Course Title: Introduction to Laboratory Physics
+Course Instructors: Rick Pam, 
+Course Code: PHYSICS67
+Course Units: 2-2
+Course Description: Methods of experimental design, data collection and analysis, statistics, and curve fitting in a laboratory setting.  Experiments drawn from electronics, optics, heat, and modern physics. Lecture plus laboratory format. Required for PHYSICS 60 series Physics and Engineering Physics majors; recommended, in place of PHYSICS 44, for PHYSICS 40 series students who intend to major in Physics or Engineering Physics.  Pre- or corequisite: PHYSICS 65 or PHYSICS 43.
+----------------------------
+Course Title: Classical Mechanics Laboratory
+Course Instructors: Kathryn Moler, Ian Tenney, Andre Frederico Menck, 
+Course Code: PHYSICS62
+Course Units: 1-1
+Course Description: Introduction to laboratory techniques, experiment design, data collection and analysis simulations, and correlating observations with theory.  Labs emphasize discovery with open-ended questions and hands-on exploration of concepts developed in PHYSICS 61 including Newton&#39;s laws, conservation laws, rotational motion.  Pre-or corequisite PHYSICS 61
+----------------------------
+Course Title: Introduction to Stellar and Galactic Astrophysics (PHYSICS 260)
+Course Instructors: Vahe Petrosian, 
+Course Code: PHYSICS160
+Course Units: 3-3
+Course Description: Observed characteristics of stars and the Milky Way galaxy. Physical processes in stars and matter under extreme conditions. Structure and evolution of stars from birth to death. White dwarfs, planetary nebulae, supernovae, neutron stars, pulsars, binary stars, x-ray stars, and black holes. Galactic structure, interstellar medium, molecular clouds, HI and HII regions, star formation, and element abundances. Undergraduates register for PHYSICS 160. Graduate students register for PHYSICS 260.  (Graduate student enrollees will be required to complete additional assignments in a format determined by the instructor.)  Pre or corequisites: PHYSICS 130.nSame as Physics 260.
+----------------------------
+Course Title: Classical Electrodynamics
+Course Instructors: Leonard Susskind, 
+Course Code: PHYSICS220
+Course Units: 3-3
+Course Description: Special relativity: The principles of relativity, Lorentz transformations, four vectors and tensors, relativistic mechanics and the principle of least action. Lagrangian formulation, charges in electromagnetic fields, gauge invariance, the electromagnetic field tensor, covariant equations of electrodynamics and mechanics, four-current and continuity equation. Noether&#39;s theorem and conservation laws, Poynting&#39;s theorem, stress-energy tensor.  Constant electromagnetic fields: conductors and dielectrics, magnetic media, electric and magnetic forces, and energy.  Electromagnetic waves: Plane and monochromatic waves, spectral resolution, polarization, electromagnetic properties of matter, dispersion relations, wave guides and cavities.  Prerequisites: PHYSICS 121 and PHYSICS 210, or equivalent; MATH 106 or MATH 116, and MATH 132 or equivalent.
+----------------------------
+Course Title: Advanced Extragalactic Astrophysics and Cosmology
+Course Instructors: 
+Course Code: PHYSICS362
+Course Units: 3-3
+Course Description: Observational data on the content and activities of galaxies, the content of the Universe, cosmic microwave background radiation, gravitational lensing, and dark matter. Models of the origin, structure, and evolution of the Universe based on the theory of general relativity. Test of the models and the nature of dark matter and dark energy. Physics of the early Universe, inflation, baryosynthesis, nucleosynthesis, and galaxy formation. Prerequisites: PHYSICS 210, PHYSICS 211, and PHYSICS 260 or PHYSICS 360.
+----------------------------
+Course Title: Lattice Gauge Theory
+Course Instructors: Stephen Shenker, 
+Course Code: PHYSICS450
+Course Units: 3-3
+Course Description: This will be a systematic introduction to Lattice Gauge Theory building on the Wilsonian approach to Quantum Field Theory.  Topics to be covered include:  basics of the Wilsonian approach;  Euclidean setup, Wilson loops and the strong coupling expansion; Hamiltonian setup; Abelian systems and electric-magnetic dualities; Finite Temperature behavior; Scalar matter, phase diagrams and emergent gauge symmetries;  Latttice fermions.  Numerical approaches.
+----------------------------
+Course Title: Modern Physics Laboratory
+Course Instructors: Andrei Linde, 
+Course Code: PHYSICS26
+Course Units: 1-1
+Course Description: Guided hands-on and simulation-based exploration of concepts in modern physics, including special relativity, quantum mechanics and nuclear physics with an emphasis on student predictions, observations and explanations. Pre- or corequisite: PHYSICS 25.
+----------------------------
+Course Title: Research Activities at Stanford
+Course Instructors: Renata Kallosh, 
+Course Code: PHYSICS290
+Course Units: 1-1
+Course Description: Required of first-year Physics graduate students; suggested for junior or senior Physics majors for 1 unit. Review of research activities in the department and elsewhere at Stanford at a level suitable for entering graduate students.
+----------------------------
+Course Title: Electricity and Magnetism
+Course Instructors: Mark Kasevich, 
+Course Code: PHYSICS43
+Course Units: 4-4
+Course Description: Electrostatics, Coulomb&#39;s law, electric fields and fluxes, electric potential, properties of conductors, Gauss&#39;s law, capacitors and resistors, DC circuits; magnetic forces and fields, Biot-Savart law, Faraday&#39;s law, Ampere&#39;s law, inductors, transformers, AC circuits, motors and generators, electric power, Galilean transformation of electric and magnetic fields, Maxwell&#39;s equations; limited coverage of electromagnetic fields and special relativity.  Prerequisite: PHYSICS 41 or equivalent. MATH 20 or MATH 42 or MATH 51 or equivalent. Recommended corequisite: Math 52.
+----------------------------
+Course Title: Programming Methodology (ENGR 70A)
+Course Instructors: Mehran Sahami, Marty Stepp, Keith Schwarz, 
+Course Code: CS106A
+Course Units: 3-5
+Course Description: Introduction to the engineering of computer applications emphasizing modern software engineering principles: object-oriented design, decomposition, encapsulation, abstraction, and testing. Uses the Java programming language. Emphasis is on good programming style and the built-in facilities of the Java language. No prior programming experience required.
+----------------------------
+Course Title: Research Project in Artificial Intelligence
+Course Instructors: 
+Course Code: CS294A
+Course Units: 3-3
+Course Description: Student teams under faculty supervision work on research and implementation of a large project in AI. State-of-the-art methods related to the problem domain. Prerequisites: AI course from 220 series, and consent of instructor.
+----------------------------
+Course Title: Teaching Computer Science
+Course Instructors: Mehran Sahami, Eric Yurko, Alex Valderrama, 
+Course Code: CS198
+Course Units: 3-4
+Course Description: Students lead a discussion section of 106A while learning how to teach a programming language at the introductory level. Focus is on teaching skills, techniques, and course specifics. Application and interview required; see http://cs198.stanford.edu.
+----------------------------
+Course Title: Statistical Computing with R Laboratory
+Course Instructors: Mehran Sahami, Benjamin Holtz, 
+Course Code: CS109L
+Course Units: 1-1
+Course Description: Supplemental lab to CS109.  Introduces the R programming language for statistical computing.  Topics include basic facilities of R including mathematical, graphical, and probability functions, building simulations, introductory data fitting and machine learning.  Provides exposure to the functional programming paradigm.  Corequisite: CS109.
+----------------------------
+Course Title: Networked Wireless Systems
+Course Instructors: 
+Course Code: CS244E
+Course Units: 3-3
+Course Description: Design and implementation of wireless networks and mobile systems. The course will commence with a short retrospective of wireless communication and initially touch on some of the fundamental physical layer properties of various wireless communication technologies. The focus will then shift to design of media access control and routing layers for various wireless systems. The course will also examine adaptations necessary at transport and higher layers to cope with node mobility and error-prone nature of the wireless medium. Finally, it will conclude with a brief overview of other related issues including emerging wireless/mobile applications. Prerequisites: EE 284
+----------------------------
+Course Title: Information Retrieval and Web Search (LINGUIST 286)
+Course Instructors: Prabhaker Raghavan, Pangal Nayak, Christopher Manning, 
+Course Code: CS276
+Course Units: 3-3
+Course Description: Text information retrieval systems; efficient text indexing; Boolean, vector space, and probabilistic retrieval models; ranking and rank aggregation; evaluating IR systems. Text clustering and classification: classification algorithms, latent semantic indexing, taxonomy induction; Web search engines including crawling and indexing, link-based algorithms, and web metadata. Prerequisites: CS 107, CS 109, CS 161.
+----------------------------
+Course Title: Topics in Computer Vision
+Course Instructors: 
+Course Code: CS328
+Course Units: 3-3
+Course Description: Fundamental issues of, and mathematical models for, computer vision. Sample topics: camera calibration, texture, stereo, motion, shape representation, image retrieval, experimental techniques. May be repeated for credit. Prerequisites: 205, 223B, or equivalents.
+----------------------------
+Course Title: High-Level Vision: Object Representation (PSYCH 250)
+Course Instructors: Kalanit Grill-Spector, 
+Course Code: CS431
+Course Units: 3-3
+Course Description: (Formerly CS423 High-Level Vision: Behaviors, Neurons, and Computational Models) Interdisciplinary seminar focusing on understanding how computations in the brain enable rapid and efficient object perception. Covers topics from multiple perspectives drawing on recent research in Psychology, Neuroscience, Computer Science and Applied Statistics. Emphasis on discussing recent empirical findings, methods and theoretical debates in the field. Topics include: theories of object perception, neural computations underlying invariant object perception, how visual exemplars and categories are represented in the brain, what information is present in distributed activations across neural populations and how it relates to object perception, what modern statistical and analytical tools there are for multi-variate analysis of brain activations.
+----------------------------
+Course Title: Topics in Computer Networks
+Course Instructors: 
+Course Code: CS344
+Course Units: 3-3
+Course Description: High-performance embedded system design. Student teams of two software engineers (C experience required) and one hardward engineer (Verilog experience required) build a fully functioning Internet router Work in teams of three. How router interoperates with others in class. Open-ended design challenge judged by panel of industry experts. Prerequisites: CS 144, 244, or network programming experience.
+----------------------------
+Course Title: Applied Machine Learning
+Course Instructors: Andrew Ng, 
+Course Code: CS229A
+Course Units: 3-4
+Course Description: Covers algorithms that allow computers to learn from data.  Emphasis on practical skills and methods for applying learning techniques and building practical AI/Learning systems.  Course covers commonly used learning techniques (classification, regression, clustering, dimensionality reduction), specific applications (anomaly detection, recommender systems, search), as well as working with big data.  Online, self-paced course. Enrollment limited. Consent of instructor required. Prerequisites: Programming at the level of CS106B or 106X, and basic linear algebra such as Math 51.
+----------------------------
+Course Title: Independent Project
+Course Instructors: Philip Levis, Alex Aiken, BJ Fogg, Pei Cao, Jean-Claude Latombe, Ashish Goel, Bernd Girod, David Dill, Hector Garcia-Molina, Michael Levitt, Martin Casado, Nick Parlante, Oyekunle Olukotun, Mary Baker, Kathleen Fisher, Pat Hanrahan, Ge Wang, Jerry Cain, Gary Bradski, Robert Plummer, Gill Bejerano, Russ Altman, Andreas Paepcke, Federico Barbagli, Rajeev Motwani, Ron Fedkiw, Michael Genesereth, Serafim Batzoglou, Mendel Rosenblum, Jeffrey Ullman, Vladlen Koltun, Mark Horowitz, Benjamin Van Roy, Mehran Sahami, Giovanni De-Micheli, Gene Golub, Armando Fox, Pangal Nayak, Martin Kay, Sebastian Thrun, Ronen Brafman, Chris Re, Dan Boneh, Christopher Manning, Andrew Ng, Noah Goodman, Kurt Konolige, David Cheriton, Teresa Meng, Prabhaker Raghavan, Scott Klemmer, Jennifer Widom, Richard Fikes, Zohar Manna, Nick McKeown, Stephen Cooper, Paulo Blikstein, Luca Trevisan, Jure Leskovec, Gio Wiederhold, J Salisbury, John Gill, Marc Levoy, Jeffrey Heer, Ryan Williams, Yoav Shoham, Edward Feigenbaum, Serge Plotkin, John Hennessy, Terry Winograd, John Mitchell, Percy Liang, Monica Lam, Tim Roughgarden, Balaji Prabhakar, David Mazieres, Patrick Young, Cynthia Dwork, Julie Zelenski, Dan Jurafsky, Leonidas Guibas, Mark Musen, Vaughan Pratt, Dawson, Engler, Bill Dally, Kurt Akeley, Eric Roberts, Ramesh Johari, Sachin Katti, Nils Nilsson, Fei-Fei Li, Edward McCluskey, Daphne Koller, John Ousterhout, Fouad Tobagi, Michael Bernstein, Margaret Johnson, Christos Kozyrakis, Oussama Khatib, John McCarthy, Clifford Nass, Anand Rajaraman, 
+Course Code: CS399P
+Course Units: 1-9
+Course Description: Graded satisfactory/no credit.
+----------------------------
+Course Title: Parameterized Algorithms and Complexity
+Course Instructors: 
+Course Code: CS266
+Course Units: 3-3
+Course Description: An introduction to the area of parameterized algorithms and complexity, which explores multidimensional methods for measuring the difficulty and feasibility of solving computational problems. Topics include: fixed-parameter tractability (FPT) and its characterizations, FPT algorithms for hard problems, the W-hierarchy (W[1], W[2], W[P], and complete problems for these classes), and the relationships between parameterized questions and classical theory questions. Prerequisites: CS 154 and 161 or the equivalent mathematical maturity.
+----------------------------
+Course Title: Callback Me Maybe: Contemporary JavaScript
+Course Instructors: Keith Schwarz, 
+Course Code: CS99SI
+Course Units: 2-2
+Course Description: Covers fundamentals and contemporary applications of the JavaScript programming language. Course focuses on introducing JavaScript through in-class demos and programming assignments based on real-world applications (e.g. Yelp, Google, Reddit, etc). Topics include: Fundamental syntax/semantics, event-based programming, document-object-model (DOM), application programming interfaces (APIs), asynchronous JavaScript and XML (AJAX), jQuery, Node.js, and WebSockets. Prerequisite: CS107.
+----------------------------
+Course Title: Object-Oriented Programming from a Modeling and Simulation Perspective
+Course Instructors: David Cheriton, 
+Course Code: CS249A
+Course Units: 3-3
+Course Description: Topics: large-scale software development approaches for complex applications, class libraries and frameworks; encapsulation, use of inheritance and dynamic dispatch, design of interfaces and interface/implementation separation, exception handling, smart pointers and reference management, minimalizing dependencies and value-oriented programming. Inheritance: when and why multiple inheritance naming, directories, manager, and disciplined use of design patterns including functors, event notification and iterators. Prerequisites: C, C++, and programming methodology as developed in 106B or X, and 107 (107 may be taken concurrently). Recommended: 193D.
+----------------------------
+Course Title: Rational Agency and Intelligent Interaction (PHIL 358)
+Course Instructors: 
+Course Code: CS222
+Course Units: 3-3
+Course Description: For advanced undergraduates, and M.S. and beginning Ph.D. students. Logic-based methods for knowledge representation, information change, and games in artificial intelligence and philosophy. Topics: knowledge, certainty, and belief; time and action; belief dynamics; preference and social choice; games; and desire and intention. Prerequisite: propositional and first-order logic.
+----------------------------
+Course Title: High Productivity and Performance with Domain-specific Languages in Scala
+Course Instructors: 
+Course Code: CS442
+Course Units: 3-3
+Course Description: Introduction to developing domain specific languages (DSLs) for productivity and performance using the Scala programming language. Goal is to equip students with the knowledge and tools to develop DSLs that can dramatically improve the experience of using high performance computation in important scientific and engineering domains. Aimed at two sorts of students: domain experts who can define key domain specific language elements that capture domain knowledge, and computer scientists who can implement these DSLs using a new DSL framework in Scala. First half of the course will focus on understanding the infrastructure for implementing DSLs in Scala and developing techniques for defining good DSLs. Second half of the course will focus on example DSLs that provide both high-productivity and performance. During the second half of the course groups of students will develop and implement their own DSLs using the Delite DSL process of implementing DSLs for parallel computation. Prerequisites: Systems course such as CS140, CS143 or CS149, and expertise is a particular domain and desire to improve productivity and performance of computation.
+----------------------------
+Course Title: Mathematical Methods for Robotics, Vision, and Graphics
+Course Instructors: Justin Solomon, 
+Course Code: CS205A
+Course Units: 3-3
+Course Description: Continuous mathematics background necessary for research in robotics, vision, and graphics. Possible topics: linear algebra; the conjugate gradient method; ordinary and partial differential equations; vector and tensor calculus. Prerequisites: 106B or X; MATH 51; or equivalents.
+----------------------------
+Course Title: Introduction to Computers
+Course Instructors: Stephen Cooper, Patrick Young, 
+Course Code: CS105
+Course Units: 3-5
+Course Description: For non-technical majors. What computers are and how they work. Practical experience in programming. Construction of computer programs and basic design techniques. A survey of Internet technology and the basics of computer hardware. Students in technical fields and students looking to acquire programming skills should take 106A or 106X. Students with prior computer science experience at the level of 106 or above require consent of instructor. Prerequisite: minimal math skills.
+----------------------------
+Course Title: Computer Laboratory
+Course Instructors: Philip Levis, Alex Aiken, Pei Cao, BJ Fogg, Luca Trevisan, Jean-Claude Latombe, Jure Leskovec, Gio Wiederhold, J Salisbury, Ashish Goel, Bernd Girod, John Gill, David Dill, Marc Levoy, Hector Garcia-Molina, Michael Levitt, Jeffrey Heer, Nick Parlante, Yoav Shoham, Oyekunle Olukotun, Edward Feigenbaum, Serge Plotkin, Mary Baker, Kathleen Fisher, John Hennessy, Terry Winograd, John Mitchell, Monica Lam, Tim Roughgarden, Pat Hanrahan, Balaji Prabhakar, Jerry Cain, David Mazieres, Gary Bradski, Patrick Young, Cynthia Dwork, Julie Zelenski, Robert Plummer, Dan Jurafsky, Russ Altman, Gill Bejerano, Federico Barbagli, Rajeev Motwani, Leonidas Guibas, Mark Musen, Vaughan Pratt, Dawson, Engler, Bill Dally, Ron Fedkiw, Michael Genesereth, Eric Roberts, Mendel Rosenblum, Jeffrey Ullman, Serafim Batzoglou, Ramesh Johari, Vladlen Koltun, Sachin Katti, Mark Horowitz, Nils Nilsson, Fei-Fei Li, Benjamin Van Roy, Mehran Sahami, Edward McCluskey, Daphne Koller, Giovanni De-Micheli, Gene Golub, Armando Fox, John Ousterhout, Fouad Tobagi, Pangal Nayak, Martin Kay, Sebastian Thrun, Margaret Johnson, Christos Kozyrakis, Ronen Brafman, Oussama Khatib, John McCarthy, Dan Boneh, Andrew Ng, Christopher Manning, Kurt Konolige, Clifford Nass, Anand Rajaraman, Teresa Meng, David Cheriton, Prabhaker Raghavan, Scott Klemmer, Jennifer Widom, Richard Fikes, Zohar Manna, Nick McKeown, 
+Course Code: CS393
+Course Units: 1-9
+Course Description: For CS graduate students. A substantial computer program is designed and implemented; written report required. Recommended as a preparation for dissertation research. Register using the section number associated with the instructor. Prerequisite: consent of instructor.
+----------------------------
+Course Title: Computational Genomics (BIOMEDIN 262)
+Course Instructors: Serafim Batzoglou, 
+Course Code: CS262
+Course Units: 3-3
+Course Description: Applications of computer science to genomics, and concepts in genomics from a computer science point of view. Topics: dynamic programming, sequence alignments, hidden Markov models, Gibbs sampling, and probabilistic context-free grammars. Applications of these tools to sequence analysis: comparative genomics, DNA sequencing and assembly, genomic annotation of repeats, genes, and regulatory sequences, microarrays and gene expression, phylogeny and molecular evolution, and RNA structure. Prerequisites: 161 or familiarity with basic algorithmic concepts. Recommended: basic knowledge of genetics.
+----------------------------
+Course Title: Computer Graphics: Geometric Modeling
+Course Instructors: Leonidas Guibas, 
+Course Code: CS348A
+Course Units: 3-4
+Course Description: The mathematical tools needed for the geometrical aspects of computer graphics and especially for modeling smooth shapes. Fundamentals: homogeneous coordinates, transformations, and perspective. Theory of parametric and implicit curve and surface models: polar forms, Bezier arcs and de Casteljau subdivision, continuity constraints, B-splines, tensor product, and triangular patch surfaces. Subdivision surfaces and multiresolution representations of geometry. Representations of solids and conversions among them. Surface reconstruction from scattered data points. Geometry processing on meshes, including simplification. Prerequisite: linear algebra. Recommended: 164, 248.
+----------------------------
+Course Title: Programming Languages
+Course Instructors: Deian Stefan, John Mitchell, Edward Yang, 
+Course Code: CS242
+Course Units: 3-3
+Course Description: Central concepts in modern programming languages, impact on software development, language design trade-offs, and implementation considerations. Functional, imperative, and object-oriented paradigms. Formal semantic methods and program analysis. Modern type systems, higher order functions and closures, exceptions and continuations. Modularity, object-oriented languages, and concurrency. Runtime support for language features, interoperability, and security issues. Prerequisite: 107, or experience with Lisp, C, and an object-oriented language.
+----------------------------
+Course Title: Human-Computer Interaction Design Studio
+Course Instructors: 
+Course Code: CS247
+Course Units: 3-4
+Course Description: Project-based focus on interaction design process, especially early-stage design and rapid prototyping. Methods used in interaction design including needs analysis, user observation, sketching, concept generation, scenario building, and evaluation. Prerequisites: 147 and 106A or equivalent background in programming.
+----------------------------
+Course Title: Topics in the Theory of Computation
+Course Instructors: 
+Course Code: CS359
+Course Units: 3-3
+Course Description: Advanced material is often taught for the first time as a topics course, perhaps by a faculty member visiting from another institution. May be repeated for credit.
+----------------------------
+Course Title: Computational Biology in Four Dimensions
+Course Instructors: Ron Dror, 
+Course Code: CS371
+Course Units: 3-3
+Course Description: Computational approaches to understanding the three-dimensional spatial organization of biological systems and how that organization evolves over time.  The course will cover cutting-edge research in both physics-based simulation and computational analysis of experimental data, at scales ranging from individual molecules to entire cells.  Prerequisite: CS 106A or equivalent, and an introductory course in biology or biochemistry. Recommended: some experience in mathematical modeling (does not need to be a formal course).
+----------------------------
+Course Title: Introduction to Computer Vision
+Course Instructors: Silvio Savarese, 
+Course Code: CS231A
+Course Units: 3-4
+Course Description: (Formerly 223B) An introduction to the concepts and applications in computer vision. Topics include: cameras and projection models, low-level image processing methods such as filtering and edge detection; mid-level vision topics such as segmentation and clustering; shape reconstruction from stereo, as well as high-level vision tasks such as object recognition, scene recognition, face detection and human motion categorization. Prerequisites: linear algebra, basic probability and statistics.
+----------------------------
+Course Title: Great Ideas in Computer Science
+Course Instructors: Eric Roberts, 
+Course Code: CS54N
+Course Units: 3-3
+Course Description: Stanford Introductory Seminar. Preference to freshmen. Covers the intellectual tradition of computer science emphasizing ideas that reflect the most important milestones in the history of the discipline.  No prior experience with programming is assumed.  Topics include programming and problem solving; implementing computation in hardware; algorithmic efficiency; the theoretical limits of computation; cryptography and security; and the philosophy behind artificial intelligence.
+----------------------------
+Course Title: Digital Dilemmas
+Course Instructors: David Dill, 
+Course Code: CS74N
+Course Units: 3-3
+Course Description: Preference to freshmen. Issues where policy decision making requires understanding computer and communications technology. Technology basics taught in non-technology terms. Topics include consumer privacy, government surveillance, file sharing and intellectual property, and electronic voting.
+----------------------------
+Course Title: Probabilistic Graphical Models: Principles and Techniques
+Course Instructors: Ben Packer, 
+Course Code: CS228
+Course Units: 3-4
+Course Description: Probabilistic graphical modeling languages for representing complex domains, algorithms for reasoning using these representations, and learning these representations from data. Topics include: Bayesian and Markov networks, extensions to temporal modeling such as hidden Markov models and dynamic Bayesian networks, exact and approximate probabilistic inference algorithms, and methods for learning models from data. Also included are sample applications to various domains including speech recognition, biological modeling and discovery, medical diagnosis, message encoding, vision, and robot motion planning. Prerequisites: basic probability theory and algorithm design and analysis.
+----------------------------
+Course Title: Research Project in Computer Science
+Course Instructors: 
+Course Code: CS294
+Course Units: 3-3
+Course Description: Student teams work under faculty supervision on research and implementation of a large project in some major sub-discipline in computer science. Lectures on state-of-the-art methods related to the particular problem domain. Prerequisites: consent of instructor.
+----------------------------
+Course Title: Social and Information Network Analysis
+Course Instructors: Jure Leskovec, 
+Course Code: CS224W
+Course Units: 3-4
+Course Description: (Formerly 322) How do rumors and information spread? Who are the influencers? Can we predict friendships on Facebook? Networks are the core of the WWW, blogs, Twitter and Facebook. They can be characterized by the complex interplay between information content, millions of individuals and organizations that create it, and the technology that supports it. Course will focus on how to analyze the structure and dynamics of large networks, how to model links, and how design algorithms that work with such large networks. Topics: statistical properties of large networks, models of social network structure and evolution, link prediction, network community detection, diffusion of innovation, information propagation, six-degrees of separation, finding influential nodes in networks, disease outbreak detection, networks with positive and negative ties, and connections with work in the social sciences and economics.
+----------------------------
+Course Title: Functional Systems in Haskell
+Course Instructors: David Mazieres, 
+Course Code: CS240H
+Course Units: 3-4
+Course Description: Covers an array of practical issues and techniques that arise when building real-world systems in the Haskell programming language. Topics include the basics of Haskell, laziness, monads, parsers, testing and debugging, performance tuning, interfacing to native code, concurrency and I/O paradigms, language extensions, meta-programming, and applications to the web and security. Concepts will be reinforced through a few individual programming assignments followed by a larger team project. Prior familiarity with Haskell may be helpful but is not required. Prerequisites: CS106B or 106X.
+----------------------------
+Course Title: Introduction to Human-Computer Interaction Design
+Course Instructors: Michael Bernstein, 
+Course Code: CS147
+Course Units: 3-4
+Course Description: Introduces fundamental methods and principles for designing, implementing, and evaluating user interfaces. Topics: user-centered design, rapid prototyping, experimentation, direct manipulation, cognitive principles, visual design, social software, software tools. Learn by doing: work with a team on a quarter-long design project, supported by lectures, readings, and studios. Prerequisite: 106B or X or equivalent programming experience.
+----------------------------
+Course Title: Database System Implementation
+Course Instructors: Chris Re, 
+Course Code: CS346
+Course Units: 3-5
+Course Description: A major database system implementation project realizes the principles and techniques covered in earlier courses. Students independently build a complete database management system, from file structures through query processing, with a personally designed feature or extension. Lectures on project details and advanced techniques in database system implementation, focusing on query processing and optimization. Guest speakers from industry on commercial DBMS implementation techniques. Prerequisites: 145, 245, programming experience in C++.
+----------------------------
+Course Title: Readings in Algorithms
+Course Instructors: Tim Roughgarden, 
+Course Code: CS167
+Course Units: 3-3
+Course Description: Recent research in the design and analysis of algorithms.  Readings cover both classical and emerging topics, such as: computational models for massive data sets; data privacy; dimensionality reduction; exact and approximate algorithms for NP-hard problems; graph algorithms; hashing; online learning; search trees; streaming and sketching.  Students are expected to respond to research papers, deliver an oral presentation, and complete a reading or programming project.  Limited enrollment; preference given to undergraduates. Prerequisites: CS161.
+----------------------------
+Course Title: Research Project in Human-Computer Interaction
+Course Instructors: 
+Course Code: CS294H
+Course Units: 3-3
+Course Description: Student teams under faculty supervision work on research and implementationnof a large project in HCI. State-of-the-art methods related to the problemndomain. Prerequisites CS 377, 147, 247, or permission from instructor.
+----------------------------
+Course Title: Music, Computing, Design II: Mobile Music (MUSIC 256B)
+Course Instructors: Ge Wang, 
+Course Code: CS476B
+Course Units: 1-4
+Course Description: Aesthetic, design, and implementation of mobile music, centered around the modern super smartphones such as the iPhone). Similarities and intrinsic differences between mobile and traditional computing and design for music. Topics include mobile software design, social and cloud computing, mobile interface design, and programming phones, in the service of music. Prerequisite: MUSIC 256A.
+----------------------------
+Course Title: Beyond Bits and Atoms: Designing Technological Tools (EDUC 236X)
+Course Instructors: 
+Course Code: CS402
+Course Units: 3-5
+Course Description: Practicum in designing and building technology-enabled curricula and learning environments. Students use software toolkits and state-of-the-art fabrication machines to design educational software, educational toolkits, and tangible user interfaces. How to design low-cost technologies, particularly for urban school in the US and abroad. The constructionist learning design perspective, critical pedagogy, and the application of complexity sciences in education.
+----------------------------
+Course Title: Departmental Lecture Series
+Course Instructors: David Dill, 
+Course Code: CS300
+Course Units: 1-1
+Course Description: Priority given to first-year Computer Science Ph.D. students. CS Masters students admitted if space is available.  Presentations by members of the department faculty, each describing informally his or her current research interests and views of computer science as a whole.
+----------------------------
+Course Title: Learning Analytics and Computational Modeling in Social Science (EDUC 390X)
+Course Instructors: 
+Course Code: CS424M
+Course Units: 3-4
+Course Description: Computational modeling and data-mining are dramatically changing the physical sciences, and more recently also the social and behavioral sciences. Traditional analysis techniques are insufficient to investigate complex dynamic social phenomena as social networks, online gaming, diffusion of innovation, opinion dynamics, classroom behavior, and other complex adaptive systems. In this course, we will learn about how modeling, network theory, and basic data-mining can support research in cognitive, and social sciences, in particular around issues of learning, cognitive development, and educational policy.
+----------------------------
+Course Title: Digital Image Processing (EE 368)
+Course Instructors: Bernd Girod, David Chen, 
+Course Code: CS232
+Course Units: 3-3
+Course Description: Image sampling and quantization color, point operations, segmentation, morphological image processing, linear image filtering and correlation, image transforms, eigenimages, multiresolution image processing, noise reduction and restoration, feature extraction and recognition tasks, image registration. Emphasis is on the general principles of image processing. Students learn to apply material by implementing and investigating image processing algorithms in Matlab and optionally on Android mobile devices. Term project. In the fall and spring quarter, a sequence of interactive web/video modules substitutes the classroom lectures. In the winter quarter, the course is taught conventionally; both versions of the course are equivalent. Recommended: EE261, EE278B.
+----------------------------
+Course Title: Computer Graphics: Image Synthesis Techniques
+Course Instructors: Matthew Pharr, 
+Course Code: CS348B
+Course Units: 3-4
+Course Description: Intermediate level, emphasizing high-quality image synthesis algorithms and systems issues in rendering. Topics include: Reyes and advanced rasterization, including motion blur and depth of field; ray tracing and physically based rendering; Monte Carlo algorithms for rendering, including direct illumination and global illumination; path tracing and photon mapping; surface reflection and light source models; volume rendering and subsurface scattering; SIMD and multi-core parallelism for rendering. Written assignments and programming projects. Prerequisite: 248 or equivalent. Recommended: Fourier analysis or digital signal processing.
+----------------------------
+Course Title: Parallel Computing
+Course Instructors: Alex Aiken, Oyekunle Olukotun, 
+Course Code: CS149
+Course Units: 3-4
+Course Description: This course is an introduction to parallelism and parallel programming.  Most new computer architectures are parallel; programming these machines requires knowledge of the basic issues of and techniques for writing parallel software. Topics:  varieties of parallelism in current hardware (e.g., fast networks, multicore, accelerators such as GPUs, vector instruction sets), importance of locality, implicit vs. explicit parallelism, shared vs. non-shared memory, synchronization mechanisms (locking, atomicity, transactions, barriers), and parallel programming models (threads, data parallel/streaming, futures, SPMD, message passing, SIMT, transactions, and nested parallelism).  Significant parallel programming assignments will be given as homework.  The course is open to students who have completed the introductory CS course sequence through 110 and have taken CS 143.
+----------------------------
+Course Title: 3D Representation and Recognition
+Course Instructors: Silvio Savarese, 
+Course Code: CS331B
+Course Units: 3-3
+Course Description: The course surveys recent developments in high level and 3D computer vision and will focus on reading recent research papers on topics related to 3D object recognition and representation, spatial inference, activity understanding, human vision and 3D perception. The course is inspired by a famous series of workshops (called 3d-RR) which have been offered during the International Conference in Computer Vision (ICCV) since 2007. Prerequisites - Some experience in research with one of the following fields: computer vision, image processing, computer graphics, machine learning.
+----------------------------
+Course Title: Music, Computing, and Design I: Software Paradigms for Computer Music (MUSIC 256A)
+Course Instructors: Ge Wang, 
+Course Code: CS476A
+Course Units: 1-4
+Course Description: Software design and implementation for computer audio. Strategies, best practices, and tradeoffs in building audio software systems of various sizes (S, M, L, XL), with a focus on interactive (real-time) systems. Lectures examine high-level designs as well as dissect code in a hands-on manner. Course work includes small programming assignments and a final software project. This course is the prerequisite for MUSIC 256B. Prerequisite: experience in C/C++ and/or Java.
+----------------------------
+Course Title: Heat Transfer in Microdevices
+Course Instructors: Mehdi Asheghi-Roudheni, 
+Course Code: ME358
+Course Units: 3-3
+Course Description: Application-driven introduction to the thermal design of electronic circuits, sensors, and actuators that have dimensions comparable to or smaller than one micrometer. The impact of thin-layer boundaries on thermal conduction and radiation. Convection in microchannels and microscopic heat pipes. Thermal property measurements for microdevices. Emphasis is on Si and GaAs semiconductor devices and layers of unusual, technically-promising materials such as chemical-vapor-deposited (CVD) diamond. Final project based on student research interests. Prerequisite: consent of instructor.
+----------------------------
+Course Title: Electric Vehicle Design
+Course Instructors: J Gerdes, Sven Beiker, 
+Course Code: ME185
+Course Units: 3-3
+Course Description: This project based class focuses on the design and prototyping of electric vehicles. Students learn the fundamentals of vehicle design in class and apply the knowledge as they form teams and work on projects involving concept, specifications, structure, systems, integration, assembly, testing, etc. The class meets once a week to learn about the fundamentals, exchange their experiences, and coordinate between projects. The teams of 3-5 will work on their projects independently.
+----------------------------
+Course Title: ReDesigning Theater: Live & Digital Performance (TAPS 130)
+Course Instructors: William Burnett, Jennifer Brody, Dan Klein, Michael Sturtz, 
+Course Code: ME288
+Course Units: 3-3
+Course Description: This quarter¿s version of ReDesigning Theater looks at Live and Digital Performance. We will examine the use of digital technology in collaboration with live performance. Students will learn and employ the design thinking process as well as improv and theatrical techniques.  We aim to create user-centric, interactive experiences where technology enables the audience to become part of and/or influence the outcome of the story or its presentation. Student projects will begin with the concepts enabled by personal technology such as smart phones and expand to animation, video projection, and other media. Students will work in small groups to investigate and experiment with formats that blur the lines between live and digital, performer and audience, and physical and virtual platforms. This project-based course is accessible to students of all backgrounds interested in exploring and transforming the frontiers of technology, art, and live performance.
+----------------------------
+Course Title: Optical Diagnostics and Spectroscopy Laboratory
+Course Instructors: Ronald Hanson, 
+Course Code: ME367
+Course Units: 4-4
+Course Description: Principles, procedures, and instrumentation associated with optical measurements in gases and plasmas. Absorption, fluorescence and emission, and light-scattering methods. Measurements of temperature, species concentration, and molecular properties. Lab. Enrollment limited to 16. Prerequisite: 362A or 364.
+----------------------------
+Course Title: Tell, Make, Engage: Action Stories for Entrepreneuring
+Course Instructors: Barbara Karanian, 
+Course Code: ME378
+Course Units: 1-3
+Course Description: Guest discussion leaders with entrepreneuring experience give the course an evolving framework of evaluative methods, formed and reformed by collaborative development within the class. Stories attached to an idea or a discovery, are considered through practice exercises, artifacts, design challenges, short papers, and presentations.
+----------------------------
+Course Title: Advanced Dynamics, Simulation & Control
+Course Instructors: Paul Mitiguy, 
+Course Code: ME331B
+Course Units: 3-3
+Course Description: Advanced methods and computational tools for the efficient formulation of equations of motion for multibody systems. D&#39;Alembert principle. Power, work, and energy. Kane&#39;s method. Lagrange&#39;s method. Computed torque control. Systems with constraints. Quaternions Numerical solutions of nonlinear algebraic and differential equations governing the behavior of multiple degree of freedom systems.
+----------------------------
+Course Title: Nanomaterials Synthesis and Applications for Mechanical Engineers
+Course Instructors: Xiaolin Zheng, 
+Course Code: ME373
+Course Units: 3-3
+Course Description: This course provides an introduction to both combustion synthesis of functional nanomaterials and nanotechnology. The first part of the course will introduce basic principles, synthesis/fabrication techniques and application of nanoscience and nanotechnology. The second part of the course will discuss combustion synthesis of nanostructures in zero-, one- two- and three- dimensions, their characterization methods, physical and chemical properties, and applications in energy conversion systems.
+----------------------------
+Course Title: @Stanford Studio
+Course Instructors: 
+Course Code: ME247A
+Course Units: 4-4
+Course Description: The d.school is working with the University to re-invent the on-campus experience. Huge shifts are disrupting education in unprecedented ways, questioning what it means to learn and live on campus. It&#39;s time to harness those changes and re-invent what it means to be a student right here at Stanford. You will delve into design, dig into the most adventurous educational experiments happening around the country, immerse yourself in mind-blowing experiences both on- and off-campus, and create short films and wild prototypes that demonstrate the future of campus life. Your work may be seen or experienced by faculty, deans, and the Stanford community at-large; the opportunity for impact is very real.
+----------------------------
+Course Title: Fundamentals of Heat Conduction
+Course Instructors: Kenneth Goodson, 
+Course Code: ME352B
+Course Units: 3-3
+Course Description: Physical description of heat conduction in solids, liquids, and gases. The heat diffusion equation and its solution using analytical and numerical techniques. Data and microscopic models for the thermal conductivity of solids, liquids, and gases, and for the thermal resistance at solid-solid and solid-liquid boundaries. Introduction to the kinetic theory of heat transport, focusing on applications for composite materials, semiconductor devices, micromachined sensors and actuators, and rarefied gases. Prerequisite: consent of instructor.
+----------------------------
+Course Title: ME Seminar Series: Theoretical and Computational Fluid Dynamics
+Course Instructors: 
+Course Code: ME495A
+Course Units: 1-1
+Course Description: Seminars will feature early career mechanical engineers working on leading edge problems in theoretical and computational fluid mechanics and related disciplines. Guest speakers will come from top universities within the U.S. and internationally and will discuss both their past research and plans for building a research program in the future.
+----------------------------
+Course Title: Product Design Methods
+Course Instructors: John Edson, 
+Course Code: ME115B
+Course Units: 3-3
+Course Description: Problem-finding, problem-solving, intermediate creativity methods and effective techniques for researching and presenting product concepts. Individual- and team-based design projects emphasizing advanced visual thinking and prototyping skills. Prerequisite: ME115A
+----------------------------
+Course Title: COMMERCIAL MEMS DESIGN
+Course Instructors: 
+Course Code: ME429
+Course Units: 3-3
+Course Description: This course, taught by Dr. Gary O&#39;Brien of the Bosch RTC, will provide insight into the issues and challenges in designing MEMS device for commercial and automotive applications.  Topics to be covered in the class will include device simulation and design, design of experiments, compensation for cross-wafer and wafer-to-wafer fabrication variations, design for extreme environments, analysis and management of reliability issues including package stress, shock, drift, cost analysis of manufacturing processes, and some discussion of the unique challenges for consumer and automotive customers and markets. Student teams will develop a device design, fabrication process, and manufacturing analysis in response to a specification.
+----------------------------
+Course Title: Product-Based Engineering Design, Innovation, and Development
+Course Instructors: Larry Leifer, 
+Course Code: ME310B
+Course Units: 4-4
+Course Description: Three quarter sequence; for engineering graduate students intending to lead projects related to sustainability, automotive, biomedical devices, communication, and user interaction. Student teams collaborate with academic partners in Europe, Asia, and Latin America on product innovation challenges presented by global corporations to design requirements and construct functional prototypes for consumer testing and technical evaluation. Design loft format such as found in Silicon Valley consultancies. Typically requires international travel. Prerequisites: undergraduate engineering design project; consent of instructor.
+----------------------------
+Course Title: Optical Diagnostics and Spectroscopy
+Course Instructors: Ronald Hanson, 
+Course Code: ME364
+Course Units: 3-3
+Course Description: The spectroscopy of gases and laser-based diagnostic techniques for measurements of species concentrations, temperature, density, and other flow field properties. Topics: electronic, vibrational, and rotational transitions; spectral lineshapes and broadening mechanisms; absorption, fluorescence, Rayleigh and Raman scattering methods; collisional quenching. Prerequisite: 362A or equivalent.
+----------------------------
+Course Title: Advanced Topics in Computational Solid Mechanics
+Course Instructors: 
+Course Code: ME411
+Course Units: 3-3
+Course Description: Discussion of the use of computational simulation methods for analyzing and optimizing production processes and for developing new products, based on real industrial applications in the metal forming industry. Brief review of linear and nonlinear continuum mechanics and the use of finite element methods to model solid mechanics problems, constitutive relations for metals, coupled thermo-elasto-plastic (viscoplastic) problems, modeling metal productions processes: bulk metal forming processes using rigid/viscoplastic material models, application examples: hot rolling of plates and the Mannesmann piercing processes and modeling the service behavior of steel pipes. Prerequisites: ME 338A, ME 335A,B,C, or consent of instructor.
+----------------------------
+Course Title: Foresight and Innovation
+Course Instructors: William Cockayne, 
+Course Code: ME410B
+Course Units: 1-5
+Course Description: Continuation of ME410A. With model prototype in hand, students have the opportunity to further develop their innovation.
+----------------------------
+Course Title: TGR Project
+Course Instructors: Wei Cai, Charles Steele, Stephen Rock, David Barnett, Felix Zajac, Drew Nelson, Daniel DeBra, Kosuke Ishii, J Salisbury, Juan Santiago, Thomas Andriacchi, Bernard Roth, George Springer, Reginald Mitchell, David Lentink, Ed Carryer, Chris Edwards, James Adams, Sheri Sheppard, Paul Mitiguy, Marc Levenston, Charles Taylor, Craig Bowman, Ronald Hanson, Friedrich Prinz, Martin Bazant, Reinhold Dauskardt, George Kembel, Mark Cappelli, Ellen Kuhl, Bob Street, Peter Pinsky, Heinz Pitsch, Ovijit Chaudhuri, Dennis Carter, Charles Kruger, Sindy Tang, David Beach, John Eaton, Kenneth Goodson, Scott Delp, Allison Okamura, Beth Pruitt, Xiaolin Zheng, Fu-Kuo Chang, Thomas Kenny, Gunter Niemeyer, Brian Cantwell, David Kelley, Craig Milroy, Huajian Gao, Parviz Moin, Larry Leifer, Peter Bradshaw, Charbel Farhat, Adrian Lew, Sanjiva Lele, Shilajeet (Banny) Banerjee, Hai Wang, Eric Darve, Gianluca Iaccarino, Oussama Khatib, Ken Waldron, Mark Cutkosky, James Johnston, J Gerdes, Christopher Jacobs, Mark Mungal, Paul Durbin, Werner Ihme, 
+Course Code: ME801
+Course Units: 0-0
+Course Description: 
+----------------------------
+Course Title: Foresight and Innovation
+Course Instructors: William Cockayne, 
+Course Code: ME410C
+Course Units: 1-5
+Course Description: Continuation of ME410B. With model prototype in hand, students have the opportunity to further develop their innovation.
+----------------------------
+Course Title: The Jet Engine
+Course Instructors: 
+Course Code: ME12N
+Course Units: 3-3
+Course Description: Preference to freshmen. How a jet engine works; the technologies and analytical techniques required to understand them. Dynamics, thermodynamics, turbomachinery, combustion, advanced materials, cooling technologies, and control systems. Visits to research laboratories, examination of a partially disassembled engine, and probable operation of a small jet engine. Prerequisites: high school physics.
+----------------------------
+Course Title: Telerobotics and Human-Robot Interactions
+Course Instructors: 
+Course Code: ME326
+Course Units: 3-3
+Course Description: Focus is on dynamics and controls. Evaluation and implementation of required control systems. Topics include master-slave systems, kinematic and dynamic similarity; control architecture, force feedback, haptics, sensory substitutions; stability, passivity, sensor resolution, servo rates; time delays, prediction, wave variables. Hardware-based projects encouraged, which may complement ongoing research or inspire new developments. Limited enrollment. Prerequisites: ENGR 205, 320 or CS 223A, or consent of instructor. (Niemeyer)
+----------------------------
+Course Title: Mechanical Engineering Teaching Assistance Training
+Course Instructors: Chris Edwards, Patrick Ferguson, Indrani Stangl, 
+Course Code: ME492
+Course Units: 1-1
+Course Description: 
+----------------------------
+Course Title: Computational Methods in Cardiovascular Bioengineering (BIOE 484)
+Course Instructors: 
+Course Code: ME484
+Course Units: 3-3
+Course Description: Lumped parameter, one-dimensional nonlinear and linear wave propagation, and three-dimensional modeling techniques applied to simulate blood flow in the cardiovascular system and evaluate the performance of cardiovascular devices.  Construction of anatomic models and extraction of physiologic quantities from medical imaging data. Problems in blood flow within the context of disease research, device design, and surgical planning.
+----------------------------
+Course Title: Advanced Product Design: Implementation 2
+Course Instructors: William Burnett, 
+Course Code: ME216C
+Course Units: 4-4
+Course Description: ME216C: Implementation II is a continuation of ME216B. Students would develop project from ME216B to a further state of completion. Design will be completed, details about manufacturing, cost and production will be developed. Students will validate their projects by making them real in the world. Prerequisites for class are ME216A and ME216B.Prerequisite: 216A and 216B.
+----------------------------
+Course Title: Energy Sustainability and Climate Change
+Course Instructors: 
+Course Code: ME25N
+Course Units: 3-3
+Course Description: One of the primary global challenges of the 21st century is providing the energy required to meet increasing demands due to population growth and economic development. A related challenge is mitigation of the effect of this energy growth on climate. This seminar will examine various scenarios for the energy resources required to meet future demand and the potential consequences on climate. The scientific issues underlying climate change and the coupling of energy use with changes in the global atmosphere that impact climate will be discussed.
+----------------------------
+Course Title: Cracks, Dislocations, and Waves
+Course Instructors: 
+Course Code: ME369
+Course Units: 3-3
+Course Description: The 6-dimensional formalism of A. N. Stroh will be developed to treat two-dimensional problems in elastically anisotropic media. Stress fields of straight dislocations will be developed, from which the elastic fields of line cracks (treated as continuous distributions of straight dislocations) will be obtained along with stress intensity factors and energy release rates. Steady waves including plane waves, Rayleigh waves, and Stoneley waves will be treated along with problems of reflection and refraction of incident plane waves in joined anisotropic half-spaces. Anisotropic boundary element methods will be discussed. Assignments will include both analytical and semi-analytical work as well as simple numerical methods to implement Stroh&#39;s formalism.  Class notes and readings will be provided.
+----------------------------
+Course Title: Design and Business Factors
+Course Instructors: William Burnett, Omar Siddiqui, 
+Course Code: ME115C
+Course Units: 3-3
+Course Description: Design and Business Factors: Introduces business concepts critical to determining the success of new products and services. Students will learn to estimate the cost of R&amp;D for new product development. Using financial analysis, ROI, and tollgates to reduce development risk will be explored using case studies and simulations. Students will develop a bill of materials and a profit and loss statement for a sample product concept, prototype a design consultancy, and create a business proposal for a proposed new product company.
+----------------------------
+Course Title: Green Design Strategies and Metrics
+Course Instructors: 
+Course Code: ME221
+Course Units: 2-2
+Course Description: Foundation in sustainable product design principles, reinforced by conceptual design projects.  Discuss what aspects of sustainability matter most for different products. Application of dozens of strategies to improve product sustainability.  Frameworks, measurements, and decision-making tools to navigate the complexities of designing greener products.  Life-cycle analysis, materials, energy use, biomimicry, product-service systems, persuasive design, design for end-of-life, and systems thinking.
+----------------------------
+Course Title: Thermosciences Research Project Seminar
+Course Instructors: 
+Course Code: ME390
+Course Units: 1-1
+Course Description: Review of work in a particular research program and presentations of other related work.
+----------------------------
+Course Title: Fluid Flow in Microdevices
+Course Instructors: 
+Course Code: ME457
+Course Units: 3-3
+Course Description: Physico-chemical hydrodynamics. Creeping flow, electric double layers, and electrochemical transport such as Nernst-Planck equation; hydrodynamics of solutions of charged and uncharged particles. Device applications include microsystems that perform capillary electrophoresis, drug dispension, and hybridization assays. Emphasis is on bioanalytical applications where electrophoresis, electro-osmosis, and diffusion are important. Prerequisite: consent of instructor.
+----------------------------
+Course Title: The Worldly Engineer
+Course Instructors: Lester Su, 
+Course Code: ME23Q
+Course Units: 3-3
+Course Description: Preference given to sophomores. Engineering, its practice and products placed in multi-disciplinary context. Topics include the history of the engineering profession and engineering education; cultural influences on design; the role of national and international public policy and economics; dependence on natural resources; environmental impact; contemporary workforce development. Emphasis is on cultivating an appreciation of these issues to enrich the educational and professional pursuit of engineering.
+----------------------------
+Course Title: Applied Electrochemistry at Micro- and Nanoscale
+Course Instructors: 
+Course Code: ME420
+Course Units: 3-3
+Course Description: The class is an introduction to applied electrochemistry with focus on micro- and nanoscale applications. Basic concepts of physical chemistry are presented, of which the fundamentals of electrochemistry are built. Theory of electrochemical methods for material analyses and material modifications are discussed with emphasis on the scaling behaviors. This year electrochemical energy generation/storage devices with focus on batteries will be discussed in class. Journals articles are reviewed within the framework of the course with focus on current problems and needs in and energy conversion and storage.
+----------------------------
+Course Title: Soft Tissue Mechanics
+Course Instructors: 
+Course Code: ME387
+Course Units: 3-3
+Course Description: Structure/function relationships and mechanical properties of soft tissues, including nonlinear elasticity, viscoelasticity, and poroelasticity.
+----------------------------
+Course Title: Ph.D. Teaching Experience
+Course Instructors: Charles Steele, Eric Shaqfeh, Wei Cai, Stephen Rock, David Barnett, Felix Zajac, Drew Nelson, Daniel DeBra, Jean-Claude Latombe, Kosuke Ishii, Julian Gorodsky, Juan Santiago, Thomas Andriacchi, George Springer, Reginald Mitchell, David Lentink, Sunil Puria, Ed Carryer, Chris Edwards, Sheri Sheppard, Paul Mitiguy, Marc Levenston, Charles Taylor, Craig Bowman, Ronald Hanson, Martin Bazant, Friedrich Prinz, Reinhold Dauskardt, George Kembel, Mark Cappelli, Bob Street, Ellen Kuhl, Peter Pinsky, Heinz Pitsch, Ovijit Chaudhuri, Dennis Carter, Sindy Tang, Charles Kruger, David Beach, John Eaton, Kenneth Goodson, William Burnett, Scott Delp, Beth Pruitt, Xiaolin Zheng, Fu-Kuo Chang, Thomas Kenny, Gunter Niemeyer, Brian Cantwell, David Kelley, Craig Milroy, Larry Leifer, Parviz Moin, Peter Bradshaw, Charbel Farhat, Ali Mani, Adrian Lew, Sanjiva Lele, Shilajeet (Banny) Banerjee, Hai Wang, Eric Darve, Gianluca Iaccarino, Oussama Khatib, Ken Waldron, James Johnston, Mark Cutkosky, J Gerdes, Christopher Jacobs, Jeffrey Schox, Werner Ihme, 
+Course Code: ME491
+Course Units: 3-3
+Course Description: Required of Ph.D. students. May be repeated for credit.
+----------------------------
+Course Title: Vehicle Dynamics and Control
+Course Instructors: J Gerdes, 
+Course Code: ME227
+Course Units: 3-3
+Course Description: The application of dynamics, kinematics, and control theory to the analysis and design of ground vehicle behavior. Simplified models of ride, handling, and braking, their role in developing intuition, and limitations in engineering design. Suspension design fundamentals. Performance and safety enhancement through automatic control systems. In-car laboratory assignments for model validation and kinesthetic understanding of dynamics. Limited enrollment. Prerequisites: ENGR 105, consent of instructor.
+----------------------------
+Course Title: ME Seminar Series: At the Interface between Mechanical Engineering and Biology
+Course Instructors: 
+Course Code: ME495B
+Course Units: 1-1
+Course Description: Seminars will feature early career mechanical engineers working on leading edge problems in biomechanical engineering. Topics include mechanobiology, cell mechanics, transport phenomena in biological systems, bio-inspired design, design and analysis of biodevices or bioinstrumentation, biomaterials, and modeling of physiological systems. Guest speakers will come from top universities within the U.S. and internationally, and will discuss both their past research and plans for building a research program in the future.
+----------------------------
+Course Title: Mechanical Systems Design
+Course Instructors: Mark Cutkosky, 
+Course Code: ME112
+Course Units: 4-4
+Course Description: Lecture/lab. Characteristics of machine elements including gears, bearings, and shafts. Design for fatigue life. Electric motor fundamentals. Transmission design for maximizing output power or efficiency. Mechanism types, linkage analysis and kinematic synthesis. Team-based design projects emphasizing the balance of physical with virtual prototyping based on engineering analysis. Lab for dissection of mechanical systems and project design reviews. Prerequisites: 80, 101. Recommended: 203, ENGR 15.
+----------------------------
+Course Title: Gender and Higher Education: National and International Perspectives (EDUC 173, FEMST 173, SOC 173, SOC 273)
+Course Instructors: 
+Course Code: EDUC273
+Course Units: 4-4
+Course Description: This course examines the ways in which higher education structures and policies affect females, males, and students in relation to each other and how changes in those structures and policies improve experiences for females and males similarly or differently. Students are expected to gain an understanding of theories and perspectives from the social sciences relevant to an understanding of the role of higher education in relation to structures of gender differentiation and hierarchy. Topics include undergraduate and graduate education; identity and sexuality; gender and science; gender and faculty; and the development of feminist scholarship and pedagogy. Attention is paid to how these issues are experienced by women and men in the United States, including people of color, and by academics throughout the world, and how these have changed over time.
+----------------------------
+Course Title: Designing Research-Based Interventions to Solve Global Health Problems (AFRICAST 135, AFRICAST 235, EDUC 135X, MED 235)
+Course Instructors: Piya Sorcar, 
+Course Code: EDUC335X
+Course Units: 3-4
+Course Description: The excitement around social innovation and entrepreneurship has spawned numerous startups focused on tackling world problems, particularly in the fields of education and health. The best social ventures are launched with careful consideration paid to research, design, and efficacy. This course offers students the necessary tools for understanding how to effectively design and evaluate education-based social ventures.n nUsing TeachAIDS (an award-winning nonprofit educational technology social venture used in 74 countries) as a primary case study, students will be given an in-depth look into how the entity was founded and scaled globally. Guest speakers will include world-class experts and entrepreneurs in Philanthropy, Medicine, Communications, Education, and Technology.nnStudents enrolling for 4 units complete additional assignments.
+----------------------------
+Course Title: Education of Immigrant Students: Psychological Perspectives
+Course Instructors: Amado Padilla, 
+Course Code: EDUC277
+Course Units: 4-4
+Course Description: Historical and contemporary approaches to educating immigrant students. Case study approach focuses on urban centers to demonstrate how stressed urban educational agencies serve immigrants and native-born U.S. students when confronted with overcrowded classrooms, controversy over curriculum, current school reform movements, and government policies regarding equal educational opportunity.
+----------------------------
+Course Title: Integrating the Garden into the Elementary Curriculum
+Course Instructors: Kevin Cool, Drew Harwell, Ruth Ann Costanzo, 
+Course Code: EDUC267G
+Course Units: 1-1
+Course Description: This mini-course uses the garden and kitchen environments to provide teacher candidates with real-world contexts in which to explore some of the key issues that children face in health, nutrition, and sustainability. Teacher candidates will gain an understanding of how to integrate the various themes with content areas and standards and an appreciation for the importance of addressing children&#39;s health needs in an era when the country is facing increased obesity and other health problems.
+----------------------------
+Course Title: The Education of American Jews (JEWISHST 393X, RELIGST 313X)
+Course Instructors: Ari Kelman, 
+Course Code: EDUC313X
+Course Units: 4-4
+Course Description: This course will take an interdisciplinary approach to the question of how American Jews negotiate the desire to retain a unique ethnic sensibility without excluding themselves from American culture more broadly. Students will examine the various ways in which people debate, deliberate, and determine what it means to be an &quot;American Jew&quot;. This includes an investigation of how American Jewish relationships to formal and informal educational encounters through school, popular culture, religious ritual, and politics.
+----------------------------
+Course Title: Hip Hop, Youth Identities, and the Politics of Language (AFRICAAM 121X, AMSTUD 121X, ANTHRO 121A, CSRE 121X, LINGUIST 155)
+Course Instructors: 
+Course Code: EDUC121X
+Course Units: 3-4
+Course Description: Focus is on issues of language, identity, and globalization, with a focus on Hip Hop cultures and the verbal virtuosity within the Hip Hop nation. Beginning with the U.S., a broad, comparative perspective in exploring youth identities and the politics of language in what is now a global Hip Hop movement. Readings draw from the interdisciplinary literature on Hip Hop cultures with a focus on sociolinguistics and youth culture.
+----------------------------
+Course Title: The Political Economy of Global Higher Education
+Course Instructors: 
+Course Code: EDUC392X
+Course Units: 3-4
+Course Description: The course is intended to introduce students to the analysis of higher education and higher educational change in an international context, reviewing critically the current literature and showing how social scientists study higher education using quantitative and qualitative tools. The course will present a model of studying change, review political, sociological, and economic theories applied to higher education, and focus on four important case studies of higher education in the developing world: Brazil, Russia, India, and China, known also as the BRIC countries.
+----------------------------
+Course Title: Psychological Well-Being On Campus: Perspectives Of The Black Diaspora
+Course Instructors: Michelle Burt, Clara Adams, 
+Course Code: EDUC193C
+Course Units: 1-1
+Course Description: Topics: the concept of culture, Black cultural attributes and their effect on reactions to counseling, verbal and non-verbal attending, open and closed questions, working with feelings, summarization, and integration. Reading assignments, guest speakers, role play, and videotaped practice. Students develop and apply skills in the Black community on campus or in other settings that the student chooses.
+----------------------------
+Course Title: Designing Surveys
+Course Instructors: Ann Porteus, 
+Course Code: EDUC399A
+Course Units: 1-2
+Course Description: This workshop/course is designed for students who are designing a survey for use in a research project. The workshop content draws on relevant cognitive processing theories and research (on comprehension, retrieval, judgment, and reporting). In addition to some readings and a few lectures, this workshop is designed to be highly interactive and practical. By the end of the course students will have designed and pilot tested their survey instrument. Course may be repeated for credit.
+----------------------------
+Course Title: Instructional Leadership: Building Capacity for Excellent Teaching
+Course Instructors: 
+Course Code: EDUC290
+Course Units: 3-4
+Course Description: This course focuses on the role of leaders in designing, supporting and sustaining excellent teaching. How do leaders create the organizational conditions to focus attention on the technical core of instruction, curriculum and assessment. Course goals: 1) explore a variety of educational leadership approaches, 2) investigate the theory of action underlying these approaches to leadership and consider the implications for instructional practice and 3) develop understanding of the relationship between the leadership approach and the learning environment.
+----------------------------
+Course Title: Elementary Classroom Leadership and Management
+Course Instructors: Dey Rose, 
+Course Code: EDUC244E
+Course Units: 1-1
+Course Description: How to best manage a classroom. Student and teacher roles in developing a classroom community. Strategies for classroom management within a theoretical framework. STEP elementary only.
+----------------------------
+Course Title: Introduction to Statistical Methods in Education
+Course Instructors: Ben Shear, Dan Schwartz, 
+Course Code: EDUC200C
+Course Units: 3-4
+Course Description: (Formerly EDUC 160.) Basic techniques in descriptive and inferential statistics for educational research will be covered with an emphasis on rigorous preparation for intermediate and advanced courses.  Topics include central tendency, variance, probability, distributions, confidence interval, t-test, F-test, correlation, regression, and analysis of variance. Non-parametric statistics and graphical principles for data representation will also be addressed.  Students will also be introduced to STATA in preparation for subsequent higher level courses.
+----------------------------
+Course Title: Designing Research-Based Interventions to Solve Global Health Problems (AFRICAST 135, AFRICAST 235, EDUC 335X, MED 235)
+Course Instructors: Piya Sorcar, 
+Course Code: EDUC135X
+Course Units: 3-4
+Course Description: The excitement around social innovation and entrepreneurship has spawned numerous startups focused on tackling world problems, particularly in the fields of education and health. The best social ventures are launched with careful consideration paid to research, design, and efficacy. This course offers students the necessary tools for understanding how to effectively design and evaluate education-based social ventures.n nUsing TeachAIDS (an award-winning nonprofit educational technology social venture used in 74 countries) as a primary case study, students will be given an in-depth look into how the entity was founded and scaled globally. Guest speakers will include world-class experts and entrepreneurs in Philanthropy, Medicine, Communications, Education, and Technology.nnStudents enrolling for 4 units complete additional assignments.
+----------------------------
+Course Title: Service Learning Practicum
+Course Instructors: Jon McConnell, 
+Course Code: EDUC98X
+Course Units: 1-1
+Course Description: For Alternative Spring Break program leaders. The skills and philosophical framework to develop and lead an ASB experience.
+----------------------------
+Course Title: Perspectives on the Education of Linguistic Minorities
+Course Instructors: 
+Course Code: EDUC146X
+Course Units: 3-4
+Course Description: Social, political, linguistic, and pedagogical issues associated with educating students who do not speak the language or language variety of the majority society. Focus is on the U.S.; attention to minorities elsewhere. American attitudes toward linguistic and racial minorities. Educational problems of linguistically different children and non-English- or limited-English-speaking children. Approaches to solving problems.
+----------------------------
+Course Title: Perspectives on Teacher Learning and Lesson Study
+Course Instructors: 
+Course Code: EDUC406X
+Course Units: 2-4
+Course Description: Seminar. Based on peer collaboration, lesson study helps to create professional communities among teachers and support their learning.  Research literature, teacher thinking and beliefs, teacher professional development, and conceptual frameworks.
+----------------------------
+Course Title: The Design of Technologies for Casual Learning (EDUC 396X)
+Course Instructors: 
+Course Code: EDUC196X
+Course Units: 3-3
+Course Description: Studio-based, participatory, and user-centered development of casualnnlearning technologies is explored, using the Apple iPhone as annprototype platform. The term &quot;casual&quot; is borrowed from casual gamingnnto denote that the learning technologies are meant for learners to usennin &quot;extreme informal&quot; learning circumstances (while &quot;on the go&quot;, &quot;anynntime and any place&quot;). The class builds on learning about andnnsynthesizing knowledge, theory and development activity in four areasnnincluding learning theories, mobile technologies, games andnnparticipatory design processes.
+----------------------------
+Course Title: Introduction to Moral Philosophy (ETHICSOC 20)
+Course Instructors: Amos Espeland, Ryan Putzer, Huw Duffy, Tamar Schapiro, Paul Tulipana, 
+Course Code: PHIL2
+Course Units: 5-5
+Course Description: A survey of moral philosophy in the Western tradition. What makes right actions right and wrong actions wrong? What is it to have a virtuous rather than a vicious character? What is the basis of these distinctions? Why should we care about morality at all? Our aim is to understand how some of the most influential philosophers (including Aristotle, Kant, and Mill) have addressed these questions, and by so doing, to better formulate our own views. No prior familiarity with philosophy required.
+----------------------------
+Course Title: Husserl and Adam Smith
+Course Instructors: 
+Course Code: PHIL386B
+Course Units: 4-4
+Course Description: Readings from Husserl and others in the phenomenological tradition, and recent work on intentionality and consciousness by philosophers and cognitive scientists.
+----------------------------
+Course Title: Aristotle on his Predecessors
+Course Instructors: Alan Code, 
+Course Code: PHIL308B
+Course Units: 2-4
+Course Description: An introduction both to Aristotle&#39;s own metaphysics and to his treatment of his predecessors on causality, included the early Ionian cosmologists, atomism, Pythagoreans, Heraclitus, Parmenides, Empedocles, Anaxagoras and Plato.  Prerequisite:  one course in ancient Greek philosophy.
+----------------------------
+Course Title: Recent Ethical Theory (PHIL 172B)
+Course Instructors: 
+Course Code: PHIL272B
+Course Units: 4-4
+Course Description: Study the works of several prominent contemporary moral philosophers. Possible authors include: Scanlon, Darwall, Nagel, Williams, Blackburn, Gibbard, Korsgaard. Prerequisite: students should have taken an introduction to moral philosophy (Phil. 20, Phil. 170 or equivalent).
+----------------------------
+Course Title: Truth and Paradox
+Course Instructors: 
+Course Code: PHIL23B
+Course Units: 2-2
+Course Description: Philosophical investigation of the concept of truth is often divided along two dimensions: investigation of the nature of truth and investigation of the semantics of truth claims. This tutorial will focus on the second kind of concern. One key impetus for a philosophical interest in the semantics and definability of truth is the challenge posed by semantic paradoxes such as the Liar paradox and Curry¿s paradox. Despite each having the initial appearance of a parlor trick, philosophers and logicians have come to appreciate the deep implications of these paradoxes. The main goal of this tutorial is to gain an appreciation of the philosophical issues -­ both with respect to formal and natural languages ­¿ which arise from consideration of the paradoxes. To this end, we will study some of the classic contributions to this area  including Tarski¿s famous result that, in an important sense, the semantic paradoxes render truth indefinable, and Kripke¿s much later attempt to provide a definition of truth in the face of Tarski¿s limitative result. Further topics include the debate between paracomplete and paraconsistent solutions to the semantic paradoxes (notably defended by, respectively, Field and Priest); the relationship between deflationism about truth and the paradoxes; and the notion of ¿revenge problems¿ (roughly, the claim that any solution to the paradoxes can be used to construct a further paradox).nThe tutorial will avoid excessive technical discussions, but will aim to engender appreciation for some philosophical interesting technical points and will assume a logic background of PHIL150 level.
+----------------------------
+Course Title: Feminist Theories and Methods Across the Disciplines (FEMGEN 103, FEMGEN 203, PHIL 253)
+Course Instructors: Helen Longino, 
+Course Code: PHIL153
+Course Units: 2-5
+Course Description: (Graduate Students register for PHIL 253 or FEMGEN 203) The interdisciplinary foundations of feminist thought. The nature of disciplines and of interdisciplinary work. Challenges of feminism for scholarship and research.nnPrerequisites:  Feminist Studies 101 or equivalent with consent of instructor.
+----------------------------
+Course Title: Newtonian Revolution (PHIL 260B)
+Course Instructors: 
+Course Code: PHIL160B
+Course Units: 4-4
+Course Description: (Graduate students register for 260B.) Newton¿s <i>Principia</i> in its historical context, emphasizing how it produced a revolution in the conduct of empirical research and in standards of evidence in science.
+----------------------------
+Course Title: Topics in Philosophy of Logic (PHIL 257)
+Course Instructors: 
+Course Code: PHIL157
+Course Units: 3-3
+Course Description: (Graduate students register for 257.) Disputed foundational issues in logic; the question of what the subject matter and boundaries of logic are, such as whether what is called second-order logic should be counted as logic. What is the proper notion of logical consequence? May be repeated for credit. Pre- or corequisite: 151, or consent of instructor.
+----------------------------
+Course Title: Subjectivity
+Course Instructors: 
+Course Code: PHIL386C
+Course Units: 4-4
+Course Description: Continuation of 386B.
+----------------------------
+Course Title: Basic Concepts in Mathematical Logic
+Course Instructors: David Barker-Plummer, 
+Course Code: PHIL150X
+Course Units: 2-2
+Course Description: Equivalent to the second half of 150. Students attend the first meeting of 150 and rejoin the class on October 30. Prerequisite: CS 103A or X, or PHIL 50.
+----------------------------
+Course Title: Intention and Normative Judgment
+Course Instructors: Michael Bratman, 
+Course Code: PHIL387
+Course Units: 2-4
+Course Description: Prominent views in both metaethics and the philosophy of action hold that there are distinctively practical states of mind that nonetheless play many of the roles traditionally associated with belief.  Some action theorists hold that intention is a kind of practical attitude subject to rational requirements such as requirements of consistency and coherence.  Metaethical noncognitivists hold that normative judgments are distinctively practical¿perhaps even a species of intention¿and face the well-known Frege-Geach problem because of that commitment.  We will consider what metaethicists can learn from debates about intention in the philosophy of action, and what philosophers of action can learn from debates about metaethical non-cognitivism.
+----------------------------
+Course Title: About Being
+Course Instructors: Alexis Burgess, 
+Course Code: PHIL386E
+Course Units: 4-4
+Course Description: A pop-up course on Burgess&#39; eponymous book project, which deals with the metaphysics of linguistic representation in the service of developing a methodology for adjudicating ontological disputes.  Keywords: linguistic turn, Plato&#39;s beard, problem of intentionality, grounding, deflationism, metaontology, etc.  Readings will be a mix of chapter drafts and recent, relevant work by other people, including Rayo, Sider, Manley &amp; Hawthorne; with a couple classics by Quine and Stalnaker thrown in for good measure.
+----------------------------
+Course Title: Kant's First Critique (PHIL 125)
+Course Instructors: R. Anderson, 
+Course Code: PHIL225
+Course Units: 4-4
+Course Description: (Graduate students register for 225.) The founding work of Kant&#39;s critical philosophy emphasizing his contributions to metaphysics and epistemology. His attempts to limit metaphysics to the objects of experience. Prerequisite: course dealing with systematic issues in metaphysics or epistemology, or with the history of modern philosophy.
+----------------------------
+Course Title: Foundations of Quantum Mechanics (PHIL 166A)
+Course Instructors: Patrick Suppes, 
+Course Code: PHIL266A
+Course Units: 4-4
+Course Description: This seminar will concentrate on a variety of probability questions that arise in quantum mechanics, including some from recent experiments.  Negative probabilities and nonmonotonic upper probabilities will be emphasized
+----------------------------
+Course Title: Naming and Necessity
+Course Instructors: 
+Course Code: PHIL194P
+Course Units: 4-4
+Course Description: Saul Kripke&#39;s lectures on reference, modal metaphysics, and the mind/body problem.
+----------------------------
+Course Title: EMOTIONS: MORALITY AND LAW (ETHICSOC 202, ETHICSOC 302, PHIL 177B)
+Course Instructors: Avishai Margalit, 
+Course Code: PHIL277B
+Course Units: 2-2
+Course Description: If emotions are the stuff of life, some emotions are the stuff of our moral and legal life.  Emotions such as: guilt, shame, revenge, indignation, resentment, disgust, envy, jealousy and humiliation, along with forgiveness, compassion, pity, mercy and patriotism, play a central role in our moral and legal life. The course is about these emotions, their meaning and role in morality and law. Issues such as the relationship between punishment and revenge, or between envy and equality, or St. Paul¿s contrast between law and love, or Nietzsche¿s idea that resentment is what feeds morality, will be discussed alongside other intriguing topics.
+----------------------------
+Course Title: Kant's Ethical Theory (PHIL 126B)
+Course Instructors: 
+Course Code: PHIL226B
+Course Units: 2-4
+Course Description: (Graduate students register for 226B.) Kant&#39;s moral philosophy based primarily on the <i>Groundwork of Metaphysics of Morals, Critique of Practical Reason,</i> and <i>The Metaphysics of Morals.</i>
+----------------------------
+Course Title: Philosophy of Mind (PHIL 186)
+Course Instructors: Kenneth Taylor, 
+Course Code: PHIL286
+Course Units: 4-4
+Course Description: (Graduate students register for 286.) Debates concerning the nature of mental states, their relation to physical states of the human body, how they acquire their content, how people come to know about them in themselves and others, and the roles they play in the explanation of human conduct.
+----------------------------
+Course Title: Epistemology of Testimony (PHIL 184C)
+Course Instructors: 
+Course Code: PHIL284C
+Course Units: 4-4
+Course Description: Many of our beliefs come from others, and not from direct experience. Is testimony a source of fundamental reasons¿reasons that do not have to be supported or validated by other sources like perception or inference? What sort of responsibility does one have to one¿s hearers, when one gives testimony?
+----------------------------
+Course Title: Rationality over Time
+Course Instructors: 
+Course Code: PHIL387D
+Course Units: 2-4
+Course Description: 
+----------------------------
+Course Title: Examples of Free Will (PHIL 189)
+Course Instructors: 
+Course Code: PHIL289
+Course Units: 4-4
+Course Description: Examples drawn from three domains: choice, computation, and conflict of norms. Conceptually, a distinction is made between examples that are predictable and those that are not, but skepticism about making a sharp distinction between determinism and indeterminism is defended.
+----------------------------
+Course Title: Good, Bad, and Rotten: The Philosophical Study of Moral Character
+Course Instructors: Grant Rozeboom, 
+Course Code: PHIL34S
+Course Units: 3-3
+Course Description: We ordinarily think there&#39;s a sense in which someone can be a good person, over and above doing well at her particular occupation (e.g., being a good firefighter), familial role (e.g., being a good sister), or political function (e.g., being a good citizen). But what does it take to be a good person, in this very general sense? And what about the opposite -- what does it take to be a bad person? We also tend to feel strongly about whether others, or ourselves, are good or bad people. In particular, we blame people for being bad and praise them for being good. But only sometimes -- if someone is bad only because, say, he had a traumatic childhood, then we tend to hold back from blaming him. So, what must be true if someone really is deserving of blame for being bad (or, of praise for being good)? And, finally, there seems to be an important difference between being bad and being completely depraved, or evil. But what underlies this difference? What distinguishes everyday badness from extraordinary evil? This course is dedicated to learning how to look for and evaluate answers to these questions. Readings will be pulled from historical and contemporary sources, including Aristotle, Augustine, Immanuel Kant, Hannah Arendt, Philippa Foot, Bernard Williams, Susan Wolf, Gary Watson, and Nomy Arpaly,
+----------------------------
+Course Title: Proof Theory (MATH 293A)
+Course Instructors: 
+Course Code: PHIL353A
+Course Units: 3-3
+Course Description: Gentzen&#39;s natural deduction and sequential calculi for first-order propositional and predicate logics. Normalization and cut-elimination procedures. Relationships with computational lambda calculi and automated deduction. Prerequisites: 151, 152, and 161, or equivalents.
+----------------------------
+Course Title: Personal Identity (PHIL 188)
+Course Instructors: 
+Course Code: PHIL288
+Course Units: 4-4
+Course Description: Do you persist through time the way that a skyscraper persists through space, by having different parts at different locations?  Or are you ¿wholly present¿ at every moment of your life, in something more like the way that an elevator is present in each place as it travels up to the top floor? What criteria determine whether you now are the very same person as some unique person located at some time in the past? Is the continuity of your memories or other mental states sufficient for your survival? Can you survive the loss or destruction of your body? Do you really exist for more than just the present moment? How do different answers to these questions bear on your moral, personal, and professional obligations? What kinds of considerations could possibly help us to answer these questions? This course explores these and related issues. Readings include a mix of introductory survey, historical, and contemporary material.
+----------------------------
+Course Title: Film & Philosophy (COMPLIT 154A, FRENCH 154, ITALIAN 154, PHIL 193C)
+Course Instructors: 
+Course Code: PHIL293C
+Course Units: 4-4
+Course Description: Issues of freedom, morality, faith, knowledge, personal identity, and the value of truth explored through film; philosophical investigation of the filmic medium itself. Screenings to include Twelve Monkeys (Gilliam), Ordet (Dreyer), The Dark Knight (Nolan), Vicky Cristina Barcelona (Allen), and Eternal Sunshine of the Spotless Mind (Kaufman). Taught in English.
+----------------------------
+Course Title: Introduction to Environmental Philosophy
+Course Instructors: Benjamin Miller, 
+Course Code: PHIL64S
+Course Units: 3-3
+Course Description: Environmental problems define and dominate the times. Climate Change threatens to displace and impoverish millions of people, species extinctions promise to reached unprecedented numbers, and sustainability has become a buzzword in discussions of responsible business practices. In this course we will explore some of the most pivotal environmental issues facing us today using the tools of philosophy. Together we¿ll ask questions such as: Are individuals or governments responsible for solving environmental problems? What objects should we care about in the natural world (animals, living things, ecosystems?), and what do we do when environmental problems force us to make tough choices in the face of competing values? Do we have responsibilities to future generations? This course will provide a foundation for thinking about these questions and for facing our environmental problems head on.
+----------------------------
+Course Title: Kant's Anthropology and Philosophy of History (PHIL 227B)
+Course Instructors: 
+Course Code: PHIL127B
+Course Units: 4-4
+Course Description: Kant&#39;s conception of anthropology or human nature, based on his philosophy of history, which influenced and anticipated 18th- and 19th-century philosophers of history such as Herder, Fichte, Hegel, and Marx. Texts include <i>Idea for a Universal History, Conjectural Beginning of Human History,</i> and <i>Anthropology from a Pragmatic Point of View.</i> Topics include: Kant&#39;s pragmatic approach to the study of human nature; the difficulty of human self knowledge; the role of regulative and teleological principles in studying human history; and Kant&#39;s theory of race.
+----------------------------
