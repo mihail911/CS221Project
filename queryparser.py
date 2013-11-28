@@ -55,6 +55,17 @@ def getInstructorNames(namedentitynodes):
 		if instructorname!='': allinstructors.append(instructorname.rstrip())
 	return set(allinstructors)
 
+def createBigramTokens(querytokens):
+	"""
+	Create a list of bigram tokens,
+	given the input of unigram tokens.
+	"""
+	bigramtokens=[]
+	for index in range(len(querytokens)-1):
+		btoken=querytokens[index].upper()+querytokens[index+1].upper()
+		bigramtokens.append(btoken)
+	return bigramtokens
+
 def containsCourseCode(querytokens,coursecodes):
 	"""
 	Checks to see if the query tokens contain a course code.
@@ -62,9 +73,11 @@ def containsCourseCode(querytokens,coursecodes):
 	empty set.
 	"""
 	querycoursecodes=[]
+	bigramtokens=createBigramTokens(querytokens)
+	alltokens=querytokens+bigramtokens
 	for code in coursecodes:
-		for token in querytokens:
-			if code in token:
+		for token in alltokens:
+			if code==token:
 				querycoursecodes.append(token)
 	return set(querycoursecodes)
 
@@ -75,11 +88,12 @@ def containsDeptCode(querytokens,departmentcodes):
 	else return the empty set.
 	"""
 	deptcodes=set()
-	#pdb.set_trace()
+	bigramtokens=createBigramTokens(querytokens)
+	alltokens=bigramtokens+querytokens	
 	for code in departmentcodes:
-		for token in querytokens:
-			if code in token:
-				deptcodes.add(token)
+		for token in alltokens:
+			if code==token.upper():
+				deptcodes.add(token.upper())
 	return deptcodes
 
 def readQuery():
@@ -92,13 +106,12 @@ def readQuery():
 	departmentcodes=createDatabase.getSetOfDeptCodes()
 	cleanquery=re.sub('[\:,/?.()]','', query).strip()
 	tokenized=nltk.word_tokenize(cleanquery)
+	bigramtokens=createBigramTokens(tokenized)
 	coursecodes=containsCourseCode(tokenized,coursecodes)
 	deptcodes=containsDeptCode(tokenized,departmentcodes)
-	print 'dept', deptcodes
-	print 'codes', coursecodes
 	postag=parseQuery(query)
 	chunkedinstructor=chunkQuery(postag,propernoungrammar1)
 	allinstructors=getInstructorNames(chunkedinstructor)
 	print allinstructors
 
-readQuery()
+#readQuery()
