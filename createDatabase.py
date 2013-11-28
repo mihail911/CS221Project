@@ -127,7 +127,7 @@ def extractPrereqs(coursedescription, deptcodes):
 # print extractPrereqs(x,deptcodes)
 def allClassInfo():
 	"""
-	Populates COURSEINFO database with all course info.
+	Populates 'courseinfo' database with all course info.
 	"""
 	conn=sqlite3.connect(allcoursesdatabase)
 	conn.text_factory=str
