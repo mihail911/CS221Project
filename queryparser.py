@@ -10,7 +10,9 @@ quarters=['autumn', 'winter', 'spring', 'summer']
 namedentitykeys=['ORGANIZATION', 'PERSON', 'LOCATION', 'DATE', 'TIME', 'MONEY', 'PERCENT', 
 				'FACILITY', 'GPE']
 
-propernoungrammar="PNOUN: {<NNP>*}"
+propernoungrammar1="PNOUN: {<NNP>*}"
+propernoungrammar2="PNOUN: {<VBD> <IN> <NNP>*}"
+
 
 
 def parseQuery(query):
@@ -44,7 +46,6 @@ def getInstructorNames(namedentitynodes):
 	nodes, if an instructor name is provided. Else
 	return an empty list.
 	"""
-
 	allinstructors=[]	
 	for n in namedentitynodes:
 		instructorname=""
@@ -91,17 +92,13 @@ def readQuery():
 	departmentcodes=createDatabase.getSetOfDeptCodes()
 	cleanquery=re.sub('[\:,/?.()]','', query).strip()
 	tokenized=nltk.word_tokenize(cleanquery)
-	#print 'course codes', coursecodes
 	coursecodes=containsCourseCode(tokenized,coursecodes)
 	deptcodes=containsDeptCode(tokenized,departmentcodes)
-	#print 'department', departmentcodes
 	print 'dept', deptcodes
 	print 'codes', coursecodes
 	postag=parseQuery(query)
-	chunkedinstructor=chunkQuery(postag,propernoungrammar)
+	chunkedinstructor=chunkQuery(postag,propernoungrammar1)
 	allinstructors=getInstructorNames(chunkedinstructor)
 	print allinstructors
 
-#readQuery()
-
-#TODO: CREATE LIST OF ALL DEPARTMENT CODES!!!!!!!!!!!!!!!!!!!
+readQuery()
