@@ -19,3 +19,5 @@
 * Cleanup
 ** Look for TODOs in files.
 ** Use Notes.md to create a nice writeup.
+** TODO If time permits, implement spellchecker using 'editdistance' (using DP counts as AI??)
+

@@ -83,8 +83,8 @@ def getCourseCodes():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
 	curs.execute('select * from courseinfo')
-	for code in curs.fetchall():
-		coursecodes.add(code[2])
+	for coursetuple in curs.fetchall():
+		coursecodes.add(coursetuple[2])
 	conn.close()
 	return coursecodes
 
@@ -98,7 +98,21 @@ def getInstructors():
 	curs.execute('select * from instructordb')
 	for instructor in curs.fetchall():
 		instructors.add(instructor[0])
+	conn.close()
 	return instructors
+
+def getAllCourseTitles():
+	"""
+	Return a set of all course title.
+	"""
+	titles=set()
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	curs.execute('select * from courseinfo')
+	for coursetuple in curs.fetchall():
+		titles.add(coursetuple[1])
+	conn.close()
+	return titles
 
 def extractPrereqs(coursedescription, deptcodes):
 	"""
@@ -122,9 +136,7 @@ def extractPrereqs(coursedescription, deptcodes):
 				tokenindex+=1
 		return newprereqs.strip()
 	return ''
-# deptcodes=getSetOfDeptCodes()
-# x='Prerequisite: Placement Test, AMELANG 128C.'
-# print extractPrereqs(x,deptcodes)
+
 def allClassInfo():
 	"""
 	Populates 'courseinfo' database with all course info.
@@ -181,7 +193,7 @@ def makeInstructorDatabase():
 	conn.commit()
 	conn.close()
 
-# setupDatabase()
-# allClassInfo()
+setupDatabase()
+allClassInfo()
 # # setupDeptCodeTable()
 # # populateDeptCodeTable()	

@@ -13,8 +13,6 @@ namedentitykeys=['ORGANIZATION', 'PERSON', 'LOCATION', 'DATE', 'TIME', 'MONEY', 
 propernoungrammar1="PNOUN: {<NNP>*}"
 propernoungrammar2="PNOUN: {<VBD> <IN> <NNP>*}"
 
-
-
 def parseQuery(query):
 	"""
 	Return query with POS tags.
@@ -96,6 +94,19 @@ def containsDeptCode(querytokens,departmentcodes):
 				deptcodes.add(token.upper())
 	return deptcodes
 
+def findMatchingCourseTitles(querytokens,coursetitles):
+	"""
+	Finds whether given query string 
+	matches any course titles.
+	"""
+	alltitles=set()
+	capitalizedquery=[querytokens[index].capitalize() for index in range(len(querytokens))]
+	newquery=' '.join(capitalizedquery)
+	for title in coursetitles:
+		if newquery in title:
+			alltitles.add(title)
+	return alltitles 
+
 def readQuery():
 	"""
 	Reads in a query and extracts information
@@ -104,14 +115,16 @@ def readQuery():
 	query=raw_input("Please input desired course search: ")
 	coursecodes=createDatabase.getCourseCodes()
 	departmentcodes=createDatabase.getSetOfDeptCodes()
+	coursetitles=createDatabase.getAllCourseTitles()
 	cleanquery=re.sub('[\:,/?.()]','', query).strip()
 	tokenized=nltk.word_tokenize(cleanquery)
 	bigramtokens=createBigramTokens(tokenized)
 	coursecodes=containsCourseCode(tokenized,coursecodes)
 	deptcodes=containsDeptCode(tokenized,departmentcodes)
+	print 'coursetitles ', findMatchingCourseTitles(tokenized,coursetitles)
 	postag=parseQuery(query)
 	chunkedinstructor=chunkQuery(postag,propernoungrammar1)
 	allinstructors=getInstructorNames(chunkedinstructor)
-	print allinstructors
+	print 'instructors', allinstructors
 
 #readQuery()
