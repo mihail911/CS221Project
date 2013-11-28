@@ -67,15 +67,15 @@ def containsCourseCode(querytokens,coursecodes):
 				querycoursecodes.append(token)
 	return set(querycoursecodes)
 
-def containsDeptCode(querytokens,deptcodes):
+def containsDeptCode(querytokens,departmentcodes):
 	"""
 	Checks to see if query tokens contain a 
 	department code. If found, return set of codes,
 	else return the empty set.
 	"""
 	deptcodes=set()
-	pdb.set_trace()
-	for code in deptcodes:
+	#pdb.set_trace()
+	for code in departmentcodes:
 		for token in querytokens:
 			if code in token:
 				deptcodes.add(token)
@@ -94,7 +94,7 @@ def readQuery():
 	#print 'course codes', coursecodes
 	coursecodes=containsCourseCode(tokenized,coursecodes)
 	deptcodes=containsDeptCode(tokenized,departmentcodes)
-	print 'department', departmentcodes
+	#print 'department', departmentcodes
 	print 'dept', deptcodes
 	print 'codes', coursecodes
 	postag=parseQuery(query)
