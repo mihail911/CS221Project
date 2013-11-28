@@ -35,8 +35,8 @@ codeFeatures :: String -> FeatureSet
 codeFeatures code = Set.fromList $ map Maybe.fromJust $ filter Maybe.isJust [
   Just $ CodeName letters,
   if length numbers > 0 then Just $ Code100s $ numbers!!0 else Nothing, 
-  if length numbers > 1 then Just $ Code10s $ numbers!!1 else Nothing, 
-  if length numbers > 0 then Just $ Code11s $ tail numbers else Nothing
+  if length numbers > 1 then Just $ Code10s $ numbers!!1 else Nothing
+  -- if length numbers > 0 then Just $ Code11s $ tail numbers else Nothing
   ]
   where letters = filter isAlpha code
         numbers = filter isDigit code

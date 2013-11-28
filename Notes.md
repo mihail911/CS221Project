@@ -16,6 +16,8 @@ I started with simple features: just the words in the title and description. The
 
 Next I thought to add combination features. I just included `code + (title/description word)` for the sake of efficiency.
 
+One problem: it thinks CS108 and Math108 are closely related. I'm going to remove the code11s feature and see if that helps.
+
 ### Profiling
 
 It takes way too long to run. I spent about two hours trying to get the Python profiler to give me something useful, but I couldn't get it to work so I'm rewriting the program in Haskell.

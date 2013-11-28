@@ -100,9 +100,11 @@ def getInstructors():
 		instructors.add(instructor[0])
 	return instructors
 
-def extractPrereqs(coursedescription, deptcodes):
+def extractPrereqsRaw(coursedescription, deptcodes):
 	"""
 	Extract course prereqs from course description.
+
+        return: Raw string containing the prerequisites.
 	"""
 	#pdb.set_trace()
 	prereqindex=coursedescription.find('Prerequisite')
@@ -122,6 +124,24 @@ def extractPrereqs(coursedescription, deptcodes):
 				tokenindex+=1
 		return newprereqs.strip()
 	return ''
+
+def extractPrereqs(description, deptcodes):
+        """
+        Extract course prereqs from course description.
+
+        return: List of prerequisite course names.
+        """
+        raw = extractPrereqsRaw(description, deptcodes)
+        words = raw.split()
+        for word in words:
+                match = re.search("\d", word)
+                if match and word[:match.start()] in deptcodes:
+                        # add prereq to entry
+        
+def prereqsToDB():
+        deptcodes = getSetOfDeptCodes()
+        
+        
 # deptcodes=getSetOfDeptCodes()
 # x='Prerequisite: Placement Test, AMELANG 128C.'
 # print extractPrereqs(x,deptcodes)

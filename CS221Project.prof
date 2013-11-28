@@ -1,20 +1,19 @@
-	Wed Nov 27 17:41 2013 Time and Allocation Profiling Report  (Final)
+	Thu Nov 28 13:55 2013 Time and Allocation Profiling Report  (Final)
 
 	   CS221Project +RTS -p -K50000000 -RTS
 
-	total time  =       13.96 secs   (13957 ticks @ 1000 us, 1 processor)
-	total alloc = 2,583,874,392 bytes  (excludes profiling overheads)
+	total time  =       11.53 secs   (11528 ticks @ 1000 us, 1 processor)
+	total alloc = 2,087,948,760 bytes  (excludes profiling overheads)
 
 COST CENTRE                     MODULE      %time %alloc
 
-compare                         Util         61.6    0.0
-bayesWeight.update.featurePrior CourseGraph  16.0    3.9
-bayesWeight.probs               CourseGraph  12.4   85.7
-bayesWeight.update              CourseGraph   8.1    0.0
-probUpdate                      Util          0.5    3.7
-smallDB                         ReadDB        0.3    1.4
-bayesWeight                     CourseGraph   0.3    2.2
-incMapValue                     CourseGraph   0.2    1.0
+compare                         Util         62.2    0.0
+bayesWeight.update.featurePrior CourseGraph  14.9    3.9
+bayesWeight.probs               CourseGraph  12.8   84.7
+bayesWeight.update              CourseGraph   7.8    0.0
+smallDB                         ReadDB        0.5    1.7
+probUpdate                      Util          0.4    3.7
+bayesWeight                     CourseGraph   0.4    2.6
 
 
                                                                                                 individual     inherited
@@ -23,21 +22,21 @@ COST CENTRE                                MODULE                             no
 MAIN                                       MAIN                               175           0    0.0    0.0   100.0  100.0
  main                                      Main                               352           0    0.0    0.0   100.0  100.0
   constructRelatednessGraph                CourseGraph                        353           0    0.0    0.0   100.0  100.0
-   constructRelatednessGraph.featurePriors CourseGraph                        417           1    0.0    0.0     0.9    1.1
-    getFeaturePriors                       CourseGraph                        418           1    0.0    0.1     0.9    1.1
-     getFeaturePriors.featureCounts        CourseGraph                        419           1    0.0    0.0     0.9    1.0
-      getFeaturePriors.folder              CourseGraph                        420         172    0.0    0.0     0.9    1.0
-       getFeaturePriors.folder.\           CourseGraph                        421       36635    0.0    0.0     0.9    1.0
-        incMapValue                        CourseGraph                        422       36635    0.2    1.0     0.9    1.0
-         compare                           Util                               425     1104004    0.3    0.0     0.3    0.0
-         incMapValue.v                     CourseGraph                        423       36635    0.1    0.0     0.4    0.0
-          compare                          Util                               424     1104004    0.3    0.0     0.3    0.0
-   constructRelatednessGraph.featureMap    CourseGraph                        379           1    0.0    0.0     0.3    1.0
-    getFeatureMap                          CourseGraph                        380           1    0.0    0.0     0.3    1.0
-     getFeatureMap.\                       CourseGraph                        381         172    0.0    0.0     0.3    1.0
-      extractFeatures                      CourseGraph                        394         172    0.0    0.0     0.3    1.0
-       extractFeatures.codeComboFeats      CourseGraph                        411         172    0.1    0.6     0.2    0.6
-        compare                            Util                               412      624924    0.1    0.0     0.1    0.0
+   constructRelatednessGraph.featurePriors CourseGraph                        417           1    0.0    0.0     0.7    1.1
+    getFeaturePriors                       CourseGraph                        418           1    0.0    0.1     0.7    1.1
+     getFeaturePriors.featureCounts        CourseGraph                        419           1    0.0    0.0     0.7    1.0
+      getFeaturePriors.folder              CourseGraph                        420         172    0.0    0.0     0.7    1.0
+       getFeaturePriors.folder.\           CourseGraph                        421       29331    0.0    0.0     0.6    1.0
+        incMapValue                        CourseGraph                        422       29331    0.2    1.0     0.6    1.0
+         compare                           Util                               425      830664    0.2    0.0     0.2    0.0
+         incMapValue.v                     CourseGraph                        423       29331    0.0    0.0     0.3    0.0
+          compare                          Util                               424      830664    0.2    0.0     0.2    0.0
+   constructRelatednessGraph.featureMap    CourseGraph                        379           1    0.0    0.0     0.3    1.1
+    getFeatureMap                          CourseGraph                        380           1    0.0    0.0     0.3    1.1
+     getFeatureMap.\                       CourseGraph                        381         172    0.0    0.0     0.3    1.1
+      extractFeatures                      CourseGraph                        394         172    0.0    0.0     0.3    1.1
+       extractFeatures.codeComboFeats      CourseGraph                        411         172    0.1    0.5     0.2    0.5
+        compare                            Util                               412      444022    0.1    0.0     0.1    0.0
        extractFeatures.descFeats           CourseGraph                        408         172    0.0    0.0     0.1    0.4
         descFeatures                       CourseGraph                        409         172    0.1    0.4     0.1    0.4
          compare                           Util                               410       32512    0.0    0.0     0.0    0.0
@@ -47,46 +46,46 @@ MAIN                                       MAIN                               17
        extractFeatures.instrFeats          CourseGraph                        403         172    0.0    0.0     0.0    0.0
         instrFeatures                      CourseGraph                        404         172    0.0    0.0     0.0    0.0
          compare                           Util                               426         168    0.0    0.0     0.0    0.0
-       compare                             Util                               402       23955    0.0    0.0     0.0    0.0
+       compare                             Util                               402       22820    0.0    0.0     0.0    0.0
        extractFeatures.codeFeats           CourseGraph                        398         172    0.0    0.0     0.0    0.0
         codeFeatures                       CourseGraph                        399         172    0.0    0.0     0.0    0.0
          codeFeatures.letters              CourseGraph                        413         172    0.0    0.0     0.0    0.0
-         compare                           Util                               401         858    0.0    0.0     0.0    0.0
+         compare                           Util                               401         514    0.0    0.0     0.0    0.0
          codeFeatures.numbers              CourseGraph                        400         172    0.0    0.0     0.0    0.0
-       extractFeatures.titleFeats          CourseGraph                        395         172    0.0    0.0     0.0    0.0
-        titleFeatures                      CourseGraph                        396         172    0.0    0.0     0.0    0.0
+       extractFeatures.titleFeats          CourseGraph                        395         172    0.0    0.0     0.0    0.1
+        titleFeatures                      CourseGraph                        396         172    0.0    0.1     0.0    0.1
          compare                           Util                               397        1825    0.0    0.0     0.0    0.0
       compare                              Util                               382        1317    0.0    0.0     0.0    0.0
-   constructRelatednessGraph.graph         CourseGraph                        370           1    0.0    0.0    98.4   96.1
-    getRelatednessGraph                    CourseGraph                        371           1    0.0    0.0    98.4   96.1
+   constructRelatednessGraph.graph         CourseGraph                        370           1    0.0    0.0    98.4   95.7
+    getRelatednessGraph                    CourseGraph                        371           1    0.0    0.0    98.4   95.7
      compare                               Util                               376        1317    0.0    0.0     0.0    0.0
-     getRelatednessGraph.\                 CourseGraph                        374         172    0.0    0.0    98.4   96.1
-      buildRelatedCourses                  CourseGraph                        378         172    0.1    0.3    98.4   96.1
+     getRelatednessGraph.\                 CourseGraph                        374         172    0.0    0.0    98.4   95.7
+      buildRelatedCourses                  CourseGraph                        378         172    0.1    0.3    98.4   95.7
        buildRelatedCourses.feats1          CourseGraph                        390         172    0.0    0.0     0.0    0.0
         compare                            Util                               391        1148    0.0    0.0     0.0    0.0
-       buildRelatedCourses.\               CourseGraph                        386       29584    0.0    0.0    98.2   95.5
-        bayesWeight                        CourseGraph                        388       29584    0.3    2.2    98.1   95.4
-         bayesWeight.probs                 CourseGraph                        389       29584   12.4   85.7    97.8   93.3
-          probUpdate                       Util                               434      291579    0.0    0.0     0.0    0.0
-          bayesWeight.update               CourseGraph                        414     6301220    8.1    0.0    85.5    7.6
-           probUpdate                      Util                               437     6009641    0.5    3.7     0.5    3.7
-           bayesWeight.update.featurePrior CourseGraph                        416     6301220   16.0    3.9    61.2    3.9
-            compare                        Util                               433   190387660   45.1    0.0    45.1    0.0
-           compare                         Util                               415    90596905   15.7    0.0    15.7    0.0
-       largestKBy                          Util                               383        1667    0.0    0.0     0.1    0.4
-        ==                                 Util                               440         354    0.0    0.0     0.0    0.0
-        largestKBy.left                    Util                               439         614    0.0    0.0     0.0    0.0
-        largestKBy.right                   Util                               438        1667    0.0    0.0     0.0    0.0
-        largestKBy.pivot                   Util                               385        1667    0.0    0.0     0.0    0.0
-        largestKBy.(...)                   Util                               384        1667    0.1    0.4     0.1    0.4
-   writeRelatednessGraph                   ReadDB                             364           1    0.0    0.0     0.4    1.4
-    writeRelatednessGraph.mapper           ReadDB                             377         172    0.0    0.0     0.0    0.0
+       buildRelatedCourses.\               CourseGraph                        386       29584    0.0    0.0    98.0   94.9
+        bayesWeight                        CourseGraph                        388       29584    0.4    2.6    98.0   94.9
+         bayesWeight.probs                 CourseGraph                        389       29584   12.8   84.7    97.6   92.2
+          probUpdate                       Util                               434      280555    0.0    0.0     0.0    0.0
+          bayesWeight.update               CourseGraph                        414     5044932    7.8    0.0    84.8    7.5
+           probUpdate                      Util                               437     4764377    0.4    3.7     0.4    3.7
+           bayesWeight.update.featurePrior CourseGraph                        416     5044932   14.9    3.9    60.4    3.9
+            compare                        Util                               433   143426328   45.5    0.0    45.5    0.0
+           compare                         Util                               415    68648025   16.1    0.0    16.1    0.0
+       largestKBy                          Util                               383        1647    0.0    0.0     0.3    0.5
+        ==                                 Util                               440         335    0.1    0.0     0.1    0.0
+        largestKBy.left                    Util                               439         590    0.0    0.0     0.0    0.0
+        largestKBy.right                   Util                               438        1647    0.0    0.0     0.0    0.0
+        largestKBy.pivot                   Util                               385        1647    0.0    0.0     0.0    0.0
+        largestKBy.(...)                   Util                               384        1647    0.2    0.5     0.2    0.5
+   writeRelatednessGraph                   ReadDB                             364           1    0.0    0.0     0.5    1.8
+    writeRelatednessGraph.mapper           ReadDB                             377         172    0.0    0.0     0.0    0.1
      writeRelatednessGraph.mapper.\        ReadDB                             441        1720    0.0    0.0     0.0    0.0
-    smallDB                                ReadDB                             366           0    0.3    1.4     0.3    1.4
+    smallDB                                ReadDB                             366           0    0.5    1.7     0.5    1.7
    allEntries                              CourseGraph                        355           0    0.0    0.0     0.1    0.3
     makeEntries                            ReadDB                             372           1    0.0    0.0     0.1    0.3
      makeEntries.go                        ReadDB                             373         173    0.0    0.0     0.1    0.3
-      makeEntry                            ReadDB                             375         172    0.1    0.1     0.1    0.3
+      makeEntry                            ReadDB                             375         172    0.0    0.1     0.1    0.3
        fromSqlString                       ReadDB                             393           0    0.0    0.2     0.0    0.2
     readDB                                 ReadDB                             358           0    0.0    0.0     0.0    0.0
  CAF:main1                                 Main                               343           0    0.0    0.0     0.0    0.0
