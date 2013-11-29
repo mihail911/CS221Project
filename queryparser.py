@@ -111,8 +111,10 @@ def readQuery():
 	"""
 	Reads in a query and extracts information
 	useful for satisfying the query.
+	Returns information as a dict with sets as values.
 	"""
 	query=raw_input("Please input desired course search: ")
+	courseinfo={}
 	coursecodes=createDatabase.getCourseCodes()
 	departmentcodes=createDatabase.getSetOfDeptCodes()
 	coursetitles=createDatabase.getAllCourseTitles()
@@ -121,10 +123,13 @@ def readQuery():
 	bigramtokens=createBigramTokens(tokenized)
 	coursecodes=containsCourseCode(tokenized,coursecodes)
 	deptcodes=containsDeptCode(tokenized,departmentcodes)
-	print 'coursetitles ', findMatchingCourseTitles(tokenized,coursetitles)
 	postag=parseQuery(query)
 	chunkedinstructor=chunkQuery(postag,propernoungrammar1)
 	allinstructors=getInstructorNames(chunkedinstructor)
-	print 'instructors', allinstructors
+	courseinfo['Instructors']=allinstructors
+	courseinfo['Titles']=findMatchingCourseTitles(tokenized,coursetitles)
+	courseinfo['Course Codes']=coursecodes
+	courseinfo['Dept Codes']=deptcodes	
+	return courseinfo
 
 #readQuery()
