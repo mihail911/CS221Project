@@ -38,7 +38,7 @@ def chunkQuery(querypostags, grammar):
 		allnamedentity.append(subtree)
 	return allnamedentity
 
-def getInstructorNames(namedentitynodes):
+def getInstructorNames(namedentitynodes,instructornames):
 	"""
 	Extract name of instructor given named entity
 	nodes, if an instructor name is provided. Else
@@ -49,7 +49,12 @@ def getInstructorNames(namedentitynodes):
 		instructorname=""
 		if hasattr(n,'node'):
 			if n.node=='PNOUN':
-				instructorname=' '.join(c[0] for c in n.leaves())
+				sanitizedinstructor=[]	
+				for c in n.leaves():
+					for inst in instructornames:
+						if c[0] in inst and c[0] not in sanitizedinstructor:
+							sanitizedinstructor.append(c[0])
+				instructorname=' '.join(sanitizedinstructor)
 		if instructorname!='': allinstructors.append(instructorname.rstrip())
 	return set(allinstructors)
 
@@ -75,8 +80,8 @@ def containsCourseCode(querytokens,coursecodes):
 	alltokens=querytokens+bigramtokens
 	for code in coursecodes:
 		for token in alltokens:
-			if code==token:
-				querycoursecodes.append(token)
+			if code==token.upper():
+				querycoursecodes.append(token.upper())
 	return set(querycoursecodes)
 
 def containsDeptCode(querytokens,departmentcodes):
@@ -107,6 +112,12 @@ def findMatchingCourseTitles(querytokens,coursetitles):
 			alltitles.add(title)
 	return alltitles 
 
+def updateCourseInfo(courseinfo,deptcodes,coursecodes,titles, instructors):
+	courseinfo['Instructors']=instructors
+	courseinfo['Titles']=titles
+	courseinfo['Course Codes']=coursecodes
+	courseinfo['Dept Codes']=deptcodes	
+
 def readQuery():
 	"""
 	Reads in a query and extracts information
@@ -117,6 +128,7 @@ def readQuery():
 	courseinfo={}
 	coursecodes=createDatabase.getCourseCodes()
 	departmentcodes=createDatabase.getSetOfDeptCodes()
+	allinstructors=createDatabase.getAllInstructors() 
 	coursetitles=createDatabase.getAllCourseTitles()
 	cleanquery=re.sub('[\:,/?.()]','', query).strip()
 	tokenized=nltk.word_tokenize(cleanquery)
@@ -125,11 +137,6 @@ def readQuery():
 	deptcodes=containsDeptCode(tokenized,departmentcodes)
 	postag=parseQuery(query)
 	chunkedinstructor=chunkQuery(postag,propernoungrammar1)
-	allinstructors=getInstructorNames(chunkedinstructor)
-	courseinfo['Instructors']=allinstructors
-	courseinfo['Titles']=findMatchingCourseTitles(tokenized,coursetitles)
-	courseinfo['Course Codes']=coursecodes
-	courseinfo['Dept Codes']=deptcodes	
+	allinstructors=getInstructorNames(chunkedinstructor,allinstructors)
+	updateCourseInfo(courseinfo,deptcodes,coursecodes,findMatchingCourseTitles(tokenized,coursetitles),allinstructors)
 	return courseinfo
-
-#readQuery()

@@ -171,6 +171,18 @@ def instructorDBInstance():
 	conn.commit()
 	conn.close()
 
+def getAllInstructors():
+	"""
+	Return set of all instructor names.
+	"""
+	allinstructors=set()
+	conn=sqlite3.connect(instructordb)
+	cursor=conn.cursor()
+	cursor.execute('select * from instructordb')
+	for insttuple in cursor.fetchall():
+		allinstructors.add(insttuple[0])
+	conn.close()
+	return allinstructors
 def makeInstructorDatabase():
 	"""Populates INSTRUCTORDB with instructor information where 
 	each row is of the form (instructor, coursecode)"""
