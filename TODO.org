@@ -19,5 +19,8 @@
 * Cleanup
 ** Look for TODOs in files.
 ** Use Notes.md to create a nice writeup.
+
 ** TODO If time permits, implement spellchecker using 'editdistance' (using DP counts as AI??)
+** TODO In write-up/discussion experiment with reduction of features (i.e. use only 'code'/'instructor' features) to discuss how adding features improves quality of results.
+** TODO Implement improved 'predictive' search given a user's history of past searches
 
