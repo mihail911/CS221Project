@@ -1,0 +1,27 @@
+Introduction/Problem Statement
+	Screen shot of how crappy 'explore courses'/'courserank' is
+
+Query Parsing (how do we extract useful info from a user's query)
+	1)Tokenize text
+	2) POS tagging
+	3) Chunk text based on pre-defined regular expression grammars
+
+Feature Extraction (how do we relate courses to each other)
+	1) In Database each course's information represented as 8-tuple
+	2) Discuss features extracted from Code/Title/Instructor/Description
+
+Assigning Weights/Relatedness Coefficient
+	1) Simple Naive schemas implemented first
+	2) Bayesian update of priors to determine relatedness (Naive Bayes assumption)
+
+Conclusion/Future Work
+	1)Support searches based on user's history?
+	2)More complex query searches
+	3)Spell-correction
+	4)Play around with other schemas for determining relatedness coefficient
+	5)Get it incorporated into the real site--already better results!
+
+References
+	http://nltk.org/book
+	http://en.wikipedia.org/wiki/Bayesian_spam_filtering
+
