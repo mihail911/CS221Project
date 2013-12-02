@@ -14,6 +14,11 @@ import createDatabase
 import readDB
 import coursegraph
 
+coursecodes="Course Codes"
+titles="Titles"
+deptcodes="Dept Codes"
+instructors="Instructors"
+
 if __name__=='__main__':
 	"""
 	Run the program.
@@ -24,4 +29,5 @@ if __name__=='__main__':
 			print 'All right, jerk. Bye.'
 			break
 		courseinfo=queryparser.readQuery()
-		print courseinfo
+		#title, course code, instructors, dept codes
+			

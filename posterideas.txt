@@ -24,4 +24,5 @@ Conclusion/Future Work
 References
 	http://nltk.org/book
 	http://en.wikipedia.org/wiki/Bayesian_spam_filtering
+	http://www.paulgraham.com/naivebayes.html
 
