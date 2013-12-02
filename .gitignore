@@ -1,5 +1,6 @@
 *~
 *.pyc
+*.o
 .DS_STORE
 dist
 Main
