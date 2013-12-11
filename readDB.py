@@ -13,7 +13,7 @@ Utilities to read the course database and provide useful output.
 import sqlite3
 import search
 
-allcoursesdbname = "courseinfo-small.db"
+allcoursesdbname = "courseinfodata.db"
 instructordbname = "instructordatabase.db"
 
 fields = 'id,title,code,instructor,unitsmin,unitsmax,description'.split(",")
@@ -45,5 +45,5 @@ def cleanup():
     Call this before exiting the program.
     """
     allcoursesdb.close()
-    instructordb.close()
+    #instructordb.close()
     

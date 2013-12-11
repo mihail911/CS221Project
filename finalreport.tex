@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage,enumitem,amsmath,amssymb,graphicx}
+\newcommand{\SUMN}[3]{\displaystyle\sum\limits_{n={#1}}^{{#2}} {#3}}
+\newcommand{\SUMK}[3]{\displaystyle\sum\limits_{k={#1}}^{{#2}} {#3}}
+\newcommand{\SUMX}[3]{\displaystyle\sum\limits_{x={#1}}^{{#2}} {#3}}
+\newcommand{\SUMI}[3]{\displaystyle\sum\limits_{i={#1}}^{{#2}} {#3}}
+\newcommand{\SUMJ}[3]{\displaystyle\sum\limits_{j={#1}}^{{#2}} {#3}}
+
+\linespread{1.5}
+\begin{document}
+
+\begin{center}
+{\Large OF COURSE! A Bayesian Inference Approach to More Dynamic Course Seach}
+\begin{center}
+{\normalsize CS221 Final Project by Michael Dickens and Mihail Eric}\\
+\today 
+\end{center}
+
+\end{center}
+
+
+
+\section*{TODOs}
+Metric to employ: 
+
+\section*{Introduction}
+	\emph{Explore Courses} is a search engine used regularly by the Stanford University community for browsing and finding courses. At the present moment, \emph{Explore Courses} can support basis query searches, including somewhat accurate retrieval given a course code and the exact title of a course. Any query search that does not fall into one of these two classes of searches will either return unrelated class results or more often no results at all. For this project, we sought to develop an improved course searching program that would be more robust in that it could support more diverse user input queries and would also be more dynamic in that the courses that were returned were more related given a universal metric that we define for assessing relatedness. The metric will be explained in a later section. \\
+	To achieve improved robustness, we implemented some basic natural language processing schemes for extracting useful and relevant information from a user input. The information that we were specifically looking for included course titles, course codes, department codes, and instructor names. To find more related courses, we extracted a variety of features that we considered relevant from all the data we could attain about a course and then we created a course-relatedness ``graph'' that assigns a relatedness score to each pair of classes, given their extracted features. To compute the relatedness score, we utilized a Bayesian inference scheme whereby we calculated the probabilities that two courses are related given that they have a pair of features in common. The Bayesian approach and the features used will be explained in later sections.
+
+\section*{Feature Extraction}
+
+
+
+\section*{Bayesian Approach to Course-Relatedness}
+First I implemented naiveWeights(), which worked sort of well. Then I implemented bayesWeights(). Finding P(R) and P(F) wasn't too hard, but how to find P(F|R)?
+
+Also, at a certain point I realide I also need to update on a feature not being in the second set as well as a feature being in the second sent--these both provide Bayesian evidence.
+
+Right now for P(F|R) and P(~F|R) I just threw in some constants. This seems to work okay.
+
+Then there's the question of how to combine each conditional probability. First I tried using combineProbs(), but that doesn't seem to work too well. It works a lot better to simply take the sum of all the probabilities. Why?
+
+\section*{Query Parsing}
+In order to satisfy a user's input queries, we need to extract useful information from a given query. We employed the following natural language processing scheme: tokenize query, tag with parts of speech, chunk appropriately using regular expression grammars. Once a query is chunked, useful information can be derived through analysis of the corresponding parse tree. 
+
+We search for instructors using a simple grammar that searches a string for sequences of proper nouns. We support course code and department code searches by tokenizing a query into unigram and bigram tokens and checking a set of course/department codes for matches. We also support title searches by searching for the input string in a set of all course titles.
+
+\section*{Data}
+	 We used the ``Explore Courses '' Java API to acquire information related to the 11,613 courses listed for enrollment for the 2013-2014 academic year. We populated a SQL datebase, using the sqlite3 Python library, with the following information for each course: course title, course code, instructors teaching the course, minimum units of credit received for taking the class, maximum units units of credit received for taking the class, and course description. 
+
+\section*{Metric for Assessment}
+
+\section*{Results}
+	
+\section*{Further Work}
+**Support searches based on user's history using more standard supervised machine learning classifiers.
+	**More complex query searches
+	**Spell-correction (edit distance)
+	**Play around with other schemas for determining relatedness coefficient
+	**Incorporate into the actual site.
+\section*{References}
+
+
+\end{document}
