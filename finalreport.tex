@@ -9,6 +9,7 @@
 \newcommand{\todo}[1]{{\Large \bf ***TODO: #1***}}
 
 \linespread{1.5}
+\setlength\parindent{24pt}
 \begin{document}
 
 \begin{center}
@@ -233,14 +234,18 @@ we can implement. At the moment, our query parsing uses the built-in NLTK POS-ta
 has made specific mistakes on some queries in the past such as occasionally labeling `CS109' as a proper noun. We may want to generate our own corpus of expected user queries along with parts-of-speech tagged, so that we can more appropriately train the POS-tagger that will be used for our program. We will also want to support a more diverse collection of chunking grammars that will allow for a greater complexity of query searches. Another thing we've also brainstormed is the possibility of supporting searches based on a user's previous history. Here we could employ some standard supervised machine learning classifying algorithms. We could use a similar Bayesian inference scheme whereby we find the probability that a user will want to find a certain course given that she has searched a number of other classes in the past.
 
 As far as improving the overall robustness of the program, the code is definitely not implemented the most efficiently as the moment. We often do complete linear searches through huge databases to find matches which is something we can definitely improve. The computational slowness of the code is also the reason we had to develop a reduced databased for testing course-relatedness. In the future we would like to create a relatedness graph for the entire collection of 11,000 courses offered. We can also implement some user spell-correction algorithm, for fixing a query if it doesn't directly match a name or code available in a database. Something as basic as a memoized edit distance algorithm should work very well for our purposes. Given all these places for improvement, our searcher already outperforms ``Explore Courses'' so we would like to get our code live at some point in the future.
-\begin{itemize}
-\item Support searches based on user's history using more standard supervised machine learning classifiers.
-\item Support more complex query searches.
-\item Spell-correction (by examining edit distance).
-\item Play around with other schemas for determining course relatedness.
-\end{itemize}
+
 
 \section*{References}
+
+\indent Bird, Steven, et al. (2009). Natural Language Toolkit. Retrieved from http://nltk.org/\\
+
+Gabrilovich, E., \& Markovitch, S. (2009). Wikipedia-based semantic interpretation for natural language processing. Journal of Artificial Intelligence Research, 34(2), 443.\\
+
+Graham, Paul, ``Probability.'' Retrieved from http://www.paulgraham.com/naivebayes.html.
+
+
+
 \todo{FIX INDENTATION}
 
 \end{document}

@@ -45,5 +45,4 @@ def cleanup():
     Call this before exiting the program.
     """
     allcoursesdb.close()
-    #instructordb.close()
     
