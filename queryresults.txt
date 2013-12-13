@@ -14,7 +14,8 @@ leon simon: 100
 amelang128b: 100
 what is hemispheric: 0
 first-year hausa: 0
-first-year hebrew, first quarter (jewishst comparative fictions of ethnicity (amstud 51q, complit , csre51q ): 30
+first-year hebrew, first quarter (jewishst 101a)
+comparative fictions of ethnicity (amstud 51q, complit , csre51q ): 30
 amelang107b and csre14n: 100
 growing up bilingual (chilatst 14n, educ math52h and cs105 ): 0
 digital dilemmas: 100
