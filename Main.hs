@@ -22,7 +22,7 @@ testRelatednessReal =
      print $ idKey math51
      print math51
      -- print $ map (getRelatedCourses featurePriors featureMap 8) entries
-     -- print $ getRelatedCourses featurePriors featureMap 8 math51
+     print $ buildRelatedCourses featurePriors featureMap 10 math51
      cleanup
 
 runTests :: IO ()
@@ -30,5 +30,6 @@ runTests = testRelatednessReal
 
 
 main :: IO ()
--- main = runTests
-main = constructRelatednessGraph 10
+main = runTests
+-- main = constructRelatednessGraph 10
+-- main = makeSmallDB

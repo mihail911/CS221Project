@@ -12,6 +12,7 @@
 * Small Changes
 ** DONE Replace magic constants for field indices with XXXindex in readDB.py.
    CLOSED: [2013-11-26 Tue 14:12]
+** TODO Put prerequisites into DB (use extractPrereqs)
 ** TODO Change list of instructors in the course info db from a string to an actual list
 ** TODO For courses where the title lists alternative codes, treat these codes as a separate value in the table and not as part of the title.
 * Bugs

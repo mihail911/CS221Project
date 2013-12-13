@@ -32,7 +32,7 @@ def setupDatabase():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
 	curs.execute('DROP TABLE courseinfo')
-	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description,prereqs)')
+	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description)')
 	conn.commit()
 	conn.close()
 
@@ -117,6 +117,8 @@ def getAllCourseTitles():
 def extractPrereqs(coursedescription, deptcodes):
 	"""
 	Extract course prereqs from course description.
+
+        return: Raw string containing the prerequisites.
 	"""
 	#pdb.set_trace()
 	prereqindex=coursedescription.find('Prerequisite')
@@ -137,6 +139,13 @@ def extractPrereqs(coursedescription, deptcodes):
 		return newprereqs.strip()
 	return ''
 
+def prereqsToDB():
+        deptcodes = getSetOfDeptCodes()
+        
+        
+# deptcodes=getSetOfDeptCodes()
+# x='Prerequisite: Placement Test, AMELANG 128C.'
+# print extractPrereqs(x,deptcodes)
 def allClassInfo():
 	"""
 	Populates 'courseinfo' database with all course info.
@@ -157,8 +166,8 @@ def allClassInfo():
 			coursedescription=' '.join(f.readline()[20:].split())
 			#courseprereqs=extractPrereqs(coursedescription,deptcodes)
 			delimiter=f.readline()
-			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription,'')
-			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?,?)", allelems)	
+			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription)
+			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
 
@@ -205,7 +214,7 @@ def makeInstructorDatabase():
 	conn.commit()
 	conn.close()
 
+setupDeptCodeTable()
+populateDeptCodeTable()	
 setupDatabase()
 allClassInfo()
-# # setupDeptCodeTable()
-# # populateDeptCodeTable()	
