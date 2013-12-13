@@ -100,6 +100,13 @@ Thus, to find the probability that two courses are related, we update
 a prior probability estimate with the evidence given by each feature
 found in the two courses.
 
+We had some difficulty in combining probabilities. We attempted to use
+the naive Bayes assumption to compute the combined probability, but
+this gave us unworkably-small probabilities. We updated the model to
+combine each of the feature probabiliteis by simply taking their
+sum. Although this operation is not meaningful in a probabilistic
+sense, it works as a useful heuristic for producing workable results.
+
 \section*{Query Parsing}
 In order to satisfy a user's input queries, we need to extract useful
 information from a given query. Using the Python Natural Language
@@ -134,8 +141,19 @@ and MATH departments. We had to utilize a reduced database because it
 was too time-consuming to create a comprehensive relatedness graph for
 all 11,613 courses.
 
-\todo{Explain how we find the top match and then find the most related
-courses.}
+We use the query parser to find an exact match for the query. Then we
+use the course relatedness graph to find a set of the nearest
+courses. A query returns this set of courses in order of relatedness.
+
+For example, if the user inputs `CS221', we identify the course with
+the code `CS221'. Then we find the courses most similar to CS221 and
+return those.
+
+This approach has certain limitations: for example, a course that has
+CS221 as a prerequisite might be more relevant to a search for `CS221'
+but not be considered sufficiently closely related to CS221. In
+practice, this isn't much of a problem. Our current approach seems to
+work relatively well, but we may refine it in the future.
 
 \section*{Metric for Assessment}
 We developed a simple point-based metric to objectively determine the
@@ -186,11 +204,15 @@ point-based system described above.
 \section*{Results}
 	
 \section*{Further Work}
-**Support searches based on user's history using more standard supervised machine learning classifiers.\\
-	**More complex query searches\\
-	**Spell-correction (edit distance)\\
-	**Play around with other schemas for determining relatedness coefficient\\
-	**Incorporate into the actual site.\\
+
+In the future, we would like to implement some or all of the following.
+
+\begin{itemize}
+\item Support searches based on user's history using more standard supervised machine learning classifiers.
+\item Support more complex query searches.
+\item Spell-correction (by examining edit distance).
+\item Play around with other schemas for determining course relatedness.
+\end{itemize}
 
 \section*{References}
 
