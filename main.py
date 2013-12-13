@@ -21,12 +21,9 @@ instructors="Instructors"
 
 allinstructors=createDatabase.getInstructors()
 
-if __name__=='__main__':
-	"""
-	Run the program.
-	"""
+def processInput(query):
 	while True:
-		courseinfo=queryparser.readQuery()
+		courseinfo=queryparser.readQuery(query)
 		coursesfound = []
 		#print 'course info',courseinfo
 		#title, course code, instructors, dept codes
@@ -58,6 +55,12 @@ if __name__=='__main__':
 		print sorted(mostrelatedcourses,key=lambda pair: pair[1])[-5:]
 		readDB.cleanup()
 		break
+
+# if __name__=='__main__':
+# 	"""
+# 	Run the program.
+# 	"""
+# 	processInput()
 
 
 

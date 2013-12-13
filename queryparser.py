@@ -118,13 +118,13 @@ def updateCourseInfo(courseinfo,deptcodes,coursecodes,titles, instructors):
 	courseinfo['Course Codes']=coursecodes
 	courseinfo['Dept Codes']=deptcodes	
 
-def readQuery():
+def readQuery(query):
 	"""
 	Reads in a query and extracts information
 	useful for satisfying the query.
 	Returns information as a dict with sets as values.
 	"""
-	query=raw_input("Please input desired course search: ")
+	#query=raw_input("Please input desired course search: ")
 	courseinfo={}
 	coursecodes=createDatabase.getCourseCodes()
 	departmentcodes=createDatabase.getSetOfDeptCodes()
