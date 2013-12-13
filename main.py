@@ -47,11 +47,11 @@ if __name__=='__main__':
 		# 	results=readDB.queryDB('SELECT * FROM courseinfo WHERE code LIKE %?%', (inst,))
 		# 	coursesfound += results
 		# 	print 'instructor', results
-		for deptcode in courseinfo[deptcodes]:
-			print deptcode
-			results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
-			coursesfound += results
-			print 'deptcode', results	
+		# for deptcode in courseinfo[deptcodes]:
+		# 	print deptcode
+		# 	results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
+		# 	coursesfound += results
+		# 	print 'deptcode', results	
 		# related = [ coursegraph.getRelatedCourses(entry)[] for entry in coursesfound ]
 		# print related
 
