@@ -32,7 +32,7 @@ def setupDatabase():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
 	curs.execute('DROP TABLE courseinfo')
-	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description,prereqs)')
+	curs.execute('CREATE TABLE courseinfo (id INTEGER PRIMARY KEY NOT NULL,title NOT NULL,code NOT NULL,instructor NOT NULL,unitsmin INTEGER NOT NULL,unitsmax INTEGER NOT NULL,description)')
 	conn.commit()
 	conn.close()
 
@@ -101,9 +101,6 @@ def getInstructors():
 	conn.close()
 	return instructors
 
-<<<<<<< HEAD
-def extractPrereqsRaw(coursedescription, deptcodes):
-=======
 def getAllCourseTitles():
 	"""
 	Return a set of all course title.
@@ -118,7 +115,6 @@ def getAllCourseTitles():
 	return titles
 
 def extractPrereqs(coursedescription, deptcodes):
->>>>>>> a41a2fc343c3a50503efeff0534279278d72dc83
 	"""
 	Extract course prereqs from course description.
 
@@ -143,20 +139,6 @@ def extractPrereqs(coursedescription, deptcodes):
 		return newprereqs.strip()
 	return ''
 
-<<<<<<< HEAD
-def extractPrereqs(description, deptcodes):
-        """
-        Extract course prereqs from course description.
-
-        return: List of prerequisite course names.
-        """
-        raw = extractPrereqsRaw(description, deptcodes)
-        words = raw.split()
-        for word in words:
-                match = re.search("\d", word)
-                if match and word[:match.start()] in deptcodes:
-                        # add prereq to entry
-        
 def prereqsToDB():
         deptcodes = getSetOfDeptCodes()
         
@@ -164,8 +146,6 @@ def prereqsToDB():
 # deptcodes=getSetOfDeptCodes()
 # x='Prerequisite: Placement Test, AMELANG 128C.'
 # print extractPrereqs(x,deptcodes)
-=======
->>>>>>> a41a2fc343c3a50503efeff0534279278d72dc83
 def allClassInfo():
 	"""
 	Populates 'courseinfo' database with all course info.
@@ -186,8 +166,8 @@ def allClassInfo():
 			coursedescription=' '.join(f.readline()[20:].split())
 			#courseprereqs=extractPrereqs(coursedescription,deptcodes)
 			delimiter=f.readline()
-			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription,'')
-			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?,?)", allelems)	
+			allelems=(id,coursetitle,coursecode,courseinstructors, courseunits[0],courseunits[1],coursedescription)
+			curs.execute("INSERT INTO courseinfo VALUES (?,?,?,?,?,?,?)", allelems)	
 	conn.commit()
 	conn.close()
 
@@ -234,7 +214,7 @@ def makeInstructorDatabase():
 	conn.commit()
 	conn.close()
 
+setupDeptCodeTable()
+populateDeptCodeTable()	
 setupDatabase()
 allClassInfo()
-# # setupDeptCodeTable()
-# # populateDeptCodeTable()	

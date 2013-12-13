@@ -32,3 +32,4 @@ runTests = testRelatednessReal
 main :: IO ()
 main = runTests
 -- main = constructRelatednessGraph 10
+-- main = makeSmallDB
