@@ -32,7 +32,6 @@ def chunkQuery(querypostags, grammar):
 	named entity nodes in list.
 	"""
 	allnamedentity=[]
-	#chunked=nltk.ne_chunk(querypostags)
 	cp=nltk.RegexpParser(grammar)
 	tree=cp.parse(querypostags)
 	for subtree in tree.subtrees():
