@@ -141,14 +141,13 @@ courses.}
 We developed a simple point-based metric to objectively determine the
 quality of our course searcher as compared to ExploreCourses. To
 evaluate the performance of our searcher, we generated a random subset
-of 26 courses taken from our reduced database. We subdivided these 26
+of 21 courses taken from our reduced database. We subdivided these 21
 courses into five types of searches: 
 
 \begin{enumerate}
 \item Specific course code such as CS109
 \item Instructor name such as `Mehran Sahami'
-\item Course title such as `Introduction to Probability for Computer Scientists'
-\item Subset of a course title such as `Probability for Computer Scientists'
+\item Course title or subset of course title such as `Probability for Computer Scientists'
 \item More complex queries
 \end{enumerate}
 
@@ -162,24 +161,20 @@ courses into five types of searches:
 
 We used the following point system to evaluate the accuracy of queries: 
 
-50 points if desired course is the first hit, 30 points if the second
-hit, then 25, 20, 15.
-
-For each of the following, give the full points for the first hit, 4/5 of
-the points for the second hit, 3/5 for the third, etc.
+For each of the following, give the full points for the first hit, 3/5
+of the points for the second hit, and 2/5 the points for the third hit.
 
 \begin{itemize}
+\item 50 points if exact match
 \item 10 points if same sequence as searched-for course (e.g. Math 51,
   52, 53)
 \item 5 points if in the same department
-\item 10 points if is the same course in a different department
 \item 10 points if has same instructor
 \item 10 points if course descriptions are sufficiently similar, judged subjectively  
 \end{itemize}
 
-Searches for instructors are judged more simply: 50 points if the
-first course is taught by the instructor, 45 for the second course,
-then 40, 35, 30.
+Searches for instructors are judged simply by whether the result is
+taught by the instructor. An exact match is worth 50 points.
 
 These numbers are somewhat arbitrary. To get a better idea of the
 reliability of our search algorithm, we should collect data on user
