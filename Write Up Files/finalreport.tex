@@ -99,14 +99,16 @@ counting how frequently it occurs in the database.
 
 Thus, to find the probability that two courses are related, we update
 a prior probability estimate with the evidence given by each feature
-found in the two courses.
+found in the two courses: \\
+
+$P(related | feature) = P(related) \dfrac{P(feature | related)}{P(feature)}$ \\
 
 We had some difficulty in combining probabilities. We attempted to use
-the naive Bayes assumption to compute the combined probability, but
+the naive Bayes assumption to compute the combined probability (Graham), but
 this gave us unworkably-small probabilities. We updated the model to
 combine each of the feature probabiliteis by simply taking their
 sum. Although this operation is not meaningful in a probabilistic
-sense, it works as a useful heuristic for producing workable results.
+sense, it works as a useful heuristic for producing accurate results.
 
 \section*{Query Parsing}
 In order to satisfy a user's input queries, we need to extract useful
