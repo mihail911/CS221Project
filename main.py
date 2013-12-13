@@ -28,30 +28,39 @@ if __name__=='__main__':
 	while True:
 		courseinfo=queryparser.readQuery()
 		coursesfound = []
+		#print courseinfo
+		allcourseids=[]
 		#title, course code, instructors, dept codes
-		print courseinfo
 		for title in courseinfo[titles]: #iterate over all possible titles
 			results=readDB.queryDB('SELECT * FROM courseinfo WHERE title=?', (title.lower(),))
-			coursesfound += results
-			print 'title', results
+			# coursesfound += results
+			# print 'title', results
+			for course in results:
+				allcourseids.append(course[0])
 		for ccode in courseinfo[coursecodes]:
 			results=readDB.queryDB('SELECT * FROM courseinfo WHERE code=?', (ccode.lower(), ))
-			coursesfound += results
-			print 'code ', results	
-		for inst in courseinfo[instructors]:
-			for instructor in allinstructors:
-				if inst in instructor:
-					results=readDB.queryDB('SELECT * FROM courseinfo WHERE instructor=? ',(inst.lower(),))
-					print 'instructors', results
-			
-			coursesfound += results
+			# coursesfound += results
+			# print 'code ', results
+			for course in results:
+				allcourseids.append(course[0])	
+		for inst in courseinfo[instructors]:#iterate over all found instructors
+			allcourses=readDB.queryDB('SELECT * from courseinfo') #iterate over all possible instructors
+			for acourse in allcourses:
+				if inst.lower() in acourse[3]:
+					#print 'instructor courses', acourse
+					allcourseids.append(acourse[0])
 		for deptcode in courseinfo[deptcodes]:
-			print deptcode
-			results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
-			coursesfound += results
-			print 'deptcode', results	
-		related = [ coursegraph.getRelatedCourses(entry)[] for entry in coursesfound ]
-		print related
+			allcourses=readDB.queryDB('SELECT * from courseinfo')
+			for acourse in allcourses:
+				if deptcode.lower() in acourse[2]:
+					#print 'deptcode', acourse
+					allcourseids.append(acourse[0])	
+			#results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
+			#coursesfound += results
+			#print 'deptcode', results	
+		related = [ coursegraph.getRelatedCourses(entry)[5] for entry in allcourseids ]
+		# print related
+		#print 'ids',allcourseids
 		readDB.cleanup()
 		break
 

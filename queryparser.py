@@ -99,7 +99,7 @@ def containsDeptCode(querytokens,departmentcodes):
 				deptcodes.add(token.upper())
 	return deptcodes
 
-def findMatchingCourseTitles(querytokens,coursetitles):
+def findMatchingCourseTitles(querytokens,coursetitles, deptcodes):
 	"""
 	Finds whether given query string 
 	matches any course titles.
@@ -108,7 +108,7 @@ def findMatchingCourseTitles(querytokens,coursetitles):
 	capitalizedquery=[querytokens[index].capitalize() for index in range(len(querytokens))]
 	newquery=' '.join(capitalizedquery)
 	for title in coursetitles:
-		if newquery in title:
+		if newquery in title and newquery.upper() not in deptcodes:
 			alltitles.add(title)
 	return alltitles 
 
@@ -138,5 +138,5 @@ def readQuery():
 	postag=parseQuery(query)
 	chunkedinstructor=chunkQuery(postag,propernoungrammar1)
 	allinstructors=getInstructorNames(chunkedinstructor,allinstructors)
-	updateCourseInfo(courseinfo,deptcodes,coursecodes,findMatchingCourseTitles(tokenized,coursetitles),allinstructors)
+	updateCourseInfo(courseinfo,deptcodes,coursecodes,findMatchingCourseTitles(tokenized,coursetitles,departmentcodes),allinstructors)
 	return courseinfo

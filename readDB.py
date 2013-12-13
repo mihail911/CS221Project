@@ -13,7 +13,7 @@ Utilities to read the course database and provide useful output.
 import sqlite3
 import search
 
-allcoursesdbname = "courseinfodata.db"
+allcoursesdbname = "courseinfo-small.db"
 instructordbname = "instructordatabase.db"
 
 fields = 'id,title,code,instructor,unitsmin,unitsmax,description'.split(",")
