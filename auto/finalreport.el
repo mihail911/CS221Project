@@ -1,6 +1,7 @@
 (TeX-add-style-hook "finalreport"
  (lambda ()
     (TeX-add-symbols
+     '("todo" 1)
      '("SUMJ" 3)
      '("SUMI" 3)
      '("SUMX" 3)
