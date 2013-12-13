@@ -28,8 +28,18 @@ import ReadDB
 allEntries :: IO [Entry]
 allEntries = readDB smallDBName >>= (return . makeEntries)
 
+unigramFeatures :: String -> [String]
+unigramFeatures = words
+
+bigramFeatures :: String -> [String]
+bigramFeatures str = map (\(x,y) -> x ++ "|" ++ y) $ zip wl (tail wl)
+  where wl = words str
+
+stringFeatures :: String -> [String]
+stringFeatures str = unigramFeatures str -- ++ bigramFeatures str
+
 titleFeatures :: String -> FeatureSet
-titleFeatures title = Set.fromList [ Title w | w <- words title ]
+titleFeatures title = Set.fromList [ Title w | w <- stringFeatures title ]
 
 codeFeatures :: String -> FeatureSet
 codeFeatures code = Set.fromList $ map Maybe.fromJust $ filter Maybe.isJust [
@@ -50,7 +60,7 @@ unitFeatures minUnits maxUnits =
   Set.fromList [ MinUnits minUnits, MaxUnits maxUnits ]
 
 descFeatures :: String -> FeatureSet
-descFeatures desc = Set.fromList [ Desc w | w <- words desc ]
+descFeatures desc = Set.fromList [ Desc w | w <- stringFeatures desc ]
 
 extractFeatures :: Entry -> FeatureSet
 extractFeatures entry = Set.unions [
@@ -88,9 +98,17 @@ getFeaturePriors featureMap =
         folder myMap feats =
           Set.foldl (\cum feat -> incMapValue feat cum) myMap feats
 
+-- combineProbs :: [Double] -> Double
+-- combineProbs [] = 0
+-- combineProbs probs = prod / (prod + invs)
+--   where prod = product probs
+--         invs = product $ map (1.0 -) probs
+
+combineProbs :: [Double] -> Double
+combineProbs = sum
 
 bayesWeight :: FeaturePriorMap -> FeatureSet -> FeatureSet -> Double
-bayesWeight featurePriors feats1 feats2 = sum $ Set.toList probs
+bayesWeight featurePriors feats1 feats2 = combineProbs $ Set.toList probs
   where probs = Set.map update feats1
         prior = 0.1
         update feat = if Set.member feat feats2

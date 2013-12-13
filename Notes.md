@@ -18,6 +18,8 @@ Next I thought to add combination features. I just included `code + (title/descr
 
 One problem: it thinks CS108 and Math108 are closely related. I'm going to remove the code11s feature and see if that helps.
 
+I added bigram features but it turns out they don't really help.
+
 ### Profiling
 
 It takes way too long to run. I spent about two hours trying to get the Python profiler to give me something useful, but I couldn't get it to work so I'm rewriting the program in Haskell.

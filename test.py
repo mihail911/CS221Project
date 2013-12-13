@@ -38,3 +38,5 @@ def testCourseRelatedness():
 
 testCourseRelatednessReal()
 # testCourseRelatedness()
+
+# [u'math109', u'math118', u'cs142', u'math16', u'cs103', u'cs105', u'cs106b', u'math104', u'cs109', u'math108']
