@@ -142,10 +142,6 @@ def extractPrereqs(coursedescription, deptcodes):
 def prereqsToDB():
         deptcodes = getSetOfDeptCodes()
         
-        
-# deptcodes=getSetOfDeptCodes()
-# x='Prerequisite: Placement Test, AMELANG 128C.'
-# print extractPrereqs(x,deptcodes)
 def allClassInfo():
 	"""
 	Populates 'courseinfo' database with all course info.
