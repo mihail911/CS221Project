@@ -1,6 +1,9 @@
 *~
 *.pyc
 *.o
+*.hi
+*.aux
+*.log
 .DS_STORE
 dist
 Main
