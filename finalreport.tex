@@ -12,13 +12,15 @@
 \begin{document}
 
 \begin{center}
-{\Large OF COURSE! Using Bayesian Inference to Build a More Dynamic Course Search}
-\begin{center}
+{\Large OF COURSE! Using Bayesian Inference to Build a More Dynamic
+  Course Search}
+
 {\normalsize CS221 Final Project by Michael Dickens and Mihail Eric}\\
 \today 
 \end{center}
 
-\end{center}
+\setlist[enumerate]{itemsep=0mm}
+\setlist[itemize]{itemsep=0mm}
 
 \section*{Introduction}
 ExploreCourses is a search engine used regularly by the Stanford
@@ -67,7 +69,7 @@ We used the following initial set of features:
 \item instructors
 \item minimum units
 \item maximum units
-\end{itemize}
+\end{itemize}  
 
 Later, we took each of the course code features and combined them with
 each title, instructor, and description feature to create a set of
@@ -108,8 +110,14 @@ chunked, useful information can be derived through analysis of the
 corresponding parse tree. Using this scheme, we are able to support
 user query searches consisting of more complex phrases
 
-We search for instructors using a simple grammar that searches a string for sequences of proper nouns. We support course code and department code searches by tokenizing a query into unigram and bigram tokens and checking a set of course/department codes for matches. We also support title searches by searching for the input string in a set of all course titles.\\
-Talk about use of NLTK POS-Tagger, chunker, regex grammar.
+We search for instructors using a simple grammar that searches a
+string for sequences of proper nouns. We support course code and
+department code searches by tokenizing a query into unigram and bigram
+tokens and checking a set of course/department codes for matches. We
+also support title searches by searching for the input string in a set
+of all course titles.
+
+\todo{Talk about use of NLTK POS-Tagger, chunker, regex grammar.}
 
 \section*{Data}
 We used the ExploreCourses Java API to acquire information related to
@@ -126,6 +134,9 @@ and MATH departments. We had to utilize a reduced database because it
 was too time-consuming to create a comprehensive relatedness graph for
 all 11,613 courses.
 
+\todo{Explain how we find the top match and then find the most related
+courses.}
+
 \section*{Metric for Assessment}
 We developed a simple point-based metric to objectively determine the
 quality of our course searcher as compared to ExploreCourses. To
@@ -141,7 +152,7 @@ courses into five types of searches:
 \item More complex queries
 \end{enumerate}
 
-The more complex queries included two of each of the following: 
+\noindent The more complex queries included two of each of the following: 
 
 \begin{enumerate}
 \item `courses taught by [instructor]'
@@ -158,7 +169,8 @@ For each of the following, give the full points for the first hit, 4/5 of
 the points for the second hit, 3/5 for the third, etc.
 
 \begin{itemize}
-\item 10 points in same sequence as searched-for course
+\item 10 points if same sequence as searched-for course (e.g. Math 51,
+  52, 53)
 \item 5 points if in the same department
 \item 10 points if is the same course in a different department
 \item 10 points if has same instructor
