@@ -4,6 +4,7 @@
 *.hi
 *.aux
 *.log
+*.orig
 .DS_STORE
 dist
 Main
