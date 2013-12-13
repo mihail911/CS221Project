@@ -20,36 +20,6 @@
 
 \end{center}
 
-
-
-\section*{TODOs}
-
-%
-Metric to employ: \\
-If no classes returned, search result of 0.\\
-
-Only top 5 course searches considered in evaluation.\\
-
-Things to consider:\\
-50 points if course desired in first hit, then 30, 25, 20, etc.\\
-1) if course in same sequence as searched for course (+10,+8,...)\\
-2) if course in same department (+5,+4,+3,+2,+1)\\
-3) if course is same course in a different department (+10)\\
-4) if course has same instructor (+10,+8,+6,+4,+2)\\
-5) if course descriptions are sufficiently similar, judged subjectively (+5,+4,...)\\
-% 5) number of nouns that course descriptions have in common (with expected course)\\
-------------------------------------------------------------------\\
-If specific course being searched, then we know that the user has a particular course in mind for their search.
-
-Data (25 searches across different 5 different domains (5 searches per domain))\\
-1) specific course code\\
-2) instructor name\\
-3) course title searchs (including segments of course titles)\\
-4) department code\\
-5) more complex queries ('courses taught by', ``cs109 and cs154'')
-
-
-
 \section*{Introduction}
 ExploreCourses is a search engine used regularly by the Stanford
 University community for browsing and finding courses. At the present
@@ -173,15 +143,38 @@ courses into five types of searches:
 
 The more complex queries included two of each of the following: 
 
-
 \begin{enumerate}
 \item `courses taught by [instructor]'
 \item `[course 1] and [course 2]'
 \item `courses in the [department] department'
 \end{enumerate}
 
-The robustness of our searcher as compared to ExploreCourses using our
-metric
+We used the following point system to evaluate the accuracy of queries: 
+
+50 points if desired course is the first hit, 30 points if the second
+hit, then 25, 20, 15.
+
+For each of the following, give the full points for the first hit, 4/5 of
+the points for the second hit, 3/5 for the third, etc.
+
+\begin{itemize}
+\item 10 points in same sequence as searched-for course
+\item 5 points if in the same department
+\item 10 points if is the same course in a different department
+\item 10 points if has same instructor
+\item 10 points if course descriptions are sufficiently similar, judged subjectively  
+\end{itemize}
+
+Searches for instructors are judged more simply: 50 points if the
+first course is taught by the instructor, 45 for the second course,
+then 40, 35, 30.
+
+These numbers are somewhat arbitrary. To get a better idea of the
+reliability of our search algorithm, we should collect data on user
+satisfaction with real-world queries. Unfortunately, such a metric is
+not feasible at this time, so for now we will stick with the
+point-based system described above.
+
 \section*{Results}
 	
 \section*{Further Work}
