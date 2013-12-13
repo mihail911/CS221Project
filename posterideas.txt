@@ -1,0 +1,42 @@
+Introduction/Problem Statement
+	Image:Screen shot of how crappy 'explore courses'/'courserank' is
+
+			 **Software widely used by students
+			 **Results often arbitrary
+			 **Wish to support smarter, more dynamic search
+			 **Improved schema for determining course relatedness
+
+
+Feature Extraction (how do we relate courses to each other)
+ 			 **How do we relate courses to each other?
+			 **Extract features from (title, code, instructor, description, unit count)
+
+	1) In Database each course's information represented as 8-tuple
+
+Assigning Weights/Relatedness Coefficient
+	** Simple naive schemas implemented first
+	** Bayesian update of priors to determine relatedness (Naive Bayes assumption)
+
+
+Query Parsing 
+		** How do we extract useful information from a user's query?
+		** Basic natural language processing schema as follows:
+			1)Tokenize text
+			2)Tag parts-of-speech using NLTK tagger
+			3)Chunk text based on predetermined regular expression grammars
+
+Results
+	Text
+
+Future Work
+	**Support searches based on user's history
+	**More complex query searches
+	**Spell-correction (edit distance)
+	**Play around with other schemas for determining relatedness coefficient
+	**Incorporate into 'ExploreCourses'
+
+References
+	http://nltk.org/book
+	http://en.wikipedia.org/wiki/Bayesian_spam_filtering
+	http://www.paulgraham.com/naivebayes.html
+

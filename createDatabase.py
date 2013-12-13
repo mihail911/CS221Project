@@ -83,8 +83,8 @@ def getCourseCodes():
 	conn=sqlite3.connect(allcoursesdatabase)
 	curs=conn.cursor()
 	curs.execute('select * from courseinfo')
-	for code in curs.fetchall():
-		coursecodes.add(code[2])
+	for coursetuple in curs.fetchall():
+		coursecodes.add(coursetuple[2])
 	conn.close()
 	return coursecodes
 
@@ -98,9 +98,27 @@ def getInstructors():
 	curs.execute('select * from instructordb')
 	for instructor in curs.fetchall():
 		instructors.add(instructor[0])
+	conn.close()
 	return instructors
 
+<<<<<<< HEAD
 def extractPrereqsRaw(coursedescription, deptcodes):
+=======
+def getAllCourseTitles():
+	"""
+	Return a set of all course title.
+	"""
+	titles=set()
+	conn=sqlite3.connect(allcoursesdatabase)
+	curs=conn.cursor()
+	curs.execute('select * from courseinfo')
+	for coursetuple in curs.fetchall():
+		titles.add(coursetuple[1])
+	conn.close()
+	return titles
+
+def extractPrereqs(coursedescription, deptcodes):
+>>>>>>> a41a2fc343c3a50503efeff0534279278d72dc83
 	"""
 	Extract course prereqs from course description.
 
@@ -125,6 +143,7 @@ def extractPrereqsRaw(coursedescription, deptcodes):
 		return newprereqs.strip()
 	return ''
 
+<<<<<<< HEAD
 def extractPrereqs(description, deptcodes):
         """
         Extract course prereqs from course description.
@@ -145,6 +164,8 @@ def prereqsToDB():
 # deptcodes=getSetOfDeptCodes()
 # x='Prerequisite: Placement Test, AMELANG 128C.'
 # print extractPrereqs(x,deptcodes)
+=======
+>>>>>>> a41a2fc343c3a50503efeff0534279278d72dc83
 def allClassInfo():
 	"""
 	Populates 'courseinfo' database with all course info.
@@ -179,6 +200,18 @@ def instructorDBInstance():
 	conn.commit()
 	conn.close()
 
+def getAllInstructors():
+	"""
+	Return set of all instructor names.
+	"""
+	allinstructors=set()
+	conn=sqlite3.connect(instructordb)
+	cursor=conn.cursor()
+	cursor.execute('select * from instructordb')
+	for insttuple in cursor.fetchall():
+		allinstructors.add(insttuple[0])
+	conn.close()
+	return allinstructors
 def makeInstructorDatabase():
 	"""Populates INSTRUCTORDB with instructor information where 
 	each row is of the form (instructor, coursecode)"""
@@ -201,7 +234,7 @@ def makeInstructorDatabase():
 	conn.commit()
 	conn.close()
 
-# setupDatabase()
-# allClassInfo()
+setupDatabase()
+allClassInfo()
 # # setupDeptCodeTable()
 # # populateDeptCodeTable()	
