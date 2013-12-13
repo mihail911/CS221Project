@@ -115,16 +115,36 @@ processing scheme: tokenize query, tag with parts of speech, chunk
 appropriately using regular expression grammars. Once a query is
 chunked, useful information can be derived through analysis of the
 corresponding parse tree. Using this scheme, we are able to support
-user query searches consisting of more complex phrases
+user query searches consisting of more complex phrases including ones of the form 
+`courses taught by Kannan Soundararajan.'
 
-We search for instructors using a simple grammar that searches a
-string for sequences of proper nouns. We support course code and
-department code searches by tokenizing a query into unigram and bigram
-tokens and checking a set of course/department codes for matches. We
+As an example of how our program processes a query, consider the example from above:
+`courses taught by Kannan Soundararajan.' We first tokenize the query and assign part-of-speech
+tags to each token. Note that we used the built-in Python NLTK POS-tagger
+which is trained on the Penn Treebank corpus. This gives us the following output: \vspace{0.15in}
+
+\emph{\small{[(`courses', `NNS'), (`taught', `VBD'), (`by', `IN'), (`Kannan', `NNP'), (`Soundarajan', `NNP')]}}	 \vspace{0.15in}
+
+where the second entry in each tuple represents the corresponding part-of-speech that the token has been identified as. Now, using a regular expression grammar of the form ``PNOUN:\{ $<$ NNP$>$*\}'', we can chunk the text to get the following parse tree in flattened text form: \vspace{0.15in}
+
+\emph{\small{Tree(`S', [(`courses', `NNS'), (`taught', `VBD'), (`by', `IN'), Tree(`PNOUN', [(`Kannan', `NNP'), (`Soundarajan', `NNP')])])
+}} \vspace{0.15in}
+
+Here the grammar searches for strings of proper nouns, operating under the assumption that most strings of proper nouns in a user input will be associated with the name of an instructor. Thus, given this parse tree, we can deduce that the user wants to search for courses taught by `Kannan Soundararajan.'
+
+
+We support course code and department code searches by tokenizing a query into unigram and bigram
+tokens and linearly searching for matches against a set of course/department codes. This scheme allows us to find multiple course codes in a user query. We
 also support title searches by searching for the input string in a set
-of all course titles.
+of all available course titles. In order to satisfy more complex query searches, we have a few parsing grammars in place for extracting information. A few of them include:
+\begin{enumerate}
+	\item \{$<$NNP$>$*\}. For identifying strings of proper nouns.
 
-\todo{Talk about use of NLTK POS-Tagger, chunker, regex grammar.}
+	\item \{$<$VBD$>$ $<$IN$>$ $<$NNP$>$*\}. For identifying phrases of the form: verb, proposition, proper noun.
+\end{enumerate}
+
+As more grammars are added, the complexity of searches supported will increase.
+
 
 \section*{Data}
 We used the ExploreCourses Java API to acquire information related to
@@ -138,7 +158,7 @@ for taking the class, and course description.
 However, for the purposes of the assessment, we used a database of a
 reduced subset of approximately 170 random classes taken from the CS
 and MATH departments. We had to utilize a reduced database because it
-was too time-consuming to create a comprehensive relatedness graph for
+was too computationally time-consuming to create a comprehensive relatedness graph for
 all 11,613 courses.
 
 We use the query parser to find an exact match for the query. Then we
@@ -204,7 +224,13 @@ point-based system described above.
 	
 \section*{Further Work}
 
-In the future, we would like to implement some or all of the following.
+In the future, we can make two classes of improvements to our program: augmentations to 
+the artificial intelligence schemes we employ to make our program `smarter' or additions to
+improve the general robustness of the program's features.
+
+First off, we will discuss some of the improvements to the artificial intelligence infrastructure
+we can implement. At the moment, our query parsing uses the built-in NLTK POS-tagger which
+has made specific mistakes on some queries in the past such as occasionally labeling `CS109' as a proper noun. We may want to generate our own corpus of expected user queries along with parts-of-speech tagged, so that we can more appropriately train the POS-tagger that will be used for our program. We will also want to support a more diverse collection of chunking grammars that will allow for a greater complexity of query searches. 
 
 \begin{itemize}
 \item Support searches based on user's history using more standard supervised machine learning classifiers.
@@ -214,6 +240,6 @@ In the future, we would like to implement some or all of the following.
 \end{itemize}
 
 \section*{References}
-
+\todo{FIX INDENTATION}
 
 \end{document}

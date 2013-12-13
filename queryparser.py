@@ -12,6 +12,7 @@ namedentitykeys=['ORGANIZATION', 'PERSON', 'LOCATION', 'DATE', 'TIME', 'MONEY', 
 
 propernoungrammar1="PNOUN: {<NNP>*}"
 propernoungrammar2="PNOUN: {<VBD> <IN> <NNP>*}"
+prereqs="PREREQ: {<NN> <IN> <NN>}"
 
 def parseQuery(query):
 	"""
