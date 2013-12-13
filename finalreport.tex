@@ -34,7 +34,7 @@ Things to consider:\\
 2) if course in same department (+5,+4,+3,+2,+1?)\\
 3) if course has same number of units? (+1)\\
 4) if course has same instructor (+10,+8,+6,+4,+2)\\
-5) number of nouns that course descriptions have in common\\
+5) number of nouns that course descriptions have in common (with expected course)\\
 ------------------------------------------------------------------\\
 If specific course being searched, then we know that the user has a particular course in mind for their search.
 
@@ -42,7 +42,7 @@ Data (25 searches across different 5 different domains (5 searches per domain))\
 1) specific course code\\
 2) instructor name\\
 3) course title searchs (including segments of course titles)\\
-4)  department code\\
+4) department code\\
 5)more complex queries ('courses taught by', ``cs109 and cs154'')
 
 
@@ -67,15 +67,22 @@ Right now for P(F|R) and P(~F|R) I just threw in some constants. This seems to w
 Then there's the question of how to combine each conditional probability. First I tried using combineProbs(), but that doesn't seem to work too well. It works a lot better to simply take the sum of all the probabilities. Why?
 
 \section*{Query Parsing}
-In order to satisfy a user's input queries, we need to extract useful information from a given query. We employed the following natural language processing scheme: tokenize query, tag with parts of speech, chunk appropriately using regular expression grammars. Once a query is chunked, useful information can be derived through analysis of the corresponding parse tree. 
+In order to satisfy a user's input queries, we need to extract useful information from a given query. Using the Python Natural Language Processing Toolkit, we employed the following natural language processing scheme: tokenize query, tag with parts of speech, chunk appropriately using regular expression grammars. Once a query is chunked, useful information can be derived through analysis of the corresponding parse tree. Using this scheme, we are able to support user query searches consisting of more complex phrases 
 
-We search for instructors using a simple grammar that searches a string for sequences of proper nouns. We support course code and department code searches by tokenizing a query into unigram and bigram tokens and checking a set of course/department codes for matches. We also support title searches by searching for the input string in a set of all course titles.
+We search for instructors using a simple grammar that searches a string for sequences of proper nouns. We support course code and department code searches by tokenizing a query into unigram and bigram tokens and checking a set of course/department codes for matches. We also support title searches by searching for the input string in a set of all course titles.\\
+Talk about use of NLTK POS-Tagger, chunker, regex grammar.
 
 \section*{Data}
-	 We used the ``Explore Courses '' Java API to acquire information related to the 11,613 courses listed for enrollment for the 2013-2014 academic year. We populated a SQL datebase, using the sqlite3 Python library, with the following information for each course: course title, course code, instructors teaching the course, minimum units of credit received for taking the class, maximum units units of credit received for taking the class, and course description. 
+	 We used the ``Explore Courses '' Java API to acquire information related to the 11,613 courses listed for enrollment for the 2013-2014 academic year. We populated a SQL datebase, using the sqlite3 Python library, with the following information for each course: course title, course code, instructors teaching the course, minimum units of credit received for taking the class, maximum units units of credit received for taking the class, and course description. \\
+
+	 However, for the purposes of the assessment, we used a database of a reduced subset of approximately 150 random classes taken from the CS and MATH departments. We had to utilize a reduced database because it was too time-consuming to create a comprehensive relatedness graph for all 11,613 courses.
 
 \section*{Metric for Assessment}
-
+	We developed a simple point-based metric to objectively determine the quality of our course searcher as compared to ``Explore Courses.'' To evaluate the performance of our searcher, we generated a random subset of 25 courses taken from our reduced database. We subdivided these 25 courses into 5 domains of query searches with 5 courses per domain: searching a specific course code such as `CS109', searching for an instructor name such as `Mehran Sahami', searching for a course title such as 
+3) course title searchs (including segments of course titles)\\
+4) department code\\
+5)more complex queries ('courses taught by', ``cs109 and cs154'')
+	The robustness of our searcher as compared to ``Explore Courses'' using our metric 
 \section*{Results}
 	
 \section*{Further Work}

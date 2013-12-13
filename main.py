@@ -38,23 +38,20 @@ if __name__=='__main__':
 			results=readDB.queryDB('SELECT * FROM courseinfo WHERE code=?', (ccode.lower(), ))
 			coursesfound += results
 			print 'code ', results	
-		# for inst in courseinfo[instructors]:
-		# 	# for instructor in allinstructors:
-		# 	# 	print instructor
-		# 	# 	if inst in instructor:
-		# 	# 		results=readDB.queryDB('SELECT * FROM courseinfo WHERE instructor=? ',(inst.lower(),))
-		# 	# 		print results
-		# 	results=readDB.queryDB('SELECT * FROM courseinfo WHERE code LIKE %?%', (inst,))
-		# 	coursesfound += results
-		# 	print 'instructor', results
-		# for deptcode in courseinfo[deptcodes]:
-		# 	print deptcode
-		# 	results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
-		# 	coursesfound += results
-		# 	print 'deptcode', results	
-		# related = [ coursegraph.getRelatedCourses(entry)[] for entry in coursesfound ]
-		# print related
-
+		for inst in courseinfo[instructors]:
+			for instructor in allinstructors:
+				if inst in instructor:
+					results=readDB.queryDB('SELECT * FROM courseinfo WHERE instructor=? ',(inst.lower(),))
+					print 'instructors', results
+			
+			coursesfound += results
+		for deptcode in courseinfo[deptcodes]:
+			print deptcode
+			results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
+			coursesfound += results
+			print 'deptcode', results	
+		related = [ coursegraph.getRelatedCourses(entry)[] for entry in coursesfound ]
+		print related
 		readDB.cleanup()
 		break
 
