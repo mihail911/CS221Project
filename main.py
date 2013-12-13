@@ -28,39 +28,34 @@ if __name__=='__main__':
 	while True:
 		courseinfo=queryparser.readQuery()
 		coursesfound = []
-		#print courseinfo
-		allcourseids=[]
+		#print 'course info',courseinfo
 		#title, course code, instructors, dept codes
 		for title in courseinfo[titles]: #iterate over all possible titles
 			results=readDB.queryDB('SELECT * FROM courseinfo WHERE title=?', (title.lower(),))
-			# coursesfound += results
+			coursesfound += results
 			# print 'title', results
-			for course in results:
-				allcourseids.append(course[0])
+			
 		for ccode in courseinfo[coursecodes]:
 			results=readDB.queryDB('SELECT * FROM courseinfo WHERE code=?', (ccode.lower(), ))
-			# coursesfound += results
-			# print 'code ', results
-			for course in results:
-				allcourseids.append(course[0])	
+			coursesfound += results
+			# print 'code ', results	
 		for inst in courseinfo[instructors]:#iterate over all found instructors
 			allcourses=readDB.queryDB('SELECT * from courseinfo') #iterate over all possible instructors
 			for acourse in allcourses:
 				if inst.lower() in acourse[3]:
 					#print 'instructor courses', acourse
-					allcourseids.append(acourse[0])
+					coursesfound.append(acourse)
 		for deptcode in courseinfo[deptcodes]:
 			allcourses=readDB.queryDB('SELECT * from courseinfo')
 			for acourse in allcourses:
 				if deptcode.lower() in acourse[2]:
 					#print 'deptcode', acourse
-					allcourseids.append(acourse[0])	
-			#results=readDB.queryDB("SELECT * FROM courseinfo WHERE code LIKE 'CS%'")
-			#coursesfound += results
-			#print 'deptcode', results	
-		related = [ coursegraph.getRelatedCourses(entry)[5] for entry in allcourseids ]
-		# print related
-		#print 'ids',allcourseids
+					coursesfound.append(acourse)	
+		#print 'courses found',coursesfound, '\n\n\n'
+		mostrelatedcourses=[]
+		for entry in coursesfound: #take top 5 from most related courses for each course
+				mostrelatedcourses+=coursegraph.getRelatedCourses(entry)[-5:]
+		print sorted(mostrelatedcourses,key=lambda pair: pair[1])[-5:]
 		readDB.cleanup()
 		break
 
