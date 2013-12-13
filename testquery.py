@@ -45,10 +45,7 @@ growing up bilingual (chilatst 14n, educ math52h and cs105 )
 digital dilemmas
 amelang129a and cs109""".split("\n")
 
-queries = """math52h and cs105
-first-year hebrew, first quarter (jewishst 101a)
-comparative fictions of ethnicity (amstud 51q, complit , csre51q )
-""".split("\n")
+queries = """math 53""".split("\n")
 
 for query in queries:
     print "%s: %s\n" % (query, [ (getField(entry, 'code'), getField(entry, 'title'), getField(entry, 'instructor')) for entry in top3(query) ])

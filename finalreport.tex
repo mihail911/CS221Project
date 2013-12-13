@@ -119,25 +119,35 @@ corresponding parse tree. Using this scheme, we are able to support
 user query searches consisting of more complex phrases including ones of the form 
 `courses taught by Kannan Soundararajan.'
 
-As an example of how our program processes a query, consider the example from above:
-`courses taught by Kannan Soundararajan.' We first tokenize the query and assign part-of-speech
-tags to each token. Note that we used the built-in Python NLTK POS-tagger
-which is trained on the Penn Treebank corpus. This gives us the following output: \vspace{0.15in}
+As an example of how our program processes a query, consider the
+example from above: `courses taught by Kannan Soundararajan.' We first
+tokenize the query and assign part-of-speech tags to each token. Note
+that we used the built-in Python NLTK part-of-speech (POS) tagger
+which is trained on the Penn Treebank corpus. This gives us the
+following output: \vspace{0.15in}
 
-\emph{\small{[(`courses', `NNS'), (`taught', `VBD'), (`by', `IN'), (`Kannan', `NNP'), (`Soundarajan', `NNP')]}}	 \vspace{0.15in}
+\emph{\small{[(`courses', `NNS'), (`taught', `VBD'), (`by', `IN'), (`Kannan', `NNP'), (`Soundararajan', `NNP')]}}	 \vspace{0.15in}
 
-where the second entry in each tuple represents the corresponding part-of-speech that the token has been identified as. Now, using a regular expression grammar of the form ``PNOUN:\{ $<$ NNP$>$*\}'', we can chunk the text to get the following parse tree in flattened text form: \vspace{0.15in}
+\noindent where the second entry in each tuple represents the corresponding
+part-of-speech that the token has been identified as. Now, using a
+regular expression grammar of the form ``PNOUN:\{ $<$ NNP$>$*\}'', we
+can chunk the text to get the following parse tree in flattened text
+form: \vspace{0.15in}
 
-\emph{\small{Tree(`S', [(`courses', `NNS'), (`taught', `VBD'), (`by', `IN'), Tree(`PNOUN', [(`Kannan', `NNP'), (`Soundarajan', `NNP')])])
+\emph{\small{Tree(`S', [(`courses', `NNS'), (`taught', `VBD'), (`by', `IN'), Tree(`PNOUN', [(`Kannan', `NNP'), (`Soundararajan', `NNP')])])
 }} \vspace{0.15in}
 
-Here the grammar searches for strings of proper nouns, operating under the assumption that most strings of proper nouns in a user input will be associated with the name of an instructor. Thus, given this parse tree, we can deduce that the user wants to search for courses taught by `Kannan Soundararajan.'
+\noindent Here the grammar searches for strings of proper nouns, operating under the assumption that most strings of proper nouns in a user input will be associated with the name of an instructor. Thus, given this parse tree, we can deduce that the user wants to search for courses taught by `Kannan Soundararajan.'
 
 
-We support course code and department code searches by tokenizing a query into unigram and bigram
-tokens and linearly searching for matches against a set of course/department codes. This scheme allows us to find multiple course codes in a user query. We
-also support title searches by searching for the input string in a set
-of all available course titles. In order to satisfy more complex query searches, we have a few parsing grammars in place for extracting information. A few of them include:
+We support course code and department code searches by tokenizing a
+query into unigram and bigram tokens and linearly searching for
+matches against a set of course/department codes. This scheme allows
+us to find multiple course codes in a user query. We also support
+title searches by searching for the input string in a set of all
+available course titles. In order to satisfy more complex query
+searches, we have a few parsing grammars in place for extracting
+information. A few of them include:
 \begin{enumerate}
 	\item \{$<$NNP$>$*\}. For identifying strings of proper nouns.
 
@@ -181,21 +191,14 @@ We developed a simple point-based metric to objectively determine the
 quality of our course searcher as compared to ExploreCourses. To
 evaluate the performance of our searcher, we generated a random subset
 of 21 courses taken from our reduced database. We subdivided these 21
-courses into five types of searches: 
+courses into the following types of searches: 
 
 \begin{enumerate}
 \item Specific course code such as CS109
 \item Instructor name such as `Mehran Sahami'
 \item Course title or subset of course title such as `Probability for Computer Scientists'
-\item More complex queries
-\end{enumerate}
-
-\noindent The more complex queries included two of each of the following: 
-
-\begin{enumerate}
 \item `courses taught by [instructor]'
 \item `[course 1] and [course 2]'
-\item `courses in the [department] department'
 \end{enumerate}
 
 We used the following point system to evaluate the accuracy of queries: 
@@ -222,18 +225,86 @@ not feasible at this time, so for now we will stick with the
 point-based system described above.
 
 \section*{Results}
+
+We compared ExploreCourses and our search using the methods decribed
+above. ExploreCourses successfully found courses for exact course code
+searches (e.g. `Math120'), occasionally found courses for title
+searches (e.g. `introduction to computing principles'), and failed for
+all other types of searches.
+
+Our improved course search performed roughly as well as ExploreCourses
+on these two types of searches. In addition, it performed much better
+for other queries. It had 100 percent success for `courses taught by
+[instructor]' or just `[instructor]' and performed reasonably well on
+the more complex queries. There exists some room for improvement in
+queries for specific course codes (arguably the most important type of
+query); we would like to achieve 100 percent success for course code
+queries. Our problem here is fairly simple: if the course code has a
+space in it (e.g. `Math 53' rather than `Math53'), our search
+fails. We should be able to correct this in a future iteration of the
+program.
+
+Its greatest weakness arose when searching for course titles: it only
+successfully found the intended course about a third of the time. It
+perfomed better in some preliminary tests that we did, and we believe
+that we may have simply modified the program in some way that created
+a bug. This should not be difficult to fix.
+
+In total, ExploreCourses scored 750 points and our search scored 1290
+points. Here is the breakdown by section: 
+
+\begin{tabular}{l r r r}
+type & ExploreCourses & our search & max possible \\
+code & 400 & 375 & 500\\
+instructor & 0 & 100 & 100 \\
+title & 300 & 315 & 1100 \\
+taught by X & 0 & 300 & 300 \\
+X and Y & 0 & 200 & 300 \\
+\end{tabular}
 	
 \section*{Further Work}
 
-In the future, we can make two classes of improvements to our program: augmentations to 
-the artificial intelligence schemes we employ to make our program `smarter' or additions to
-improve the general robustness of the program's features.
+In the future, we can make two classes of improvements to our program:
+augmentations to the artificial intelligence schemes we employ to make
+our program `smarter'; and additions to improve the general robustness
+of the program's features.
 
-First off, we will discuss some of the improvements to the artificial intelligence infrastructure
-we can implement. At the moment, our query parsing uses the built-in NLTK POS-tagger which
-has made specific mistakes on some queries in the past such as occasionally labeling `CS109' as a proper noun. We may want to generate our own corpus of expected user queries along with parts-of-speech tagged, so that we can more appropriately train the POS-tagger that will be used for our program. We will also want to support a more diverse collection of chunking grammars that will allow for a greater complexity of query searches. Another thing we've also brainstormed is the possibility of supporting searches based on a user's previous history. Here we could employ some standard supervised machine learning classifying algorithms. We could use a similar Bayesian inference scheme whereby we find the probability that a user will want to find a certain course given that she has searched a number of other classes in the past.
+First, let us discuss some of the improvements to the artificial
+intelligence infrastructure we can implement. At the moment, our query
+parsing uses the built-in NLTK POS-tagger which has made specific
+mistakes on some queries in the past such as occasionally labeling
+`CS109' as a proper noun. We may want to generate our own corpus of
+expected user queries along with part-of-speech tagging, so that we
+can more appropriately train the POS-tagger that will be used for our
+program. We will also want to support a more diverse collection of
+chunking grammars that will allow for a greater complexity of query
+searches. Another thing we've also brainstormed is the possibility of
+supporting searches based on a user's previous history. Here we could
+employ some standard supervised machine learning classifying
+algorithms. We could use a similar Bayesian inference scheme whereby
+we find the probability that a user will want to find a certain course
+given that she has searched a number of other classes in the past.
 
-As far as improving the overall robustness of the program, the code is definitely not implemented the most efficiently as the moment. We often do complete linear searches through huge databases to find matches which is something we can definitely improve. The computational slowness of the code is also the reason we had to develop a reduced databased for testing course-relatedness. In the future we would like to create a relatedness graph for the entire collection of 11,000 courses offered. We can also implement some user spell-correction algorithm, for fixing a query if it doesn't directly match a name or code available in a database. Something as basic as a memoized edit distance algorithm should work very well for our purposes. Given all these places for improvement, our searcher already outperforms ``Explore Courses'' so we would like to get our code live at some point in the future.
+As far as improving the overall robustness of the program, the code is
+definitely not implemented as efficiently as it could be at this
+time. We often do complete linear searches through huge databases to
+find matches; we could greatly improve this by managing our data
+within a more intelligent data structure. The computational slowness
+of the code is also the reason we had to develop a reduced databased
+for testing course-relatedness. In the future we would like to create
+a relatedness graph for the entire collection of 11,000 courses
+offered. 
+
+We may also implement a spell-correction algorithm,
+for fixing a query if it does not directly match a name or code
+available in a database. Something as basic as a memoized edit
+distance algorithm should work very well for our purposes. Given all
+these places for improvement, our searcher already outperforms
+ExploreCourses, and we would like to get our code live at some point
+in the future. We are already in communication with the Office of the
+University Registrar and they have expressed some excitement about our
+improved course search.
+
 
 
 \section*{References}
