@@ -20,6 +20,7 @@ def searchCode(code):
     entries = top3(code)
     points = 0
     for i in range(numresults):
-        points +=  getField(entries[i], 'code') == code
+        points += 50 * (getField(entries[i], 'code') == code)
+        
 
     
