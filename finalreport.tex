@@ -75,10 +75,10 @@ Talk about use of NLTK POS-Tagger, chunker, regex grammar.
 \section*{Data}
 	 We used the ``Explore Courses '' Java API to acquire information related to the 11,613 courses listed for enrollment for the 2013-2014 academic year. We populated a SQL datebase, using the sqlite3 Python library, with the following information for each course: course title, course code, instructors teaching the course, minimum units of credit received for taking the class, maximum units units of credit received for taking the class, and course description. \\
 
-	 However, for the purposes of the assessment, we used a database of a reduced subset of approximately 150 random classes taken from the CS and MATH departments. We had to utilize a reduced database because it was too time-consuming to create a comprehensive relatedness graph for all 11,613 courses.
+	 However, for the purposes of the assessment, we used a database of a reduced subset of approximately 170 random classes taken from the CS and MATH departments. We had to utilize a reduced database because it was too time-consuming to create a comprehensive relatedness graph for all 11,613 courses.
 
 \section*{Metric for Assessment}
-	We developed a simple point-based metric to objectively determine the quality of our course searcher as compared to ``Explore Courses.'' To evaluate the performance of our searcher, we generated a random subset of 25 courses taken from our reduced database. We subdivided these 25 courses into 5 domains of query searches with 5 courses per domain: searching a specific course code such as `CS109', searching for an instructor name such as `Mehran Sahami', searching for a course title such as 
+	We developed a simple point-based metric to objectively determine the quality of our course searcher as compared to ``Explore Courses.'' To evaluate the performance of our searcher, we generated a random subset of 25 courses taken from our reduced database. We subdivided these 25 courses into 5 domains of query searches with 5 courses per domain: searching a specific course code such as `CS109', searching for an instructor name such as `Mehran Sahami', searching for a course title or subset of such as 
 3) course title searchs (including segments of course titles)\\
 4) department code\\
 5)more complex queries ('courses taught by', ``cs109 and cs154'')
