@@ -10,8 +10,7 @@
 *** TODO Make features use word stems instead of words (use NLP.Stemmer)
 *** TODO The relatedness graph DB may be inefficient since it has to iterate over the whole table to find courses related to some course.
 * Small Changes
-** DONE Replace magic constants for field indices with XXXindex in readDB.py.
-   CLOSED: [2013-11-26 Tue 14:12]
+** TODO If a query returns multiple results, perform a relatedness search on each result instead of just the first.
 ** TODO Put prerequisites into DB (use extractPrereqs)
 ** TODO Change list of instructors in the course info db from a string to an actual list
 ** TODO For courses where the title lists alternative codes, treat these codes as a separate value in the table and not as part of the title.
